@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Tes Gaya Kelekatan | Apa Tipe Cintamu?",
+    "description": "Temukan gaya kelekatanmu lewat 10 skenario hubungan. Aman, Cemas, Menghindar, atau Takut?"
+  },
+  "app": {
+    "title": "Tes Gaya Kelekatan",
+    "subtitle": "Temukan gaya kelekatanmu lewat 10 skenario hubungan",
+    "warning": "Tes ini hanya untuk hiburan dan bukan pengganti penilaian psikologis profesional.",
+    "start": "Mulai Tes"
+  },
+  "questions": {
+    "q1": {
+      "text": "Pasanganmu belum balas chat selama 3 jam. Apa yang kamu lakukan?",
+      "options": {
+        "a": "Pasti lagi sibuk. Aku lanjut kerjain hal lain.",
+        "b": "Cemas terus cek HP — jangan-jangan di-read doang.",
+        "c": "Biasa aja sih. Nggak suka nungguin balesan juga.",
+        "d": "Kesel tapi nggak mau chat duluan — ntar dikira needy."
+      }
+    },
+    "q2": {
+      "text": "Pasangan bilang 'Kita perlu ngobrol serius'. Reaksi pertamamu?",
+      "options": {
+        "a": "Deg-degan — jangan-jangan mau putus?",
+        "b": "Siap buat ngobrol terbuka.",
+        "c": "Pengen kabur tapi ya udah, dengerin deh.",
+        "d": "Langsung defensif sekaligus cemas."
+      }
+    },
+    "q3": {
+      "text": "Teman dekatmu mulai PDKT sama pasanganmu. Gimana reaksimu?",
+      "options": {
+        "a": "Dia pasti lebih baik dari aku… emang aku nggak cukup.",
+        "b": "Ya sudahlah, nggak bisa dikontrol juga.",
+        "c": "Percaya sama pasangan, kalau perlu ngobrol jujur.",
+        "d": "Cemburu tapi diam aja, takut dikira posesif."
+      }
+    },
+    "q4": {
+      "text": "Pasanganmu kasih hadiah kejutan. Reaksimu?",
+      "options": {
+        "a": "Senang dan langsung bilang terima kasih dengan tulus.",
+        "b": "Terharu banget sampai mau nangis, terus ngerasa harus bales.",
+        "c": "Agak nggak nyaman. Nggak usah segala gitu juga.",
+        "d": "Senang tapi curiga — ada maunya nggak ya?"
+      }
+    },
+    "q5": {
+      "text": "Habis berantem hebat sama pasangan, biasanya kamu gimana?",
+      "options": {
+        "a": "Putus kontak mau sendiri, tapi takut dia pergi.",
+        "b": "Butuh jarak buat proses perasaan sendiri.",
+        "c": "Langsung kirim pesan terus biar cepet baikan.",
+        "d": "Tunggu sama-sama tenang dulu, baru ngobrol baik-baik."
+      }
+    },
+    "q6": {
+      "text": "Baru mulai pacaran sama orang baru. Kamu kayak gimana di awal?",
+      "options": {
+        "a": "Terus-terusan cari tanda seberapa tertariknya dia.",
+        "b": "Cepat jatuh cinta tapi takut ditinggalin.",
+        "c": "Kenalan pelan-pelan dengan ritme yang nyaman.",
+        "d": "Kalau udah terlalu dekat, aku mundur."
+      }
+    },
+    "q7": {
+      "text": "Pasangan bilang butuh waktu sendiri. Apa yang kamu pikirkan?",
+      "options": {
+        "a": "Bagus! Aku juga butuh me-time.",
+        "b": "Malah bagus — aku juga bisa napas.",
+        "c": "Jangan-jangan udah bosen sama aku?",
+        "d": "Setengah lega, setengah khawatir — jangan-jangan ngejauh."
+      }
+    },
+    "q8": {
+      "text": "Pasanganmu lagi susah dan butuh dukungan emosional. Kamu...",
+      "options": {
+        "a": "Dengerin dan hibur dengan senang hati.",
+        "b": "Mau bantu tapi ngerasa beban emosionalnya berat.",
+        "c": "Agak cemas tapi senang dibutuhkan.",
+        "d": "Bingung harus ngapain dan ngerasa nggak nyaman."
+      }
+    },
+    "q9": {
+      "text": "Nemu mantan pasanganmu di medsos. Reaksimu?",
+      "options": {
+        "a": "Pasti aku nggak semenarik dia.",
+        "b": "Stalking habis-habisan terus bandingin sama diri sendiri.",
+        "c": "Masa lalu ya masa lalu. Santai aja.",
+        "d": "Kalau penasaran, tanya langsung ke pasangan."
+      }
+    },
+    "q10": {
+      "text": "Kalau disuruh deskripsiin hubungan ideal dalam satu kalimat?",
+      "options": {
+        "a": "Saling hargai ruang masing-masing — terlalu deket bikin sesak.",
+        "b": "Selalu diyakinkan dan merasa dicintai setiap detik.",
+        "c": "Saling percaya dalam dan tetap menghargai kehidupan masing-masing.",
+        "d": "Pengen dicintai tapi susah buka hati sepenuhnya karena takut sakit."
+      }
+    }
+  },
+  "results": {
+    "secure": {
+      "name": "Aman",
+      "emoji": "🛡️",
+      "desc": "Kamu punya gaya kelekatan aman. Di hubungan kamu merasa nyaman, secara alami percaya pasangan, dan menghargai kebersamaan maupun waktu pribadi. Saat konflik, kamu menyelesaikannya lewat komunikasi yang jujur.",
+      "traits": ["Batasan yang sehat", "Ekspresi emosi yang jujur", "Penyelesaian konflik lewat dialog", "Percaya diri yang baik"],
+      "idealPartner": "Kamu cocok dengan semua tipe, tapi dengan sesama Aman akan tercipta dinamika paling sehat. Kamu juga bisa memberi stabilitas ke pasangan Cemas atau Menghindar.",
+      "advice": "Skill hubunganmu sudah bagus banget! Hanya hati-hati jangan sampai nganggep ketidakamanan pasangan sebagai kesalahanmu. Stabilitasmu itu kekuatan — tapi jangan lupa ungkapin kebutuhanmu sendiri juga ya."
+    },
+    "anxious": {
+      "name": "Cemas",
+      "emoji": "💓",
+      "desc": "Kamu punya gaya kelekatan cemas. Kamu mencintai dengan sangat dalam dan penuh dedikasi, tapi selalu dihantui rasa takut ditinggalkan. Kamu sangat sensitif terhadap perubahan kecil dari pasangan dan butuh konfirmasi serta kedekatan terus-menerus.",
+      "traits": ["Empati dan sensitivitas tinggi", "Komitmen mendalam", "Kecenderungan cemas terpisah", "Sangat peka terhadap reaksi pasangan"],
+      "idealPartner": "Pasangan tipe Aman paling ideal — yang memberi rasa tenang konsisten. Hati-hati dengan tipe Menghindar karena dinamika tarik-ulur bisa bikin cemasmu makin parah.",
+      "advice": "Kecepatan bales chat bukan ukuran cinta. Saat cemas melanda, berhenti sebentar sebelum bereaksi impulsif. Belajar mencintai diri sendiri dulu akan bikin semua hubunganmu jadi lebih sehat."
+    },
+    "avoidant": {
+      "name": "Menghindar",
+      "emoji": "🏔️",
+      "desc": "Kamu punya gaya kelekatan menghindar. Kamu menghargai kemandirian dan kebebasan, dan kedekatan berlebihan bikin nggak nyaman. Mungkin susah mengekspresikan emosi secara terbuka, tapi di balik itu ada perasaan yang dalam. Kamu butuh waktu dan ruang sendiri.",
+      "traits": ["Kemandirian kuat", "Sulit mengekspresikan emosi", "Sangat menghargai ruang pribadi", "Pola pikir mandiri"],
+      "idealPartner": "Pasangan tipe Aman yang memberi ruang tanpa klepek-klepek. Orang yang hangat tapi nggak overwhelming bisa pelan-pelan menurunkan tembokmu. Dengan tipe Cemas bisa terjadi siklus kejar-lari.",
+      "advice": "Mendekat ke seseorang bukan berarti lemah. Coba pelan-pelan buka diri. Boleh bilang butuh space — tapi akui juga kebutuhan emosional pasangan. Keseimbangan itu kunci."
+    },
+    "fearful": {
+      "name": "Takut",
+      "emoji": "🌪️",
+      "desc": "Kamu punya gaya kelekatan takut (disorganized). Kamu mendambakan keintiman tapi sekaligus takut. Ingin mendekat tapi mundur untuk melindungi diri dari sakit hati. Konflik batin ini bisa bikin hubunganmu rumit dan emosional naik-turun.",
+      "traits": ["Ambigu soal keintiman", "Emosi naik-turun", "Terpengaruh luka masa lalu", "Insting perlindungan diri kuat"],
+      "idealPartner": "Pasangan tipe Aman yang sabar — yang memahami pola tarik-mundurmu dan tetap kokoh. Mengalami hubungan yang aman, meski butuh waktu, sangat penting untuk pertumbuhanmu.",
+      "advice": "Perasaan campur adukmu itu mekanisme pertahanan alami, tapi nggak semua hubungan berakhir menyakitkan. Bangun kepercayaan pelan-pelan dari hal kecil. Bantuan profesional juga pilihan bagus. Kamu layak dicintai, tanpa ragu."
+    }
+  },
+  "result": {
+    "attachmentLevel": "Level Kelekatan",
+    "secondaryType": "Tipe Sekunder",
+    "retake": "Tes Ulang",
+    "keyTraits": "Ciri Utama",
+    "idealPartner": "Pasangan Ideal",
+    "advice": "Saran Hubungan"
+  },
+  "share": {
+    "twitter": "Temukan gaya kelekatanmu!",
+    "copyUrl": "Salin link",
+    "copied": "Link tersalin!"
+  },
+  "nav": {
+    "back": "Kembali"
+  },
+  "a11y": {
+    "skip": "Langsung ke konten"
+  }
+}

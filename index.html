@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>애착유형 테스트 | Attachment Style Test</title>
+<meta name="description" content="나의 연애 애착유형을 알아보세요. 10가지 관계 시나리오로 안정형, 불안형, 회피형, 혼란형 중 나의 유형을 확인합니다.">
+
+<!-- Canonical & Hreflang -->
+<link rel="canonical" href="https://dopabrain.com/attachment-style/">
+<link rel="alternate" hreflang="ko" href="https://dopabrain.com/attachment-style/?lang=ko">
+<link rel="alternate" hreflang="en" href="https://dopabrain.com/attachment-style/?lang=en">
+<link rel="alternate" hreflang="zh" href="https://dopabrain.com/attachment-style/?lang=zh">
+<link rel="alternate" hreflang="hi" href="https://dopabrain.com/attachment-style/?lang=hi">
+<link rel="alternate" hreflang="ru" href="https://dopabrain.com/attachment-style/?lang=ru">
+<link rel="alternate" hreflang="ja" href="https://dopabrain.com/attachment-style/?lang=ja">
+<link rel="alternate" hreflang="es" href="https://dopabrain.com/attachment-style/?lang=es">
+<link rel="alternate" hreflang="pt" href="https://dopabrain.com/attachment-style/?lang=pt">
+<link rel="alternate" hreflang="id" href="https://dopabrain.com/attachment-style/?lang=id">
+<link rel="alternate" hreflang="tr" href="https://dopabrain.com/attachment-style/?lang=tr">
+<link rel="alternate" hreflang="de" href="https://dopabrain.com/attachment-style/?lang=de">
+<link rel="alternate" hreflang="fr" href="https://dopabrain.com/attachment-style/?lang=fr">
+<link rel="alternate" hreflang="x-default" href="https://dopabrain.com/attachment-style/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="애착유형 테스트 | Attachment Style Test">
+<meta property="og:description" content="나의 연애 애착유형을 알아보세요. 10가지 관계 시나리오로 확인합니다.">
+<meta property="og:url" content="https://dopabrain.com/attachment-style/">
+<meta property="og:image" content="https://dopabrain.com/attachment-style/icon-512.svg">
+<meta property="og:site_name" content="DopaBrain">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="애착유형 테스트 | Attachment Style Test">
+<meta name="twitter:description" content="나의 연애 애착유형을 알아보세요.">
+<meta name="twitter:image" content="https://dopabrain.com/attachment-style/icon-512.svg">
+
+<!-- Favicon -->
+<link rel="icon" href="icon-192.svg" type="image/svg+xml">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Attachment Style Test",
+  "alternateName": "애착유형 테스트",
+  "description": "Discover your attachment style through 10 relationship scenarios. Find out if you're Secure, Anxious, Avoidant, or Fearful-Avoidant.",
+  "url": "https://dopabrain.com/attachment-style/",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "DopaBrain", "url": "https://dopabrain.com" },
+  "inLanguage": ["ko","en","zh","hi","ru","ja","es","pt","id","tr","de","fr"]
+}
+</script>
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
+
+<!-- AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
+
+<!-- App Loader -->
+<div id="app-loader" class="app-loader">
+  <div class="loader-content">
+    <div class="loader-emoji">💔</div>
+    <div class="loader-spinner"></div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="app-header">
+  <div class="header-controls">
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+      <span class="theme-icon-dark">🌙</span>
+      <span class="theme-icon-light">☀️</span>
+    </button>
+    <select id="lang-select" class="lang-select" aria-label="Language">
+      <option value="ko">한국어</option>
+      <option value="en">English</option>
+      <option value="zh">中文</option>
+      <option value="hi">हिन्दी</option>
+      <option value="ru">Русский</option>
+      <option value="ja">日本語</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="id">Indonesia</option>
+      <option value="tr">Türkçe</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main id="main-content" class="container">
+
+  <!-- Start Screen -->
+  <section id="start-screen" class="screen active">
+    <div class="card glass-card start-card">
+      <div class="app-emoji">💔</div>
+      <h1 data-i18n="app.title">애착유형 테스트</h1>
+      <p class="subtitle" data-i18n="app.subtitle">10가지 관계 시나리오로 나의 애착유형을 알아보세요</p>
+      <p class="warning" data-i18n="app.warning">이 테스트는 재미를 위한 것이며, 전문적인 심리 진단을 대체하지 않습니다.</p>
+      <button id="start-btn" class="btn btn-primary" data-i18n="app.start">테스트 시작</button>
+    </div>
+  </section>
+
+  <!-- Quiz Screen -->
+  <section id="quiz-screen" class="screen">
+    <div class="card glass-card quiz-card">
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+      <div class="question-counter">
+        <span id="current-q">1</span> / <span id="total-q">10</span>
+      </div>
+      <h2 id="question-text" class="question-text"></h2>
+      <div id="options-container" class="options-container"></div>
+    </div>
+  </section>
+
+  <!-- Result Screen -->
+  <section id="result-screen" class="screen">
+    <div class="card glass-card result-card">
+      <div class="result-reveal">
+        <div id="result-emoji" class="result-emoji"></div>
+        <h2 id="result-type" class="result-type"></h2>
+      </div>
+
+      <div class="attachment-meter">
+        <h3 data-i18n="result.attachmentLevel">애착 수준</h3>
+        <div class="meter-container">
+          <div class="meter-labels">
+            <span data-i18n="results.avoidant.name">회피형</span>
+            <span data-i18n="results.secure.name">안정형</span>
+            <span data-i18n="results.anxious.name">불안형</span>
+          </div>
+          <div class="meter-bar">
+            <div id="meter-indicator" class="meter-indicator"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-details">
+        <div class="result-section">
+          <p id="result-desc" class="result-desc"></p>
+        </div>
+
+        <div class="result-section">
+          <h3 data-i18n="result.keyTraits">주요 특성</h3>
+          <ul id="result-traits" class="traits-list"></ul>
+        </div>
+
+        <div class="result-section">
+          <h3 data-i18n="result.idealPartner">이상적 파트너</h3>
+          <p id="result-partner"></p>
+        </div>
+
+        <div class="result-section">
+          <h3 data-i18n="result.advice">연애 조언</h3>
+          <p id="result-advice"></p>
+        </div>
+
+        <div class="result-section secondary-type">
+          <h3 data-i18n="result.secondaryType">보조 유형</h3>
+          <p id="secondary-type-text"></p>
+        </div>
+      </div>
+
+      <div class="result-actions">
+        <button id="share-twitter" class="btn btn-share btn-twitter" data-i18n="share.twitter">트위터 공유</button>
+        <button id="share-copy" class="btn btn-share btn-copy" data-i18n="share.copyUrl">링크 복사</button>
+        <button id="retake-btn" class="btn btn-primary" data-i18n="result.retake">다시 테스트</button>
+      </div>
+    </div>
+
+    <!-- Cross-promo container -->
+    <div id="cross-promo-container"></div>
+  </section>
+
+</main>
+
+<!-- Scripts -->
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="/portal/js/cross-promo.js" defer></script>
+</body>
+</html>

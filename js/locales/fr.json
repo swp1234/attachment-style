@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Test de Style d'Attachement | Quel est votre type amoureux ?",
+    "description": "Découvrez votre style d'attachement grâce à 10 scénarios de couple. Sécure, anxieux, évitant ou craintif ?"
+  },
+  "app": {
+    "title": "Test de Style d'Attachement",
+    "subtitle": "Découvrez votre style d'attachement à travers 10 scénarios de couple",
+    "warning": "Ce test est à but récréatif et ne remplace pas une évaluation psychologique professionnelle.",
+    "start": "Commencer le Test"
+  },
+  "questions": {
+    "q1": {
+      "text": "Votre partenaire n'a pas répondu depuis 3 heures. Que faites-vous ?",
+      "options": {
+        "a": "Il/elle est sûrement occupé(e). Je vaque à mes occupations.",
+        "b": "Je vérifie mon téléphone sans arrêt, angoissé(e) à l'idée d'être ignoré(e).",
+        "c": "Franchement, je m'en fiche. Attendre des messages, ce n'est pas mon truc.",
+        "d": "Ça m'énerve mais hors de question d'écrire en premier — je ne veux pas avoir l'air en demande."
+      }
+    },
+    "q2": {
+      "text": "Votre partenaire dit : 'Il faut qu'on parle.' Votre première réaction ?",
+      "options": {
+        "a": "Mon cœur s'arrête — il/elle veut rompre ?",
+        "b": "Je me prépare à une conversation ouverte.",
+        "c": "J'aimerais fuir mais bon, j'écoute.",
+        "d": "Je deviens défensif/ve et anxieux/se en même temps."
+      }
+    },
+    "q3": {
+      "text": "Un ami proche commence à draguer votre partenaire. Comment réagissez-vous ?",
+      "options": {
+        "a": "Il/elle est sûrement mieux que moi… Je savais que je n'étais pas à la hauteur.",
+        "b": "Ce qui doit arriver arrivera. Je ne peux pas tout contrôler.",
+        "c": "Je fais confiance à mon partenaire et j'en parle honnêtement si besoin.",
+        "d": "Je suis jaloux/se mais je me tais pour ne pas passer pour quelqu'un de possessif."
+      }
+    },
+    "q4": {
+      "text": "Votre partenaire vous fait un cadeau surprise. Votre réaction ?",
+      "options": {
+        "a": "Je suis ravi(e) et j'exprime ma gratitude chaleureusement.",
+        "b": "Je suis si ému(e) que j'ai envie de pleurer, et je ressens la pression d'offrir quelque chose en retour.",
+        "c": "C'est un peu gênant. Il/elle n'avait pas besoin de faire ça.",
+        "d": "Ça me fait plaisir mais je me demande s'il y a une arrière-pensée."
+      }
+    },
+    "q5": {
+      "text": "Après une grosse dispute avec votre partenaire, quel est votre schéma habituel ?",
+      "options": {
+        "a": "Je coupe le contact et veux être seul(e), mais j'ai peur qu'il/elle parte.",
+        "b": "J'ai besoin de distance pour digérer mes émotions.",
+        "c": "J'envoie message sur message pour me réconcilier au plus vite.",
+        "d": "J'attends que tout le monde se calme, puis on en discute posément."
+      }
+    },
+    "q6": {
+      "text": "Vous venez de commencer à fréquenter quelqu'un. Comment êtes-vous au début ?",
+      "options": {
+        "a": "Je cherche constamment des signes d'intérêt de sa part.",
+        "b": "Je m'attache vite et profondément, mais j'ai peur d'être abandonné(e).",
+        "c": "Je prends le temps de découvrir l'autre à mon rythme.",
+        "d": "Si ça devient trop intime, je prends du recul."
+      }
+    },
+    "q7": {
+      "text": "Votre partenaire dit avoir besoin de temps seul(e). Qu'en pensez-vous ?",
+      "options": {
+        "a": "Super ! Moi aussi, j'aime mon temps perso.",
+        "b": "Tant mieux — moi aussi je peux souffler.",
+        "c": "Est-ce qu'il/elle se lasse de moi ?",
+        "d": "D'un côté je suis soulagé(e), de l'autre j'ai peur qu'il/elle m'éloigne."
+      }
+    },
+    "q8": {
+      "text": "Votre partenaire traverse un moment difficile et cherche votre soutien. Vous…",
+      "options": {
+        "a": "J'écoute et je réconforte avec plaisir.",
+        "b": "Je veux aider mais le poids émotionnel me pèse.",
+        "c": "Ça me rend anxieux/se mais content(e) qu'on ait besoin de moi.",
+        "d": "Je ne sais pas trop comment réagir et je me sens mal à l'aise."
+      }
+    },
+    "q9": {
+      "text": "Vous tombez sur l'ex de votre partenaire sur les réseaux. Votre réaction ?",
+      "options": {
+        "a": "Je suis sûrement moins attirant(e) que cette personne.",
+        "b": "J'épluche son profil et je ne peux m'empêcher de me comparer.",
+        "c": "Le passé, c'est le passé. Ça ne me dérange pas.",
+        "d": "Si ça me tracasse, je pose la question directement à mon partenaire."
+      }
+    },
+    "q10": {
+      "text": "Comment décririez-vous votre relation idéale en une phrase ?",
+      "options": {
+        "a": "Respecter l'espace de l'autre — trop de proximité, ça étouffe.",
+        "b": "Être rassuré(e) en permanence et se sentir aimé(e) à chaque instant.",
+        "c": "Une confiance profonde tout en respectant la vie de chacun.",
+        "d": "Vouloir de l'amour mais avoir du mal à s'ouvrir entièrement par peur de souffrir."
+      }
+    }
+  },
+  "results": {
+    "secure": {
+      "name": "Sécure",
+      "emoji": "🛡️",
+      "desc": "Vous avez un style d'attachement sécure. Vous vous sentez à l'aise dans vos relations, faites naturellement confiance à votre partenaire et appréciez autant les moments ensemble que votre espace personnel. En cas de conflit, vous privilégiez la communication honnête.",
+      "traits": ["Limites saines", "Expression émotionnelle sincère", "Résolution des conflits par le dialogue", "Bonne estime de soi"],
+      "idealPartner": "Vous vous entendez avec tous les types, mais avec un autre Sécure, c'est la dynamique la plus saine. Vous pouvez aussi apporter de la stabilité aux partenaires Anxieux ou Évitants.",
+      "advice": "Vous avez déjà d'excellentes compétences relationnelles ! Veillez simplement à ne pas porter l'insécurité de votre partenaire comme si c'était votre faute. Votre stabilité est une force — mais n'oubliez pas d'exprimer vos propres besoins aussi."
+    },
+    "anxious": {
+      "name": "Anxieux",
+      "emoji": "💓",
+      "desc": "Vous avez un style d'attachement anxieux. Vous aimez profondément et êtes incroyablement dévoué(e), mais portez une peur constante de l'abandon. Vous êtes hypersensible aux changements d'humeur de votre partenaire et avez besoin de réassurance permanente.",
+      "traits": ["Grande empathie et sensibilité", "Engagement profond dans les relations", "Tendance à l'anxiété de séparation", "Hypervigilance aux réactions du partenaire"],
+      "idealPartner": "Un partenaire Sécure est idéal — quelqu'un qui offre une réassurance constante et un comportement stable. Prudence avec les Évitants : la dynamique de va-et-vient peut amplifier votre anxiété.",
+      "advice": "Le temps de réponse de votre partenaire ne mesure pas son amour. Quand l'anxiété monte, faites une pause avant de réagir impulsivement. Apprendre à s'aimer soi-même d'abord rend toutes les relations plus saines."
+    },
+    "avoidant": {
+      "name": "Évitant",
+      "emoji": "🏔️",
+      "desc": "Vous avez un style d'attachement évitant. Vous valorisez l'indépendance et la liberté, et trop de proximité vous met mal à l'aise. Exprimer vos émotions ouvertement peut être difficile, mais des sentiments profonds existent sous la surface. Vous avez besoin de votre temps et de votre espace.",
+      "traits": ["Forte indépendance", "Difficulté à exprimer ses émotions", "Haute valeur accordée à l'espace personnel", "Mentalité autosuffisante"],
+      "idealPartner": "Un partenaire Sécure qui vous laisse de l'espace sans être collant. Quelqu'un de chaleureux mais pas envahissant peut aider à faire tomber vos murs progressivement. Avec les Anxieux, un cycle poursuite-fuite peut s'installer.",
+      "advice": "Se rapprocher de quelqu'un ne vous rend pas vulnérable. Essayez de vous ouvrir petit à petit. C'est normal de dire que vous avez besoin d'espace — mais reconnaissez aussi les besoins émotionnels de l'autre. L'équilibre est la clé."
+    },
+    "fearful": {
+      "name": "Craintif",
+      "emoji": "🌪️",
+      "desc": "Vous avez un style d'attachement craintif (désorganisé). Vous désirez l'intimité mais la redoutez en même temps. Vous voulez vous rapprocher mais reculez pour vous protéger de la souffrance. Ce conflit intérieur peut rendre vos relations complexes et émotionnellement tumultueuses.",
+      "traits": ["Ambivalence face à l'intimité", "Hauts et bas émotionnels", "Influence des blessures passées", "Fort instinct d'autoprotection"],
+      "idealPartner": "Un partenaire Sécure et patient est idéal — quelqu'un qui comprend vos allers-retours et reste solide. Vivre une relation sécurisante, même si cela prend du temps, est crucial pour votre épanouissement.",
+      "advice": "Vos sentiments contradictoires sont un mécanisme de défense naturel, mais toutes les relations ne finissent pas dans la douleur. Construisez la confiance progressivement, en commençant par les petites choses. Un accompagnement professionnel est aussi une excellente option. Vous méritez absolument l'amour."
+    }
+  },
+  "result": {
+    "attachmentLevel": "Niveau d'Attachement",
+    "secondaryType": "Type Secondaire",
+    "retake": "Refaire le Test",
+    "keyTraits": "Traits Clés",
+    "idealPartner": "Partenaire Idéal",
+    "advice": "Conseil Amoureux"
+  },
+  "share": {
+    "twitter": "Découvrez votre style d'attachement !",
+    "copyUrl": "Copier le lien",
+    "copied": "Lien copié !"
+  },
+  "nav": {
+    "back": "Retour"
+  },
+  "a11y": {
+    "skip": "Aller au contenu"
+  }
+}

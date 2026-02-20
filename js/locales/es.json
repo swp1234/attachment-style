@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Test de Estilo de Apego | ¿Cuál es tu tipo?",
+    "description": "Descubre tu estilo de apego con 10 escenarios de relación. ¿Eres seguro, ansioso, evitativo o temeroso?"
+  },
+  "app": {
+    "title": "Test de Estilo de Apego",
+    "subtitle": "Descubre tu estilo de apego a través de 10 escenarios de pareja",
+    "warning": "Este test es solo para entretenimiento y no sustituye una evaluación psicológica profesional.",
+    "start": "Empezar Test"
+  },
+  "questions": {
+    "q1": {
+      "text": "Tu pareja lleva 3 horas sin contestar. ¿Qué haces?",
+      "options": {
+        "a": "Seguro está ocupado/a. Sigo con lo mío.",
+        "b": "Reviso el móvil sin parar preguntándome si me está ignorando.",
+        "c": "La verdad, me da igual. No me gusta depender de los mensajes.",
+        "d": "Me molesta pero no quiero escribir primero para no parecer desesperado/a."
+      }
+    },
+    "q2": {
+      "text": "Tu pareja dice 'Tenemos que hablar'. ¿Tu primera reacción?",
+      "options": {
+        "a": "Se me cae el alma al suelo — ¿me va a dejar?",
+        "b": "Me preparo para una conversación abierta y tranquila.",
+        "c": "Preferiría evitarlo pero bueno, toca escuchar.",
+        "d": "Me pongo a la defensiva y me invade la ansiedad a la vez."
+      }
+    },
+    "q3": {
+      "text": "Un amigo cercano empieza a coquetear con tu pareja. ¿Cómo reaccionas?",
+      "options": {
+        "a": "Seguro es mejor que yo… ya sabía que no soy suficiente.",
+        "b": "Lo que tenga que ser, será. No puedo controlar eso.",
+        "c": "Confío en mi pareja y hablo con sinceridad si hace falta.",
+        "d": "Me muero de celos pero me callo para no parecer posesivo/a."
+      }
+    },
+    "q4": {
+      "text": "Tu pareja te sorprende con un regalo. ¿Tu reacción?",
+      "options": {
+        "a": "Me alegro y le doy las gracias con cariño.",
+        "b": "Me emociono tanto que casi lloro, y siento que tengo que devolver el gesto.",
+        "c": "Es un poco incómodo. No hacía falta.",
+        "d": "Me alegra pero me pregunto si hay alguna intención oculta."
+      }
+    },
+    "q5": {
+      "text": "Después de una pelea fuerte con tu pareja, ¿cuál es tu patrón?",
+      "options": {
+        "a": "Corto la comunicación y quiero estar solo/a, pero me aterroriza que se vaya.",
+        "b": "Necesito distancia para procesar mis emociones a solas.",
+        "c": "Escribo sin parar para arreglarlo cuanto antes.",
+        "d": "Espero a que ambos nos calmemos y luego hablamos con calma."
+      }
+    },
+    "q6": {
+      "text": "Acabas de empezar a salir con alguien. ¿Cómo eres al principio?",
+      "options": {
+        "a": "Busco constantemente señales de cuánto le intereso.",
+        "b": "Me enamoro rápido pero me aterra que me abandonen.",
+        "c": "Voy conociéndole poco a poco, a mi ritmo.",
+        "d": "Si la cosa se pone muy íntima, me echo para atrás."
+      }
+    },
+    "q7": {
+      "text": "Tu pareja dice que necesita tiempo a solas. ¿Qué piensas?",
+      "options": {
+        "a": "¡Genial! Yo también valoro mi tiempo personal.",
+        "b": "Mejor aún — yo también necesito respirar.",
+        "c": "¿Se habrá cansado de mí?",
+        "d": "Por un lado me alivia, pero por otro me preocupa que me esté alejando."
+      }
+    },
+    "q8": {
+      "text": "Tu pareja pasa por un mal momento y busca tu apoyo emocional. Tú...",
+      "options": {
+        "a": "Le escucho y le consuelo con gusto.",
+        "b": "Quiero ayudar pero siento que el peso emocional me agobia.",
+        "c": "Me pone ansioso/a pero me alegra que me necesite.",
+        "d": "No sé muy bien cómo reaccionar y me siento incómodo/a."
+      }
+    },
+    "q9": {
+      "text": "Encuentras el perfil del ex de tu pareja en redes. ¿Tu reacción?",
+      "options": {
+        "a": "Seguro soy menos atractivo/a que esa persona.",
+        "b": "Me meto a fondo en su perfil y no puedo evitar compararme.",
+        "c": "El pasado es el pasado. No me importa.",
+        "d": "Si me da curiosidad, le pregunto directamente a mi pareja."
+      }
+    },
+    "q10": {
+      "text": "¿Cómo describirías tu relación ideal en una frase?",
+      "options": {
+        "a": "Respetar el espacio del otro y vivir tranquilos — demasiada cercanía agobia.",
+        "b": "Que me reafirmen constantemente y sentirme amado/a en cada momento.",
+        "c": "Confiar profundamente y respetar la vida individual de cada uno.",
+        "d": "Querer amor pero no poder abrirme del todo por miedo a sufrir."
+      }
+    }
+  },
+  "results": {
+    "secure": {
+      "name": "Seguro",
+      "emoji": "🛡️",
+      "desc": "Tienes un estilo de apego seguro. Te sientes cómodo/a en las relaciones, confías en tu pareja de forma natural y valoras tanto la unión como el espacio personal. Ante los conflictos, apuestas por la comunicación honesta.",
+      "traits": ["Límites saludables", "Expresión emocional sincera", "Resolución de conflictos por diálogo", "Buena autoestima"],
+      "idealPartner": "Te llevas bien con todos los tipos, pero con otro Seguro se crea la dinámica más sana. También puedes aportar estabilidad a parejas Ansiosas o Evitativas.",
+      "advice": "¡Ya tienes grandes habilidades relacionales! Solo ten cuidado de no cargar con la inseguridad de tu pareja como si fuera culpa tuya. Tu estabilidad es una fortaleza, pero no olvides expresar también tus propias necesidades."
+    },
+    "anxious": {
+      "name": "Ansioso",
+      "emoji": "💓",
+      "desc": "Tienes un estilo de apego ansioso. Amas profundamente y eres muy entregado/a, pero cargas con un miedo constante al abandono. Eres hipersensible a los cambios de humor de tu pareja y necesitas confirmación y cercanía.",
+      "traits": ["Gran empatía y sensibilidad", "Entrega total en las relaciones", "Tendencia a la ansiedad de separación", "Hipersensibilidad a las reacciones del otro"],
+      "idealPartner": "Una pareja Segura es ideal — alguien que ofrezca tranquilidad constante y comportamiento estable. Cuidado con los Evitativos: la dinámica de empujar-tirar puede intensificar tu ansiedad.",
+      "advice": "El tiempo de respuesta de tu pareja no mide cuánto te quiere. Cuando la ansiedad suba, para un momento antes de reaccionar impulsivamente. Aprender a quererte primero hará que todas tus relaciones sean más sanas."
+    },
+    "avoidant": {
+      "name": "Evitativo",
+      "emoji": "🏔️",
+      "desc": "Tienes un estilo de apego evitativo. Valoras la independencia y la libertad, y demasiada cercanía te incomoda. Puede que te cueste expresar emociones abiertamente, pero debajo de la superficie hay sentimientos profundos. Necesitas tu propio tiempo y espacio.",
+      "traits": ["Gran independencia", "Dificultad para expresar emociones", "Alta valoración del espacio personal", "Mentalidad autosuficiente"],
+      "idealPartner": "Una pareja Segura que te dé espacio sin ser pegajosa. Alguien cálido pero no agobiante puede ayudarte a bajar las defensas. Con los Ansiosos puede generarse un ciclo de persecución-huida.",
+      "advice": "Acercarte a alguien no te hace débil. Intenta abrirte poco a poco. Está bien decirle a tu pareja que necesitas espacio — pero también reconoce sus necesidades emocionales. El equilibrio lo es todo."
+    },
+    "fearful": {
+      "name": "Temeroso",
+      "emoji": "🌪️",
+      "desc": "Tienes un estilo de apego temeroso (desorganizado). Deseas la intimidad pero al mismo tiempo la temes. Quieres acercarte pero retrocedes para protegerte del dolor. Este conflicto interno puede hacer que tus relaciones sean complicadas y emocionalmente turbulentas.",
+      "traits": ["Ambivalencia ante la intimidad", "Altibajos emocionales", "Influencia de heridas pasadas", "Fuerte instinto de autoprotección"],
+      "idealPartner": "Una pareja Segura y paciente es lo ideal — alguien que entienda tu vaivén y se mantenga firme. Experimentar una relación segura, aunque lleve tiempo, es clave para tu crecimiento.",
+      "advice": "Tus sentimientos contradictorios son un mecanismo de defensa natural, pero no todas las relaciones terminan en dolor. Construye confianza poco a poco, empezando por lo pequeño. El apoyo profesional también es una gran opción. Mereces amor, sin duda."
+    }
+  },
+  "result": {
+    "attachmentLevel": "Nivel de Apego",
+    "secondaryType": "Tipo Secundario",
+    "retake": "Repetir Test",
+    "keyTraits": "Rasgos Clave",
+    "idealPartner": "Pareja Ideal",
+    "advice": "Consejo Sentimental"
+  },
+  "share": {
+    "twitter": "¡Descubre tu estilo de apego!",
+    "copyUrl": "Copiar enlace",
+    "copied": "¡Enlace copiado!"
+  },
+  "nav": {
+    "back": "Atrás"
+  },
+  "a11y": {
+    "skip": "Ir al contenido"
+  }
+}

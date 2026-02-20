@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D946EF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="40" fill="#0f0f1a"/>
+  <!-- Heart shape -->
+  <path d="M96 155c-4-3-52-38-52-72 0-22 16-38 34-38 12 0 18 8 18 8s6-8 18-8c18 0 34 16 34 38 0 34-48 69-52 72z" fill="url(#grad)"/>
+  <!-- Lock keyhole on heart -->
+  <circle cx="96" cy="100" r="10" fill="#0f0f1a"/>
+  <rect x="92" y="100" width="8" height="16" rx="2" fill="#0f0f1a"/>
+  <!-- Chain links left -->
+  <ellipse cx="58" cy="72" rx="12" ry="8" fill="none" stroke="#D946EF" stroke-width="4" opacity="0.6"/>
+  <ellipse cx="38" cy="72" rx="12" ry="8" fill="none" stroke="#D946EF" stroke-width="4" opacity="0.4"/>
+  <!-- Chain links right -->
+  <ellipse cx="134" cy="72" rx="12" ry="8" fill="none" stroke="#D946EF" stroke-width="4" opacity="0.6"/>
+  <ellipse cx="154" cy="72" rx="12" ry="8" fill="none" stroke="#D946EF" stroke-width="4" opacity="0.4"/>
+</svg>

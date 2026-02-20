@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Bağlanma Stili Testi | Aşk Tipin Ne?",
+    "description": "10 ilişki senaryosuyla bağlanma stilinizi keşfedin. Güvenli, Kaygılı, Kaçınan mı yoksa Korkulu mu?"
+  },
+  "app": {
+    "title": "Bağlanma Stili Testi",
+    "subtitle": "10 ilişki senaryosuyla bağlanma stilinizi keşfedin",
+    "warning": "Bu test eğlence amaçlıdır ve profesyonel psikolojik değerlendirmenin yerini tutmaz.",
+    "start": "Teste Başla"
+  },
+  "questions": {
+    "q1": {
+      "text": "Partneriniz 3 saattir mesajınıza cevap vermedi. Ne yaparsınız?",
+      "options": {
+        "a": "Herhalde meşguldür. Kendi işime bakarım.",
+        "b": "Sürekli telefonu kontrol ederim — acaba görmezden mi geliyor?",
+        "c": "Umurumda değil açıkçası. Mesaj beklemek bana göre değil.",
+        "d": "Sinir oluyorum ama ilk yazan ben olmak istemiyorum — muhtaç gözükmek yok."
+      }
+    },
+    "q2": {
+      "text": "Partneriniz 'Konuşmamız lazım' diyor. İlk tepkiniz?",
+      "options": {
+        "a": "Kalbim duruyor — ayrılmak mı istiyor?",
+        "b": "Açık bir sohbete hazır oluyorum.",
+        "c": "Kaçmak istiyorum ama mecbur dinlerim.",
+        "d": "Hem savunmaya geçiyorum hem de kaygılanıyorum."
+      }
+    },
+    "q3": {
+      "text": "Yakın arkadaşınız partnerinize yürümeye başlıyor. Nasıl tepki verirsiniz?",
+      "options": {
+        "a": "Zaten benden iyidir… yeterli olmadığımı biliyordum.",
+        "b": "Ne olacaksa olsun. Kontrol edemem.",
+        "c": "Partnerime güvenir, gerekirse dürüstçe konuşurum.",
+        "d": "Kıskanıyorum ama sahiplenici görünmemek için sesimi çıkarmam."
+      }
+    },
+    "q4": {
+      "text": "Partneriniz sürpriz bir hediye verdi. Tepkiniz?",
+      "options": {
+        "a": "Sevinip içtenlikle teşekkür ederim.",
+        "b": "O kadar duygulanırım ki ağlayacak gibi olurum, karşılık verme baskısı hissederim.",
+        "c": "Biraz rahatsız edici. Yapmasına gerek yoktu.",
+        "d": "Mutlu olurum ama bir art niyet mi var diye düşünürüm."
+      }
+    },
+    "q5": {
+      "text": "Partnerinizle büyük bir kavgadan sonra ne yaparsınız?",
+      "options": {
+        "a": "İletişimi keser yalnız kalmak isterim ama gitmesinden korkarım.",
+        "b": "Duygularımı yalnız başıma işlemek için mesafeye ihtiyacım var.",
+        "c": "Hemen barışmak için sürekli mesaj atarım.",
+        "d": "İkimiz de sakinleştikten sonra konuşarak çözerim."
+      }
+    },
+    "q6": {
+      "text": "Yeni biriyle çıkmaya başladınız. İlk dönemde nasılsınız?",
+      "options": {
+        "a": "Sürekli ne kadar ilgilendiğine dair işaret ararım.",
+        "b": "Hızla bağlanırım ama terk edilmekten korkarım.",
+        "c": "Rahat bir tempoda tanımaya devam ederim.",
+        "d": "Çok yakınlaşırsak geri çekilirim."
+      }
+    },
+    "q7": {
+      "text": "Partneriniz yalnız vakit geçirmek istediğini söylüyor. Ne düşünürsünüz?",
+      "options": {
+        "a": "Harika! Ben de kişisel zamanıma değer veririm.",
+        "b": "Daha da iyi — ben de nefes alırım.",
+        "c": "Acaba benden sıkıldı mı?",
+        "d": "Bir yandan rahatlasam da diğer yandan beni uzaklaştırıyor mu diye endişelenirim."
+      }
+    },
+    "q8": {
+      "text": "Partneriniz zor günler geçiriyor ve duygusal desteğinize ihtiyaç duyuyor. Siz...",
+      "options": {
+        "a": "Seve seve dinler ve teselli ederim.",
+        "b": "Yardım etmek isterim ama duygusal yükü ağır gelir.",
+        "c": "Kaygılanırım ama ihtiyaç duyulması beni mutlu eder.",
+        "d": "Nasıl tepki vereceğimi bilemem ve rahatsız olurum."
+      }
+    },
+    "q9": {
+      "text": "Sosyal medyada partnerinizin eski sevgilisini buldunuz. Tepkiniz?",
+      "options": {
+        "a": "Ben onun kadar çekici değilimdir muhtemelen.",
+        "b": "Profilini didik didik inceleyip kendimle kıyaslarım.",
+        "c": "Geçmiş geçmiştir. Beni ilgilendirmez.",
+        "d": "Merak edersem partnerime doğrudan sorarım."
+      }
+    },
+    "q10": {
+      "text": "İdeal ilişkinizi bir cümleyle nasıl tanımlarsınız?",
+      "options": {
+        "a": "Birbirimizin alanına saygı duymak — çok yakınlık boğucu olur.",
+        "b": "Sürekli sevgi teyidi almak ve her an sevildiğini hissetmek.",
+        "c": "Derin güven ve birbirinin bireysel hayatına saygı.",
+        "d": "Sevmek istiyorum ama incinme korkusuyla tamamen açılamıyorum."
+      }
+    }
+  },
+  "results": {
+    "secure": {
+      "name": "Güvenli",
+      "emoji": "🛡️",
+      "desc": "Güvenli bağlanma stiliniz var. İlişkilerde rahat hisseder, partnerinize doğal olarak güvenir ve hem birlikteliğe hem kişisel alana değer verirsiniz. Çatışmalarda dürüst iletişim yolunu tercih edersiniz.",
+      "traits": ["Sağlıklı sınırlar koyma", "Dürüst duygu ifadesi", "Diyalogla çatışma çözümü", "Güçlü öz saygı"],
+      "idealPartner": "Tüm tiplerle iyi geçinirsiniz ama bir diğer Güvenli tiple en sağlıklı ilişkiyi kurarsınız. Kaygılı veya Kaçınan partnerlere de istikrar sağlayabilirsiniz.",
+      "advice": "Zaten harika ilişki becerileriniz var! Sadece partnerinizin güvensizliğini kendi hatanız gibi algılamaktan kaçının. İstikrarınız büyük bir güç — ama kendi ihtiyaçlarınızı da ifade etmeyi unutmayın."
+    },
+    "anxious": {
+      "name": "Kaygılı",
+      "emoji": "💓",
+      "desc": "Kaygılı bağlanma stiliniz var. Derinden sever ve inanılmaz fedakârsınız ama terk edilme korkusunu sürekli taşırsınız. Partnerinizin en ufak ruh hali değişikliğine karşı hassassınız ve sürekli güvence ve yakınlığa ihtiyaç duyarsınız.",
+      "traits": ["Yüksek empati ve hassasiyet", "İlişkilere derin bağlılık", "Ayrılık kaygısı eğilimi", "Partner tepkilerine aşırı duyarlılık"],
+      "idealPartner": "Güvenli bir partner ideal — sürekli güvence ve tutarlı davranış sunan biri. Kaçınan tiplerle dikkatli olun: çek-bırak dinamiği kaygınızı artırabilir.",
+      "advice": "Partnerinizin cevap süresi sevgisinin ölçüsü değil. Kaygı yükseldiğinde, dürtüsel tepki vermeden önce bir durun. Önce kendinizi sevmeyi öğrenmek tüm ilişkilerinizi sağlıklılaştıracaktır."
+    },
+    "avoidant": {
+      "name": "Kaçınan",
+      "emoji": "🏔️",
+      "desc": "Kaçınan bağlanma stiliniz var. Bağımsızlığa ve özgürlüğe değer verirsiniz, aşırı yakınlık sizi rahatsız eder. Duyguları açıkça ifade etmekte zorlanabilirsiniz ama yüzeyin altında derin hisler var. Kendi zamanınıza ve alanınıza ihtiyacınız var.",
+      "traits": ["Güçlü bağımsızlık", "Duygu ifade etmede zorluk", "Kişisel alana yüksek değer", "Kendine yeten zihniyet"],
+      "idealPartner": "Yapışkan olmadan alan veren Güvenli bir partner. Sıcak ama bunaltıcı olmayan biri duvarlarınızı yavaşça indirmeye yardımcı olabilir. Kaygılı partnerlerle kovalamaca-kaçış döngüsü oluşabilir.",
+      "advice": "Birine yaklaşmak zayıflık değildir. Yavaş yavaş açılmayı deneyin. Alana ihtiyacınız olduğunu söylemek sorun değil — ama partnerinizin duygusal ihtiyaçlarını da kabul edin. Denge her şeydir."
+    },
+    "fearful": {
+      "name": "Korkulu",
+      "emoji": "🌪️",
+      "desc": "Korkulu (dezorganize) bağlanma stiliniz var. Yakınlığı arzularsınız ama aynı anda ondan korkarsınız. Yaklaşmak istersiniz ama incinmemek için geri çekilirsiniz. Bu iç çatışma ilişkilerinizi karmaşık ve duygusal olarak çalkantılı yapabilir.",
+      "traits": ["Yakınlığa karşı ikirciklilik", "Duygusal iniş çıkışlar", "Geçmiş yaraların etkisi", "Güçlü kendini koruma içgüdüsü"],
+      "idealPartner": "Sabırlı ve Güvenli bir partner ideal — gel-git hareketlerinizi anlayan ve kararlı kalan biri. Güvenli bir ilişki deneyimi, zaman alsa da, büyümeniz için çok önemli.",
+      "advice": "Çelişkili hisleriniz doğal bir savunma mekanizması ama her ilişki acıyla bitmez. Küçük adımlarla güven inşa edin. Profesyonel destek de harika bir seçenektir. Sevgiyi kesinlikle hak ediyorsunuz."
+    }
+  },
+  "result": {
+    "attachmentLevel": "Bağlanma Seviyesi",
+    "secondaryType": "İkincil Tip",
+    "retake": "Tekrar Yap",
+    "keyTraits": "Temel Özellikler",
+    "idealPartner": "İdeal Partner",
+    "advice": "İlişki Tavsiyesi"
+  },
+  "share": {
+    "twitter": "Bağlanma stilini öğren!",
+    "copyUrl": "Linki kopyala",
+    "copied": "Link kopyalandı!"
+  },
+  "nav": {
+    "back": "Geri"
+  },
+  "a11y": {
+    "skip": "İçeriğe atla"
+  }
+}

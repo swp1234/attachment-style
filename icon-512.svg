@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D946EF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="#0f0f1a"/>
+  <!-- Heart shape -->
+  <path d="M256 410c-10-8-140-100-140-192 0-58 42-100 90-100 32 0 50 22 50 22s18-22 50-22c48 0 90 42 90 100 0 92-130 184-140 192z" fill="url(#grad)" filter="url(#glow)"/>
+  <!-- Lock body -->
+  <rect x="228" y="255" width="56" height="50" rx="8" fill="#0f0f1a"/>
+  <!-- Lock shackle -->
+  <path d="M240 255v-20c0-16 8-24 16-24s16 8 16 24v20" fill="none" stroke="#0f0f1a" stroke-width="8" stroke-linecap="round"/>
+  <!-- Keyhole -->
+  <circle cx="256" cy="275" r="8" fill="#D946EF"/>
+  <rect x="253" y="275" width="6" height="14" rx="2" fill="#D946EF"/>
+  <!-- Chain links left -->
+  <ellipse cx="148" cy="188" rx="32" ry="18" fill="none" stroke="#D946EF" stroke-width="8" opacity="0.6"/>
+  <ellipse cx="96" cy="188" rx="32" ry="18" fill="none" stroke="#D946EF" stroke-width="8" opacity="0.4"/>
+  <ellipse cx="50" cy="188" rx="28" ry="16" fill="none" stroke="#D946EF" stroke-width="6" opacity="0.2"/>
+  <!-- Chain links right -->
+  <ellipse cx="364" cy="188" rx="32" ry="18" fill="none" stroke="#D946EF" stroke-width="8" opacity="0.6"/>
+  <ellipse cx="416" cy="188" rx="32" ry="18" fill="none" stroke="#D946EF" stroke-width="8" opacity="0.4"/>
+  <ellipse cx="462" cy="188" rx="28" ry="16" fill="none" stroke="#D946EF" stroke-width="6" opacity="0.2"/>
+</svg>
