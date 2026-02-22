@@ -1,103 +1,125 @@
 {
   "meta": {
-    "title": "Test de Style d'Attachement | Quel est votre type amoureux ?",
-    "description": "Découvrez votre style d'attachement grâce à 10 scénarios de couple. Sécure, anxieux, évitant ou craintif ?"
+    "title": "Test de style d'attachement | Simulateur de chat",
+    "description": "Découvrez votre style d'attachement à travers des conversations par SMS réalistes. Comment répondez-vous aux messages de votre partenaire ?"
   },
   "app": {
-    "title": "Test de Style d'Attachement",
-    "subtitle": "Découvrez votre style d'attachement à travers 10 scénarios de couple",
-    "warning": "Ce test est à but récréatif et ne remplace pas une évaluation psychologique professionnelle.",
-    "start": "Commencer le Test"
+    "title": "Style d'attachement",
+    "subtitle": "Comment écris-tu vraiment à ton partenaire ?",
+    "description": "Tes habitudes de messagerie révèlent ton style d'attachement. Chatte à travers 10 scénarios réalistes pour découvrir le tien.",
+    "badge": "Simulateur de chat",
+    "info1": "10 Chats",
+    "info2": "~3 Min",
+    "info3": "4 Styles",
+    "disclaimer": "À des fins de divertissement uniquement. Pas un diagnostic clinique.",
+    "start": "Commencer à chatter 💬"
   },
-  "questions": {
-    "q1": {
-      "text": "Votre partenaire n'a pas répondu depuis 3 heures. Que faites-vous ?",
+  "chat": {
+    "partner": "Partenaire",
+    "typing": "écrit...",
+    "online": "en ligne",
+    "scenario": "Chat",
+    "tapToReply": "Choisis ta réponse..."
+  },
+  "scenarios": {
+    "s1": {
+      "context": "3 heures depuis ton dernier message",
+      "partnerMsg": "Hey, je t'ai envoyé un message il y a 3 heures... tout va bien ? 😕",
       "options": {
-        "a": "Il/elle est sûrement occupé(e). Je vaque à mes occupations.",
-        "b": "Je vérifie mon téléphone sans arrêt, angoissé(e) à l'idée d'être ignoré(e).",
-        "c": "Franchement, je m'en fiche. Attendre des messages, ce n'est pas mon truc.",
-        "d": "Ça m'énerve mais hors de question d'écrire en premier — je ne veux pas avoir l'air en demande."
+        "a": "Désolé(e) ! J'étais super occupé(e) au boulot. Quoi de neuf ? 😊",
+        "b": "OMG je suis tellement désolé(e) !! Je ne voulais pas t'ignorer 😭",
+        "c": "Ouais, j'ai vu. J'étais occupé(e) de mon côté.",
+        "d": "Pardon... je voulais répondre mais je ne savais pas quoi dire"
       }
     },
-    "q2": {
-      "text": "Votre partenaire dit : 'Il faut qu'on parle.' Votre première réaction ?",
+    "s2": {
+      "context": "Mardi soir",
+      "partnerMsg": "Hey... il faut qu'on parle de quelque chose ce soir.",
       "options": {
-        "a": "Mon cœur s'arrête — il/elle veut rompre ?",
-        "b": "Je me prépare à une conversation ouverte.",
-        "c": "J'aimerais fuir mais bon, j'écoute.",
-        "d": "Je deviens défensif/ve et anxieux/se en même temps."
+        "a": "Bien sûr, qu'est-ce qu'il y a ? Je t'écoute 😊",
+        "b": "Oh non, tout va bien ?? Tu me fais peur 😰",
+        "c": "Tu peux pas juste me le dire maintenant ? J'aime pas attendre.",
+        "d": "...d'accord (relit le message 5 fois pour décoder le ton)"
       }
     },
-    "q3": {
-      "text": "Un ami proche commence à draguer votre partenaire. Comment réagissez-vous ?",
+    "s3": {
+      "context": "Message aléatoire l'après-midi",
+      "partnerMsg": "Je pensais à toi et je voulais te dire que je suis vraiment content(e) de t'avoir dans ma vie 💕",
       "options": {
-        "a": "Il/elle est sûrement mieux que moi… Je savais que je n'étais pas à la hauteur.",
-        "b": "Ce qui doit arriver arrivera. Je ne peux pas tout contrôler.",
-        "c": "Je fais confiance à mon partenaire et j'en parle honnêtement si besoin.",
-        "d": "Je suis jaloux/se mais je me tais pour ne pas passer pour quelqu'un de possessif."
+        "a": "Ça me touche tellement 🥰 Je ressens la même chose pour toi !",
+        "b": "Vraiment ?? Tu le penses vraiment ? 🥺 Tu promets ?",
+        "c": "Haha merci 👍",
+        "d": "C'est vraiment adorable, merci... (tape et efface 3 fois avant d'envoyer)"
       }
     },
-    "q4": {
-      "text": "Votre partenaire vous fait un cadeau surprise. Votre réaction ?",
+    "s4": {
+      "context": "Plans du week-end",
+      "partnerMsg": "Mes potes font une soirée samedi. Tu viens ? 🎉",
       "options": {
-        "a": "Je suis ravi(e) et j'exprime ma gratitude chaleureusement.",
-        "b": "Je suis si ému(e) que j'ai envie de pleurer, et je ressens la pression d'offrir quelque chose en retour.",
-        "c": "C'est un peu gênant. Il/elle n'avait pas besoin de faire ça.",
-        "d": "Ça me fait plaisir mais je me demande s'il y a une arrière-pensée."
+        "a": "Ça a l'air super ! Je dois être là à quelle heure ?",
+        "b": "Qui d'autre vient ? Ton ex sera là ? 👀",
+        "c": "Je te dirai. J'ai peut-être autre chose de prévu.",
+        "d": "J'aimerais bien mais... je suis pas à l'aise en groupe. On peut partir tôt ?"
       }
     },
-    "q5": {
-      "text": "Après une grosse dispute avec votre partenaire, quel est votre schéma habituel ?",
+    "s5": {
+      "context": "Le matin après une dispute",
+      "partnerMsg": "Je crois qu'on a dit tous les deux des choses qu'on ne pensait pas hier...",
       "options": {
-        "a": "Je coupe le contact et veux être seul(e), mais j'ai peur qu'il/elle parte.",
-        "b": "J'ai besoin de distance pour digérer mes émotions.",
-        "c": "J'envoie message sur message pour me réconcilier au plus vite.",
-        "d": "J'attends que tout le monde se calme, puis on en discute posément."
+        "a": "Tu as raison. On peut s'asseoir et en parler calmement ?",
+        "b": "T'es encore fâché(e) ? J'ai passé toute la nuit à y repenser 😔",
+        "c": "Passons à autre chose. Ça sert à rien de ruminer.",
+        "d": "Chaque dispute me donne l'impression que c'est la fin... j'arrive pas à gérer ça"
       }
     },
-    "q6": {
-      "text": "Vous venez de commencer à fréquenter quelqu'un. Comment êtes-vous au début ?",
+    "s6": {
+      "context": "Message du soir",
+      "partnerMsg": "J'ai besoin d'un peu de temps seul(e) ce soir. Y'a rien, j'ai juste besoin de recharger 🔋",
       "options": {
-        "a": "Je cherche constamment des signes d'intérêt de sa part.",
-        "b": "Je m'attache vite et profondément, mais j'ai peur d'être abandonné(e).",
-        "c": "Je prends le temps de découvrir l'autre à mon rythme.",
-        "d": "Si ça devient trop intime, je prends du recul."
+        "a": "Bien sûr ! Prends tout le temps qu'il te faut. Je suis là 😊",
+        "b": "J'ai fait quelque chose de mal ? T'es sûr(e) que t'es pas contrarié(e) ?",
+        "c": "OK, j'allais justement proposer la même chose.",
+        "d": "D'accord... (mais et si il/elle commençait à prendre ses distances ?)"
       }
     },
-    "q7": {
-      "text": "Votre partenaire dit avoir besoin de temps seul(e). Qu'en pensez-vous ?",
+    "s7": {
+      "context": "Message tardif",
+      "partnerMsg": "J'ai passé la pire journée... je peux te raconter un peu ? 😞",
       "options": {
-        "a": "Super ! Moi aussi, j'aime mon temps perso.",
-        "b": "Tant mieux — moi aussi je peux souffler.",
-        "c": "Est-ce qu'il/elle se lasse de moi ?",
-        "d": "D'un côté je suis soulagé(e), de l'autre j'ai peur qu'il/elle m'éloigne."
+        "a": "Toujours. Dis-moi tout, je suis là pour toi 💛",
+        "b": "Bien sûr !! Je viens tout de suite ?? J'annule tout !",
+        "c": "OK, mais fais court s'il te plaît. J'ai aussi des trucs à gérer.",
+        "d": "Oui... je veux t'aider mais je suis pas sûr(e) de trouver les bons mots"
       }
     },
-    "q8": {
-      "text": "Votre partenaire traverse un moment difficile et cherche votre soutien. Vous…",
+    "s8": {
+      "context": "Conversation profonde",
+      "partnerMsg": "Question random mais... tu nous vois où dans un an ? 🤔",
       "options": {
-        "a": "J'écoute et je réconforte avec plaisir.",
-        "b": "Je veux aider mais le poids émotionnel me pèse.",
-        "c": "Ça me rend anxieux/se mais content(e) qu'on ait besoin de moi.",
-        "d": "Je ne sais pas trop comment réagir et je me sens mal à l'aise."
+        "a": "Grandir ensemble, où que la vie nous mène. On trouvera notre chemin 😊",
+        "b": "Je pense à notre avenir TOUT le temps. J'espère tellement qu'on y arrivera 🥺",
+        "c": "Un an ? C'est loin. Profitons juste du moment présent.",
+        "d": "Je voudrais dire quelque chose d'optimiste mais... j'ai peur de nous porter malheur"
       }
     },
-    "q9": {
-      "text": "Vous tombez sur l'ex de votre partenaire sur les réseaux. Votre réaction ?",
+    "s9": {
+      "context": "Moment réseaux sociaux",
+      "partnerMsg": "J'ai remarqué que t'as liké les photos de ton ex sur Instagram... 👀",
       "options": {
-        "a": "Je suis sûrement moins attirant(e) que cette personne.",
-        "b": "J'épluche son profil et je ne peux m'empêcher de me comparer.",
-        "c": "Le passé, c'est le passé. Ça ne me dérange pas.",
-        "d": "Si ça me tracasse, je pose la question directement à mon partenaire."
+        "a": "Oh ça ? C'est rien. Tu sais que t'es la seule personne qui compte pour moi 💛",
+        "b": "C'était rien je te jure !! Je me désabonne tout de suite 😫",
+        "c": "C'est juste les réseaux. Faut pas chercher plus loin.",
+        "d": "T'as raison, c'était pas malin... t'es fâché(e) contre moi ? 😟"
       }
     },
-    "q10": {
-      "text": "Comment décririez-vous votre relation idéale en une phrase ?",
+    "s10": {
+      "context": "L'heure de dormir",
+      "partnerMsg": "Bonne nuit ! Fais de beaux rêves 🌙💕 J'ai trop hâte de te voir demain !",
       "options": {
-        "a": "Respecter l'espace de l'autre — trop de proximité, ça étouffe.",
-        "b": "Être rassuré(e) en permanence et se sentir aimé(e) à chaque instant.",
-        "c": "Une confiance profonde tout en respectant la vie de chacun.",
-        "d": "Vouloir de l'amour mais avoir du mal à s'ouvrir entièrement par peur de souffrir."
+        "a": "Bonne nuit ! 💛 Vivement demain !",
+        "b": "Bonne nuit !! Écris-moi DÈS que tu te réveilles d'accord ?? 🥰🥰",
+        "c": "Bonne nuit 👋",
+        "d": "Bonne nuit... (aimerait pouvoir dire à quel point cette personne compte)"
       }
     }
   },
@@ -105,51 +127,51 @@
     "secure": {
       "name": "Sécure",
       "emoji": "🛡️",
-      "desc": "Vous avez un style d'attachement sécure. Vous vous sentez à l'aise dans vos relations, faites naturellement confiance à votre partenaire et appréciez autant les moments ensemble que votre espace personnel. En cas de conflit, vous privilégiez la communication honnête.",
-      "traits": ["Limites saines", "Expression émotionnelle sincère", "Résolution des conflits par le dialogue", "Bonne estime de soi"],
-      "idealPartner": "Vous vous entendez avec tous les types, mais avec un autre Sécure, c'est la dynamique la plus saine. Vous pouvez aussi apporter de la stabilité aux partenaires Anxieux ou Évitants.",
-      "advice": "Vous avez déjà d'excellentes compétences relationnelles ! Veillez simplement à ne pas porter l'insécurité de votre partenaire comme si c'était votre faute. Votre stabilité est une force — mais n'oubliez pas d'exprimer vos propres besoins aussi."
+      "desc": "Tu as un style d'attachement sécure. Tu es à l'aise avec la proximité émotionnelle et tu communiques honnêtement. Tu fais confiance à ton partenaire tout en maintenant des limites saines. En cas de conflit, tu l'abordes directement avec bienveillance.",
+      "traits": ["Limites saines", "Communication honnête", "Stabilité émotionnelle", "Confiance naturelle"],
+      "idealPartner": "Tu t'entends avec tous les types, mais un autre partenaire Sécure crée la dynamique la plus saine. Tu peux aussi apporter de la stabilité aux partenaires Anxieux ou Évitants.",
+      "advice": "Tes instincts relationnels sont solides ! N'oublie pas d'exprimer tes propres besoins aussi — être la personne \"stable\" ne veut pas dire réprimer tes émotions."
     },
     "anxious": {
       "name": "Anxieux",
       "emoji": "💓",
-      "desc": "Vous avez un style d'attachement anxieux. Vous aimez profondément et êtes incroyablement dévoué(e), mais portez une peur constante de l'abandon. Vous êtes hypersensible aux changements d'humeur de votre partenaire et avez besoin de réassurance permanente.",
-      "traits": ["Grande empathie et sensibilité", "Engagement profond dans les relations", "Tendance à l'anxiété de séparation", "Hypervigilance aux réactions du partenaire"],
-      "idealPartner": "Un partenaire Sécure est idéal — quelqu'un qui offre une réassurance constante et un comportement stable. Prudence avec les Évitants : la dynamique de va-et-vient peut amplifier votre anxiété.",
-      "advice": "Le temps de réponse de votre partenaire ne mesure pas son amour. Quand l'anxiété monte, faites une pause avant de réagir impulsivement. Apprendre à s'aimer soi-même d'abord rend toutes les relations plus saines."
+      "desc": "Tu as un style d'attachement anxieux. Tu aimes profondément et tu es incroyablement dévoué(e), mais tu portes une peur constante d'être abandonné(e). Tu es hyper-sensible aux changements d'humeur de ton partenaire et tu as besoin d'être rassuré(e) pour te sentir en sécurité.",
+      "traits": ["Empathie profonde", "Dévouement intense", "Peur de l'abandon", "Besoin de réassurance"],
+      "idealPartner": "Un partenaire Sécure est ton match idéal — quelqu'un qui te rassure constamment et t'offre un amour stable. Sois prudent(e) avec les types Évitants, car le jeu de va-et-vient peut intensifier l'anxiété.",
+      "advice": "Une réponse tardive ≠ un amour qui s'éteint. Quand l'anxiété monte, respire avant de réagir. Construire l'amour de soi est la base de relations plus saines."
     },
     "avoidant": {
       "name": "Évitant",
       "emoji": "🏔️",
-      "desc": "Vous avez un style d'attachement évitant. Vous valorisez l'indépendance et la liberté, et trop de proximité vous met mal à l'aise. Exprimer vos émotions ouvertement peut être difficile, mais des sentiments profonds existent sous la surface. Vous avez besoin de votre temps et de votre espace.",
-      "traits": ["Forte indépendance", "Difficulté à exprimer ses émotions", "Haute valeur accordée à l'espace personnel", "Mentalité autosuffisante"],
-      "idealPartner": "Un partenaire Sécure qui vous laisse de l'espace sans être collant. Quelqu'un de chaleureux mais pas envahissant peut aider à faire tomber vos murs progressivement. Avec les Anxieux, un cycle poursuite-fuite peut s'installer.",
-      "advice": "Se rapprocher de quelqu'un ne vous rend pas vulnérable. Essayez de vous ouvrir petit à petit. C'est normal de dire que vous avez besoin d'espace — mais reconnaissez aussi les besoins émotionnels de l'autre. L'équilibre est la clé."
+      "desc": "Tu as un style d'attachement évitant. Tu valorises l'indépendance et la liberté. Trop de proximité te met mal à l'aise, mais des sentiments profonds existent sous cette façade détachée. Tu gères tes émotions mieux à ta propre manière.",
+      "traits": ["Forte indépendance", "Émotions réservées", "Besoin d'espace", "Autonomie"],
+      "idealPartner": "Un partenaire Sécure qui te laisse de l'espace sans pression. Quelqu'un de chaleureux mais patient peut progressivement t'aider à baisser tes barrières.",
+      "advice": "La vulnérabilité n'est pas une faiblesse — c'est le pont vers une connexion plus profonde. Essaie de t'ouvrir petit à petit. Reconnais aussi les besoins émotionnels de ton partenaire."
     },
     "fearful": {
-      "name": "Craintif",
+      "name": "Craintif-Évitant",
       "emoji": "🌪️",
-      "desc": "Vous avez un style d'attachement craintif (désorganisé). Vous désirez l'intimité mais la redoutez en même temps. Vous voulez vous rapprocher mais reculez pour vous protéger de la souffrance. Ce conflit intérieur peut rendre vos relations complexes et émotionnellement tumultueuses.",
-      "traits": ["Ambivalence face à l'intimité", "Hauts et bas émotionnels", "Influence des blessures passées", "Fort instinct d'autoprotection"],
-      "idealPartner": "Un partenaire Sécure et patient est idéal — quelqu'un qui comprend vos allers-retours et reste solide. Vivre une relation sécurisante, même si cela prend du temps, est crucial pour votre épanouissement.",
-      "advice": "Vos sentiments contradictoires sont un mécanisme de défense naturel, mais toutes les relations ne finissent pas dans la douleur. Construisez la confiance progressivement, en commençant par les petites choses. Un accompagnement professionnel est aussi une excellente option. Vous méritez absolument l'amour."
+      "desc": "Tu as un style d'attachement craintif-évitant. Tu désires l'intimité mais tu la crains en même temps. Tu veux te rapprocher mais tu recules pour te protéger de la douleur. Ce va-et-vient fait de tes relations de véritables montagnes russes émotionnelles.",
+      "traits": ["Désire & craint la proximité", "Hauts & bas émotionnels", "Influence des blessures passées", "Instinct d'autoprotection"],
+      "idealPartner": "Un partenaire Sécure et patient qui reste stable dans ton va-et-vient. Vivre une relation sûre et régulière — même lentement — peut tout changer.",
+      "advice": "Tes signaux contradictoires viennent de l'autoprotection, pas de la confusion. Toutes les relations ne finissent pas dans la souffrance. Construis la confiance petit à petit. Tu mérites l'amour dont tu as peur."
     }
   },
   "result": {
-    "attachmentLevel": "Niveau d'Attachement",
-    "secondaryType": "Type Secondaire",
-    "retake": "Refaire le Test",
-    "keyTraits": "Traits Clés",
-    "idealPartner": "Partenaire Idéal",
-    "advice": "Conseil Amoureux"
+    "yourStyle": "Ton style d'attachement",
+    "chatAnalysis": "Analyse des schémas de chat",
+    "attachmentLevel": "Spectre d'attachement",
+    "secondaryType": "Style secondaire",
+    "keyTraits": "Traits clés",
+    "idealPartner": "Partenaire idéal",
+    "advice": "Conseil amoureux",
+    "retake": "Rechatter 💬"
   },
   "share": {
-    "twitter": "Découvrez votre style d'attachement !",
+    "twitter": "Découvrez votre style d'attachement à travers des conversations par SMS !",
+    "shareX": "Partager sur X",
     "copyUrl": "Copier le lien",
     "copied": "Lien copié !"
-  },
-  "nav": {
-    "back": "Retour"
   },
   "a11y": {
     "skip": "Aller au contenu"

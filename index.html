@@ -2,9 +2,9 @@
 <html lang="ko" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>애착유형 테스트 | Attachment Style Test</title>
-<meta name="description" content="나의 연애 애착유형을 알아보세요. 10가지 관계 시나리오로 안정형, 불안형, 회피형, 혼란형 중 나의 유형을 확인합니다.">
+<meta name="description" content="나의 연애 애착유형을 알아보세요. 실제 문자 대화를 통해 안정형, 불안형, 회피형, 혼란형 중 나의 유형을 확인합니다.">
 
 <!-- Canonical & Hreflang -->
 <link rel="canonical" href="https://dopabrain.com/attachment-style/">
@@ -25,7 +25,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="애착유형 테스트 | Attachment Style Test">
-<meta property="og:description" content="나의 연애 애착유형을 알아보세요. 10가지 관계 시나리오로 확인합니다.">
+<meta property="og:description" content="실제 문자 대화로 나의 애착유형을 알아보세요.">
 <meta property="og:url" content="https://dopabrain.com/attachment-style/">
 <meta property="og:image" content="https://dopabrain.com/attachment-style/icon-512.svg">
 <meta property="og:site_name" content="DopaBrain">
@@ -33,7 +33,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="애착유형 테스트 | Attachment Style Test">
-<meta name="twitter:description" content="나의 연애 애착유형을 알아보세요.">
+<meta name="twitter:description" content="실제 문자 대화로 나의 애착유형을 알아보세요.">
 <meta name="twitter:image" content="https://dopabrain.com/attachment-style/icon-512.svg">
 
 <!-- Favicon -->
@@ -49,7 +49,7 @@
   "@type": "WebApplication",
   "name": "Attachment Style Test",
   "alternateName": "애착유형 테스트",
-  "description": "Discover your attachment style through 10 relationship scenarios. Find out if you're Secure, Anxious, Avoidant, or Fearful-Avoidant.",
+  "description": "Discover your attachment style through realistic text conversations. Find out if you're Secure, Anxious, Avoidant, or Fearful-Avoidant.",
   "url": "https://dopabrain.com/attachment-style/",
   "applicationCategory": "LifestyleApplication",
   "operatingSystem": "Any",
@@ -74,7 +74,7 @@
 <!-- App Loader -->
 <div id="app-loader" class="app-loader">
   <div class="loader-content">
-    <div class="loader-emoji">💔</div>
+    <div class="loader-emoji">💬</div>
     <div class="loader-spinner"></div>
   </div>
 </div>
@@ -109,25 +109,51 @@
   <!-- Start Screen -->
   <section id="start-screen" class="screen active">
     <div class="card glass-card start-card">
-      <div class="app-emoji">💔</div>
-      <h1 data-i18n="app.title">애착유형 테스트</h1>
-      <p class="subtitle" data-i18n="app.subtitle">10가지 관계 시나리오로 나의 애착유형을 알아보세요</p>
-      <p class="warning" data-i18n="app.warning">이 테스트는 재미를 위한 것이며, 전문적인 심리 진단을 대체하지 않습니다.</p>
-      <button id="start-btn" class="btn btn-primary" data-i18n="app.start">테스트 시작</button>
+      <div class="app-emoji">💬</div>
+      <div class="badge" data-i18n="app.badge">Chat Simulator</div>
+      <h1 data-i18n="app.title">Attachment Style</h1>
+      <p class="subtitle" data-i18n="app.subtitle">How do you really text your partner?</p>
+      <p class="description" data-i18n="app.description">Your texting habits reveal your attachment style. Chat through 10 realistic scenarios to discover yours.</p>
+      <div class="info-chips">
+        <span class="chip" data-i18n="app.info1">10 Chats</span>
+        <span class="chip" data-i18n="app.info2">~3 Min</span>
+        <span class="chip" data-i18n="app.info3">4 Styles</span>
+      </div>
+      <p class="disclaimer" data-i18n="app.disclaimer">For entertainment only. Not a clinical diagnosis.</p>
+      <button id="start-btn" class="btn btn-primary" data-i18n="app.start">Start Chatting 💬</button>
     </div>
   </section>
 
-  <!-- Quiz Screen -->
-  <section id="quiz-screen" class="screen">
-    <div class="card glass-card quiz-card">
-      <div class="progress-bar">
-        <div id="progress-fill" class="progress-fill"></div>
+  <!-- Chat Screen -->
+  <section id="chat-screen" class="screen">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-status-bar">
+        <span class="status-time" id="status-time">9:41</span>
+        <div class="status-icons">
+          <svg class="status-signal" width="16" height="12" viewBox="0 0 16 12"><rect x="0" y="8" width="3" height="4" rx="0.5" fill="currentColor"/><rect x="4.5" y="5" width="3" height="7" rx="0.5" fill="currentColor"/><rect x="9" y="2" width="3" height="10" rx="0.5" fill="currentColor"/><rect x="13.5" y="0" width="2.5" height="12" rx="0.5" fill="currentColor" opacity="0.3"/></svg>
+          <svg class="status-battery" width="22" height="11" viewBox="0 0 22 11"><rect x="0.5" y="0.5" width="18" height="10" rx="2" stroke="currentColor" fill="none"/><rect x="2" y="2" width="12" height="7" rx="1" fill="currentColor"/><path d="M19.5 3.5h1.5a1 1 0 011 1v2a1 1 0 01-1 1h-1.5" fill="currentColor"/></svg>
+        </div>
       </div>
-      <div class="question-counter">
-        <span id="current-q">1</span> / <span id="total-q">10</span>
+      <div class="phone-header">
+        <div class="phone-contact">
+          <div class="phone-avatar">💕</div>
+          <div class="phone-contact-info">
+            <span class="phone-name" data-i18n="chat.partner">Partner</span>
+            <span class="phone-online" id="phone-status" data-i18n="chat.online">online</span>
+          </div>
+        </div>
+        <span class="phone-counter" id="chat-counter">1 / 10</span>
       </div>
-      <h2 id="question-text" class="question-text"></h2>
-      <div id="options-container" class="options-container"></div>
+      <div class="chat-area" id="chat-area">
+        <!-- Messages appear here dynamically -->
+      </div>
+      <div class="reply-area" id="reply-area">
+        <p class="reply-hint" id="reply-hint" data-i18n="chat.tapToReply">Choose your reply...</p>
+        <div class="reply-options" id="reply-options">
+          <!-- Reply bubbles appear here -->
+        </div>
+      </div>
     </div>
   </section>
 
@@ -137,18 +163,24 @@
       <div class="result-reveal">
         <div id="result-emoji" class="result-emoji"></div>
         <h2 id="result-type" class="result-type"></h2>
+        <p class="result-label" data-i18n="result.yourStyle">Your Attachment Style</p>
       </div>
 
       <div class="attachment-meter">
-        <h3 data-i18n="result.attachmentLevel">애착 수준</h3>
+        <h3 data-i18n="result.attachmentLevel">Attachment Spectrum</h3>
         <div class="meter-container">
           <div class="meter-labels">
-            <span data-i18n="results.avoidant.name">회피형</span>
-            <span data-i18n="results.secure.name">안정형</span>
-            <span data-i18n="results.anxious.name">불안형</span>
+            <span>🏔️</span>
+            <span>🛡️</span>
+            <span>💓</span>
           </div>
           <div class="meter-bar">
             <div id="meter-indicator" class="meter-indicator"></div>
+          </div>
+          <div class="meter-labels meter-labels-text">
+            <span id="meter-label-avoidant"></span>
+            <span id="meter-label-secure"></span>
+            <span id="meter-label-anxious"></span>
           </div>
         </div>
       </div>
@@ -159,30 +191,30 @@
         </div>
 
         <div class="result-section">
-          <h3 data-i18n="result.keyTraits">주요 특성</h3>
+          <h3 data-i18n="result.keyTraits">Key Traits</h3>
           <ul id="result-traits" class="traits-list"></ul>
         </div>
 
         <div class="result-section">
-          <h3 data-i18n="result.idealPartner">이상적 파트너</h3>
+          <h3 data-i18n="result.idealPartner">Ideal Partner</h3>
           <p id="result-partner"></p>
         </div>
 
         <div class="result-section">
-          <h3 data-i18n="result.advice">연애 조언</h3>
+          <h3 data-i18n="result.advice">Love Advice</h3>
           <p id="result-advice"></p>
         </div>
 
         <div class="result-section secondary-type">
-          <h3 data-i18n="result.secondaryType">보조 유형</h3>
+          <h3 data-i18n="result.secondaryType">Secondary Style</h3>
           <p id="secondary-type-text"></p>
         </div>
       </div>
 
       <div class="result-actions">
-        <button id="share-twitter" class="btn btn-share btn-twitter" data-i18n="share.twitter">트위터 공유</button>
-        <button id="share-copy" class="btn btn-share btn-copy" data-i18n="share.copyUrl">링크 복사</button>
-        <button id="retake-btn" class="btn btn-primary" data-i18n="result.retake">다시 테스트</button>
+        <button id="share-twitter" class="btn btn-share btn-twitter" data-i18n="share.shareX">Share on X</button>
+        <button id="share-copy" class="btn btn-share btn-copy" data-i18n="share.copyUrl">Copy Link</button>
+        <button id="retake-btn" class="btn btn-primary" data-i18n="result.retake">Chat Again 💬</button>
       </div>
     </div>
 

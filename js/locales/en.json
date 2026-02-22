@@ -1,103 +1,125 @@
 {
   "meta": {
-    "title": "Attachment Style Test | What's Your Love Style?",
-    "description": "Discover your attachment style through 10 relationship scenarios. Are you Secure, Anxious, Avoidant, or Fearful-Avoidant?"
+    "title": "Attachment Style Test | Chat Simulator",
+    "description": "Discover your attachment style through realistic text conversations. How do you respond to your partner's messages?"
   },
   "app": {
-    "title": "Attachment Style Test",
-    "subtitle": "Discover your attachment style through 10 relationship scenarios",
-    "warning": "This test is for entertainment purposes only and does not replace professional psychological assessment.",
-    "start": "Start Test"
+    "title": "Attachment Style",
+    "subtitle": "How do you really text your partner?",
+    "description": "Your texting habits reveal your attachment style. Chat through 10 realistic scenarios to discover yours.",
+    "badge": "Chat Simulator",
+    "info1": "10 Chats",
+    "info2": "~3 Min",
+    "info3": "4 Styles",
+    "disclaimer": "For entertainment only. Not a clinical diagnosis.",
+    "start": "Start Chatting 💬"
   },
-  "questions": {
-    "q1": {
-      "text": "Your partner hasn't texted back in 3 hours. What do you do?",
+  "chat": {
+    "partner": "Partner",
+    "typing": "typing...",
+    "online": "online",
+    "scenario": "Chat",
+    "tapToReply": "Choose your reply..."
+  },
+  "scenarios": {
+    "s1": {
+      "context": "3 hours since your last text",
+      "partnerMsg": "Hey, I texted you 3 hours ago... is everything okay? 😕",
       "options": {
-        "a": "They're probably busy. I'll just do my own thing.",
-        "b": "Keep checking my phone anxiously and wonder if they're ignoring me.",
-        "c": "Honestly don't really care. I don't like waiting for texts anyway.",
-        "d": "Feel annoyed but refuse to text first — I don't want to seem needy."
+        "a": "Sorry! Was super busy at work. What's up? 😊",
+        "b": "OMG I'm so sorry!! I didn't mean to ignore you 😭",
+        "c": "Yeah, I saw it. Was just doing my thing.",
+        "d": "Sorry... I kept wanting to reply but didn't know what to say"
       }
     },
-    "q2": {
-      "text": "Your partner says 'We need to talk.' What's your first reaction?",
+    "s2": {
+      "context": "Tuesday evening",
+      "partnerMsg": "Hey... we need to talk about something tonight.",
       "options": {
-        "a": "My heart drops — are they breaking up with me?",
-        "b": "I feel ready to have an open conversation about anything.",
-        "c": "I want to avoid it but I guess I'll hear them out.",
-        "d": "I get defensive and anxious at the same time."
+        "a": "Sure, what's on your mind? I'm all ears 😊",
+        "b": "Oh no, is everything okay?? You're scaring me 😰",
+        "c": "Can you just tell me now? I don't like waiting.",
+        "d": "...okay (reads it 5 times trying to decode the tone)"
       }
     },
-    "q3": {
-      "text": "A close friend starts flirting with your partner. How do you react?",
+    "s3": {
+      "context": "Random afternoon message",
+      "partnerMsg": "I was just thinking about you and wanted to say I really appreciate having you in my life 💕",
       "options": {
-        "a": "They're probably better than me anyway… I knew I wasn't enough.",
-        "b": "Whatever happens, happens. I can't control it.",
-        "c": "I trust my partner and would talk to them honestly if needed.",
-        "d": "I'm jealous but I don't say anything because I don't want to seem possessive."
+        "a": "That means so much 🥰 I feel the same way about you!",
+        "b": "Really?? You actually mean that? 🥺 Promise?",
+        "c": "Haha thanks 👍",
+        "d": "That's really sweet, thanks... (types and deletes 3 times first)"
       }
     },
-    "q4": {
-      "text": "Your partner surprises you with a gift. Your reaction?",
+    "s4": {
+      "context": "Weekend plans",
+      "partnerMsg": "My friends are having a get-together Saturday. Wanna come? 🎉",
       "options": {
-        "a": "I'm happy and express my gratitude warmly.",
-        "b": "I'm so moved I could cry, and I feel pressure to do something back.",
-        "c": "It's a bit uncomfortable. They really didn't have to do that.",
-        "d": "I'm pleased but also wonder if there's a hidden motive."
+        "a": "Sounds fun! What time should I be there?",
+        "b": "Who else is coming? Will your ex be there? 👀",
+        "c": "I'll let you know. Might have other plans.",
+        "d": "I want to but... I'm not great with groups. Can we leave early?"
       }
     },
-    "q5": {
-      "text": "After a big fight with your partner, what's your pattern?",
+    "s5": {
+      "context": "The morning after a fight",
+      "partnerMsg": "I think we both said things we didn't mean yesterday...",
       "options": {
-        "a": "I go silent and want space, but I'm terrified they'll leave.",
-        "b": "I need distance to process my feelings alone.",
-        "c": "I keep texting and calling to make up right away.",
-        "d": "I wait until we've both cooled down, then talk it through calmly."
+        "a": "You're right. Can we sit down and talk through it calmly?",
+        "b": "Are you still mad? I've been overthinking it all night 😔",
+        "c": "Let's just move on. Dwelling on it won't help.",
+        "d": "Every fight makes me feel like it's ending... I can't handle this"
       }
     },
-    "q6": {
-      "text": "You've just started seeing someone new. What are you like early on?",
+    "s6": {
+      "context": "Evening check-in",
+      "partnerMsg": "I need some alone time tonight. Nothing's wrong, just need to recharge 🔋",
       "options": {
-        "a": "I constantly look for signs of how interested they are.",
-        "b": "I fall hard and fast, but I'm scared they'll abandon me.",
-        "c": "I take it slow, getting to know them at a comfortable pace.",
-        "d": "If things get too close too fast, I pull back."
+        "a": "Of course! Take all the time you need. I'll be here 😊",
+        "b": "Did I do something wrong? Are you sure you're not upset?",
+        "c": "Sure, I was gonna suggest the same actually.",
+        "d": "Okay... (but what if they're starting to pull away?)"
       }
     },
-    "q7": {
-      "text": "Your partner says they need some alone time. What goes through your mind?",
+    "s7": {
+      "context": "Late night message",
+      "partnerMsg": "I had the worst day... can I vent to you for a bit? 😞",
       "options": {
-        "a": "Great! I value my personal time too.",
-        "b": "Even better — I could use some breathing room.",
-        "c": "Are they getting tired of me?",
-        "d": "Part of me is relieved, but part of me worries they're pushing me away."
+        "a": "Always. Tell me everything, I'm here for you 💛",
+        "b": "Of course!! Should I come over right now?? I'll cancel everything!",
+        "c": "Sure, but can you keep it short? I've got stuff too.",
+        "d": "Yeah... I want to help but I'm not sure I'll say the right things"
       }
     },
-    "q8": {
-      "text": "Your partner is going through a tough time and leans on you emotionally. You...",
+    "s8": {
+      "context": "Deep conversation",
+      "partnerMsg": "Random question but... where do you see us in a year? 🤔",
       "options": {
-        "a": "Gladly listen and comfort them.",
-        "b": "Want to help but feel weighed down by the emotional burden.",
-        "c": "Feel anxious but glad they need me.",
-        "d": "Don't really know how to respond and feel uncomfortable."
+        "a": "Growing together, wherever life takes us. We'll figure it out 😊",
+        "b": "I think about our future ALL the time. I really hope we make it 🥺",
+        "c": "A year? That's far ahead. Let's just enjoy the present.",
+        "d": "I want to say something hopeful but... I'm scared to jinx it"
       }
     },
-    "q9": {
-      "text": "You find your partner's ex on social media. Your reaction?",
+    "s9": {
+      "context": "Social media moment",
+      "partnerMsg": "I noticed you liked your ex's photos on Instagram... 👀",
       "options": {
-        "a": "I'm probably not as attractive as them anyway.",
-        "b": "I deep-dive their profile and can't help comparing myself.",
-        "c": "The past is the past. Doesn't bother me.",
-        "d": "If I'm curious, I just ask my partner about it directly."
+        "a": "Oh that? Just casual. You know you're the only one for me 💛",
+        "b": "It was nothing I swear!! I'll unfollow them right now 😫",
+        "c": "It's just social media. Don't read into it.",
+        "d": "You're right, that was thoughtless... are you mad at me? 😟"
       }
     },
-    "q10": {
-      "text": "How would you describe your ideal relationship in one sentence?",
+    "s10": {
+      "context": "Bedtime",
+      "partnerMsg": "Goodnight! Sweet dreams 🌙💕 Can't wait to see you tomorrow!",
       "options": {
-        "a": "Respecting each other's space and living comfortably — too much closeness feels suffocating.",
-        "b": "Being constantly reassured and feeling loved every single moment.",
-        "c": "Trusting each other deeply while respecting each person's individual life.",
-        "d": "Wanting love but finding it hard to fully open up for fear of getting hurt."
+        "a": "Goodnight! 💛 Tomorrow can't come soon enough!",
+        "b": "Goodnight!! Text me the SECOND you wake up okay?? 🥰🥰",
+        "c": "Night 👋",
+        "d": "Night... (wishes they could say how much this person means to them)"
       }
     }
   },
@@ -105,51 +127,51 @@
     "secure": {
       "name": "Secure",
       "emoji": "🛡️",
-      "desc": "You have a secure attachment style. You feel comfortable in relationships, naturally trust your partner, and value both togetherness and personal space. When conflicts arise, you address them through honest communication rather than avoidance or escalation.",
-      "traits": ["Healthy boundary setting", "Honest emotional expression", "Conflict resolution through dialogue", "Strong self-esteem"],
-      "idealPartner": "You get along with all types, but another Secure partner creates the healthiest dynamic. You can also bring stability to Anxious or Avoidant partners.",
-      "advice": "You already have great relationship skills! Just be careful not to take on your partner's insecurity as your own fault. Your stability is a strength — but don't forget to express your own needs too."
+      "desc": "You have a secure attachment style. You're comfortable with emotional closeness and communicate honestly. You trust your partner while maintaining healthy boundaries. When conflict arises, you address it directly with care.",
+      "traits": ["Healthy boundaries", "Honest communication", "Emotional stability", "Natural trust"],
+      "idealPartner": "You vibe with all types, but another Secure partner creates the healthiest dynamic. You can also bring stability to Anxious or Avoidant partners.",
+      "advice": "Your relationship instincts are strong! Just remember to express your own needs too — being the 'stable one' doesn't mean suppressing your emotions."
     },
     "anxious": {
       "name": "Anxious",
       "emoji": "💓",
-      "desc": "You have an anxious attachment style. You love deeply and are incredibly devoted, but carry a constant fear of abandonment. You're highly sensitive to your partner's mood shifts and crave reassurance and closeness.",
-      "traits": ["High empathy and sensitivity", "Deep commitment to relationships", "Separation anxiety tendencies", "Hyper-aware of partner's reactions"],
-      "idealPartner": "A Secure partner is ideal — someone who offers consistent reassurance and steady behavior. Be cautious with Avoidant types, as the push-pull dynamic can intensify your anxiety.",
-      "advice": "Your partner's response time doesn't measure their love. When anxiety spikes, pause before reacting impulsively. Learning to love yourself first will make all your relationships healthier."
+      "desc": "You have an anxious attachment style. You love deeply and are incredibly devoted, but carry a constant fear of being abandoned. You're hyper-sensitive to your partner's mood shifts and crave reassurance to feel secure.",
+      "traits": ["Deep empathy", "Intense devotion", "Fear of abandonment", "Need for reassurance"],
+      "idealPartner": "A Secure partner is your ideal match — someone who provides consistent reassurance and steady love. Be cautious with Avoidant types, as the push-pull can intensify anxiety.",
+      "advice": "A slow reply ≠ fading love. When anxiety spikes, breathe before reacting. Building self-love is the foundation for healthier connections."
     },
     "avoidant": {
       "name": "Avoidant",
       "emoji": "🏔️",
-      "desc": "You have an avoidant attachment style. You value independence and freedom, and too much closeness can make you uncomfortable. While you may struggle to express emotions openly, deep feelings exist beneath the surface. You need your own time and space.",
-      "traits": ["Strong independence", "Difficulty expressing emotions", "High value on personal space", "Self-sufficient mindset"],
-      "idealPartner": "A Secure partner who gives you room without being clingy. Someone warm but not overwhelming can gradually help lower your walls. Anxious partners may trigger a chase-retreat cycle.",
-      "advice": "Getting close doesn't mean becoming weak. Try opening up little by little. It's okay to tell your partner you need space — just also acknowledge their emotional needs. Balance is everything."
+      "desc": "You have an avoidant attachment style. You prize independence and freedom. Too much closeness makes you uncomfortable, but deep feelings exist beneath that cool exterior. You process emotions best on your own terms.",
+      "traits": ["Strong independence", "Guarded emotions", "Need for space", "Self-reliance"],
+      "idealPartner": "A Secure partner who gives you room without pressure. Someone warm but patient can gradually help lower your walls.",
+      "advice": "Vulnerability isn't weakness — it's the bridge to deeper connection. Try opening up in small doses. Acknowledge your partner's emotional needs too."
     },
     "fearful": {
       "name": "Fearful-Avoidant",
       "emoji": "🌪️",
-      "desc": "You have a fearful-avoidant (disorganized) attachment style. You crave intimacy but simultaneously fear it. You want to get close but pull back to protect yourself from being hurt. This inner conflict can make relationships complicated and emotionally turbulent.",
-      "traits": ["Ambivalence about intimacy", "Emotional highs and lows", "Influenced by past wounds", "Strong self-protection instinct"],
-      "idealPartner": "A patient, Secure partner is ideal — someone who understands your push-pull tendencies and stays steady through it all. Experiencing a safe relationship, even if it takes time, is crucial for growth.",
-      "advice": "Your mixed feelings are a natural defense mechanism, but not every relationship ends in pain. Build trust gradually, starting small. Professional support can also be incredibly helpful. You absolutely deserve love."
+      "desc": "You have a fearful-avoidant attachment style. You crave intimacy but simultaneously fear it. You want to get close but pull back to protect yourself from pain. This push-pull makes relationships feel like an emotional rollercoaster.",
+      "traits": ["Craves & fears closeness", "Emotional highs & lows", "Past wound influence", "Self-protective instinct"],
+      "idealPartner": "A patient Secure partner who stays steady through your push-pull. Experiencing a safe, consistent relationship — even slowly — is transformative.",
+      "advice": "Your mixed signals come from self-protection, not confusion. Not every relationship ends in hurt. Build trust in small steps. You deserve the love you're afraid of."
     }
   },
   "result": {
-    "attachmentLevel": "Attachment Level",
-    "secondaryType": "Secondary Type",
-    "retake": "Retake Test",
+    "yourStyle": "Your Attachment Style",
+    "chatAnalysis": "Chat Pattern Analysis",
+    "attachmentLevel": "Attachment Spectrum",
+    "secondaryType": "Secondary Style",
     "keyTraits": "Key Traits",
     "idealPartner": "Ideal Partner",
-    "advice": "Relationship Advice"
+    "advice": "Love Advice",
+    "retake": "Chat Again 💬"
   },
   "share": {
-    "twitter": "Find out your attachment style!",
+    "twitter": "Discover your attachment style through text convos!",
+    "shareX": "Share on X",
     "copyUrl": "Copy Link",
     "copied": "Link copied!"
-  },
-  "nav": {
-    "back": "Back"
   },
   "a11y": {
     "skip": "Skip to content"

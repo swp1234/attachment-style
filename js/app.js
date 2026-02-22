@@ -1,64 +1,66 @@
 /* ========================================
-   Attachment Style Test - App Logic
-   10 scenario-based questions
+   Attachment Style Test - Chat Simulator
+   10 conversation scenarios
    4 types: secure, anxious, avoidant, fearful
    ======================================== */
 
 (async function () {
   try {
-    // Wait for i18n
     await i18n.loadTranslations(i18n.currentLang);
     i18n.updateUI();
 
-    // --- State ---
-    const TOTAL_QUESTIONS = 10;
-    let currentQuestion = 0;
-    let scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
+    // --- Constants ---
+    var TOTAL_SCENARIOS = 10;
+    var TYPING_DELAY = 1200;
+    var REPLY_SHOW_DELAY = 600;
+    var NEXT_SCENARIO_DELAY = 800;
 
-    // Question mapping: each option maps to a type
-    const questionMap = [
-      { options: ['secure', 'anxious', 'avoidant', 'fearful'] },
-      { options: ['anxious', 'secure', 'fearful', 'avoidant'] },
-      { options: ['avoidant', 'fearful', 'secure', 'anxious'] },
-      { options: ['secure', 'anxious', 'avoidant', 'fearful'] },
-      { options: ['fearful', 'avoidant', 'anxious', 'secure'] },
-      { options: ['anxious', 'fearful', 'secure', 'avoidant'] },
-      { options: ['avoidant', 'secure', 'fearful', 'anxious'] },
-      { options: ['secure', 'fearful', 'anxious', 'avoidant'] },
-      { options: ['fearful', 'anxious', 'avoidant', 'secure'] },
-      { options: ['avoidant', 'anxious', 'secure', 'fearful'] }
+    // --- State ---
+    var currentScenario = 0;
+    var scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
+    var isAnimating = false;
+
+    // Scoring map: each scenario, option a/b/c/d maps to a type
+    var scenarioMap = [
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful'],
+      ['secure', 'anxious', 'avoidant', 'fearful']
     ];
 
-    // --- DOM Elements ---
-    const startScreen = document.getElementById('start-screen');
-    const quizScreen = document.getElementById('quiz-screen');
-    const resultScreen = document.getElementById('result-screen');
-    const startBtn = document.getElementById('start-btn');
-    const progressFill = document.getElementById('progress-fill');
-    const currentQEl = document.getElementById('current-q');
-    const totalQEl = document.getElementById('total-q');
-    const questionText = document.getElementById('question-text');
-    const optionsContainer = document.getElementById('options-container');
-    const quizCard = document.querySelector('.quiz-card');
-    const themeToggle = document.getElementById('theme-toggle');
-    const langSelect = document.getElementById('lang-select');
-    const retakeBtn = document.getElementById('retake-btn');
-    const shareTwitter = document.getElementById('share-twitter');
-    const shareCopy = document.getElementById('share-copy');
+    // --- DOM ---
+    var startScreen = document.getElementById('start-screen');
+    var chatScreen = document.getElementById('chat-screen');
+    var resultScreen = document.getElementById('result-screen');
+    var startBtn = document.getElementById('start-btn');
+    var chatArea = document.getElementById('chat-area');
+    var replyArea = document.getElementById('reply-area');
+    var replyHint = document.getElementById('reply-hint');
+    var replyOptions = document.getElementById('reply-options');
+    var chatCounter = document.getElementById('chat-counter');
+    var phoneStatus = document.getElementById('phone-status');
+    var statusTime = document.getElementById('status-time');
+    var themeToggle = document.getElementById('theme-toggle');
+    var langSelect = document.getElementById('lang-select');
+    var retakeBtn = document.getElementById('retake-btn');
+    var shareTwitter = document.getElementById('share-twitter');
+    var shareCopy = document.getElementById('share-copy');
 
     // --- Theme ---
     function initTheme() {
-      const saved = localStorage.getItem('theme');
-      if (saved) {
-        document.documentElement.setAttribute('data-theme', saved);
-      } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
+      var saved = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', saved || 'dark');
     }
 
     themeToggle.addEventListener('click', function () {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
     });
@@ -70,92 +72,194 @@
 
     langSelect.addEventListener('change', async function () {
       await i18n.setLanguage(this.value);
-      // Re-render current screen content
-      if (quizScreen.classList.contains('active')) {
-        renderQuestion(currentQuestion);
+      if (chatScreen.classList.contains('active')) {
+        // Re-render current scenario
+        renderScenario(currentScenario, true);
       }
       if (resultScreen.classList.contains('active')) {
         showResult();
       }
     });
 
+    // --- Clock ---
+    function updateClock() {
+      var now = new Date();
+      var h = now.getHours();
+      var m = now.getMinutes();
+      statusTime.textContent = h + ':' + (m < 10 ? '0' : '') + m;
+    }
+    updateClock();
+    setInterval(updateClock, 30000);
+
     // --- Screen Navigation ---
     function showScreen(screen) {
-      [startScreen, quizScreen, resultScreen].forEach(function (s) {
+      [startScreen, chatScreen, resultScreen].forEach(function (s) {
         s.classList.remove('active');
       });
       screen.classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // --- Start Quiz ---
+    // --- Start ---
     startBtn.addEventListener('click', function () {
-      currentQuestion = 0;
+      currentScenario = 0;
       scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
-      showScreen(quizScreen);
-      renderQuestion(0);
+      chatArea.innerHTML = '';
+      showScreen(chatScreen);
+      renderScenario(0, false);
     });
 
-    // --- Render Question ---
-    function renderQuestion(index) {
-      var qNum = index + 1;
-      currentQEl.textContent = qNum;
-      totalQEl.textContent = TOTAL_QUESTIONS;
-      progressFill.style.width = ((qNum / TOTAL_QUESTIONS) * 100) + '%';
+    // --- Render Scenario ---
+    function renderScenario(index, isRerender) {
+      if (isAnimating && !isRerender) return;
+      isAnimating = true;
 
-      var qKey = 'questions.q' + qNum + '.text';
-      questionText.textContent = i18n.t(qKey);
+      var num = index + 1;
+      chatCounter.textContent = num + ' / ' + TOTAL_SCENARIOS;
 
-      optionsContainer.innerHTML = '';
+      // Clear reply options
+      replyOptions.innerHTML = '';
+      replyOptions.classList.add('hidden');
+      replyHint.style.display = 'none';
+
+      if (!isRerender) {
+        // Add context label
+        var contextText = i18n.t('scenarios.s' + num + '.context');
+        if (contextText) {
+          var contextEl = document.createElement('div');
+          contextEl.className = 'chat-context';
+          contextEl.innerHTML = '<span>' + escapeHtml(contextText) + '</span>';
+          chatArea.appendChild(contextEl);
+        }
+
+        // Show typing indicator
+        showTypingIndicator();
+
+        // After delay, show partner message
+        setTimeout(function () {
+          removeTypingIndicator();
+          var partnerMsg = i18n.t('scenarios.s' + num + '.partnerMsg');
+          addBubble(partnerMsg, 'incoming');
+
+          // Show reply options after a short delay
+          setTimeout(function () {
+            showReplyOptions(index);
+            isAnimating = false;
+          }, REPLY_SHOW_DELAY);
+        }, TYPING_DELAY);
+      } else {
+        // Re-render: just update reply options text
+        showReplyOptions(index);
+        isAnimating = false;
+      }
+
+      scrollChatToBottom();
+    }
+
+    // --- Show Typing Indicator ---
+    function showTypingIndicator() {
+      phoneStatus.textContent = i18n.t('chat.typing') || 'typing...';
+      phoneStatus.style.color = 'var(--primary)';
+
+      var typingEl = document.createElement('div');
+      typingEl.className = 'typing-indicator';
+      typingEl.id = 'typing-indicator';
+      typingEl.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+      chatArea.appendChild(typingEl);
+      scrollChatToBottom();
+    }
+
+    // --- Remove Typing Indicator ---
+    function removeTypingIndicator() {
+      var el = document.getElementById('typing-indicator');
+      if (el) el.remove();
+      phoneStatus.textContent = i18n.t('chat.online') || 'online';
+      phoneStatus.style.color = '#34d399';
+    }
+
+    // --- Add Chat Bubble ---
+    function addBubble(text, type) {
+      var bubble = document.createElement('div');
+      bubble.className = 'chat-bubble ' + (type === 'incoming' ? 'bubble-incoming' : 'bubble-outgoing bubble-sending');
+      bubble.textContent = text;
+      chatArea.appendChild(bubble);
+      scrollChatToBottom();
+    }
+
+    // --- Show Reply Options ---
+    function showReplyOptions(scenarioIndex) {
+      var num = scenarioIndex + 1;
       var optionKeys = ['a', 'b', 'c', 'd'];
+      replyOptions.innerHTML = '';
 
       optionKeys.forEach(function (key) {
         var btn = document.createElement('button');
-        btn.className = 'option-btn';
-        btn.textContent = i18n.t('questions.q' + qNum + '.options.' + key);
+        btn.className = 'reply-btn';
+        btn.textContent = i18n.t('scenarios.s' + num + '.options.' + key);
         btn.addEventListener('click', function () {
-          selectOption(index, key);
+          selectReply(scenarioIndex, key);
         });
-        optionsContainer.appendChild(btn);
+        replyOptions.appendChild(btn);
+      });
+
+      replyHint.style.display = 'block';
+      replyOptions.classList.remove('hidden');
+    }
+
+    // --- Select Reply ---
+    function selectReply(scenarioIndex, optionKey) {
+      if (isAnimating) return;
+      isAnimating = true;
+
+      var optionKeys = ['a', 'b', 'c', 'd'];
+      var optionIndex = optionKeys.indexOf(optionKey);
+      var type = scenarioMap[scenarioIndex][optionIndex];
+      scores[type] += 1;
+
+      // Highlight selected button
+      var buttons = replyOptions.querySelectorAll('.reply-btn');
+      buttons.forEach(function (btn) { btn.disabled = true; });
+      buttons[optionIndex].classList.add('selected');
+
+      // After brief pause, show as sent message
+      setTimeout(function () {
+        var num = scenarioIndex + 1;
+        var msgText = i18n.t('scenarios.s' + num + '.options.' + optionKey);
+        addBubble(msgText, 'outgoing');
+
+        // Hide reply options
+        replyOptions.classList.add('hidden');
+        replyHint.style.display = 'none';
+
+        // Partner "reacts" with typing then next scenario
+        setTimeout(function () {
+          if (currentScenario < TOTAL_SCENARIOS - 1) {
+            currentScenario++;
+            renderScenario(currentScenario, false);
+          } else {
+            // Show results
+            setTimeout(function () {
+              showScreen(resultScreen);
+              showResult();
+              isAnimating = false;
+            }, 400);
+          }
+        }, NEXT_SCENARIO_DELAY);
+      }, 300);
+    }
+
+    // --- Scroll Chat ---
+    function scrollChatToBottom() {
+      requestAnimationFrame(function () {
+        chatArea.scrollTop = chatArea.scrollHeight;
       });
     }
 
-    // --- Select Option ---
-    function selectOption(questionIndex, optionKey) {
-      var optionKeys = ['a', 'b', 'c', 'd'];
-      var optionIndex = optionKeys.indexOf(optionKey);
-      var type = questionMap[questionIndex].options[optionIndex];
-
-      scores[type] += 1;
-
-      // Highlight selected
-      var buttons = optionsContainer.querySelectorAll('.option-btn');
-      buttons[optionIndex].classList.add('selected');
-
-      // Disable all buttons
-      buttons.forEach(function (btn) {
-        btn.disabled = true;
-      });
-
-      // Next question or result
-      setTimeout(function () {
-        if (currentQuestion < TOTAL_QUESTIONS - 1) {
-          currentQuestion++;
-          // Slide animation
-          quizCard.classList.add('slide-out');
-          setTimeout(function () {
-            renderQuestion(currentQuestion);
-            quizCard.classList.remove('slide-out');
-            quizCard.classList.add('slide-in');
-            setTimeout(function () {
-              quizCard.classList.remove('slide-in');
-            }, 300);
-          }, 300);
-        } else {
-          showScreen(resultScreen);
-          showResult();
-        }
-      }, 400);
+    // --- Escape HTML ---
+    function escapeHtml(text) {
+      var div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
     }
 
     // --- Calculate Result ---
@@ -173,13 +277,8 @@
       var primary = result.primary;
       var secondary = result.secondary;
 
-      // Emoji
       document.getElementById('result-emoji').textContent = i18n.t('results.' + primary + '.emoji');
-
-      // Type name
       document.getElementById('result-type').textContent = i18n.t('results.' + primary + '.name');
-
-      // Description
       document.getElementById('result-desc').textContent = i18n.t('results.' + primary + '.desc');
 
       // Traits
@@ -194,44 +293,25 @@
         });
       }
 
-      // Ideal partner
       document.getElementById('result-partner').textContent = i18n.t('results.' + primary + '.idealPartner');
-
-      // Advice
       document.getElementById('result-advice').textContent = i18n.t('results.' + primary + '.advice');
-
-      // Secondary type
       document.getElementById('secondary-type-text').textContent =
         i18n.t('results.' + secondary + '.emoji') + ' ' + i18n.t('results.' + secondary + '.name');
 
-      // Attachment meter position
-      // avoidant = left (0%), secure = center (50%), anxious = right (100%)
-      // fearful = between avoidant and anxious (25% or 75%)
-      var meterPositions = {
-        secure: 50,
-        anxious: 85,
-        avoidant: 15,
-        fearful: 35
-      };
+      // Meter labels
+      document.getElementById('meter-label-avoidant').textContent = i18n.t('results.avoidant.name');
+      document.getElementById('meter-label-secure').textContent = i18n.t('results.secure.name');
+      document.getElementById('meter-label-anxious').textContent = i18n.t('results.anxious.name');
+
+      // Meter position
+      var meterPositions = { secure: 50, anxious: 85, avoidant: 15, fearful: 35 };
       var indicator = document.getElementById('meter-indicator');
-      // Start at center then animate
       indicator.style.left = '50%';
       setTimeout(function () {
         indicator.style.left = meterPositions[primary] + '%';
       }, 600);
 
-      // Update meter labels with i18n
-      var meterLabels = document.querySelector('.meter-labels');
-      if (meterLabels) {
-        var spans = meterLabels.querySelectorAll('span');
-        if (spans.length >= 3) {
-          spans[0].textContent = i18n.t('results.avoidant.name');
-          spans[1].textContent = i18n.t('results.secure.name');
-          spans[2].textContent = i18n.t('results.anxious.name');
-        }
-      }
-
-      // GA4 event
+      // GA4
       if (typeof gtag === 'function') {
         gtag('event', 'quiz_complete', {
           event_category: 'attachment_style',
@@ -255,7 +335,7 @@
       );
     });
 
-    // --- Share: Copy Link ---
+    // --- Share: Copy ---
     shareCopy.addEventListener('click', function () {
       var url = 'https://dopabrain.com/attachment-style/';
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -263,7 +343,6 @@
           showToast(i18n.t('share.copied'));
         });
       } else {
-        // Fallback
         var ta = document.createElement('textarea');
         ta.value = url;
         document.body.appendChild(ta);
@@ -290,27 +369,23 @@
 
       setTimeout(function () {
         toast.classList.remove('show');
-        setTimeout(function () {
-          toast.remove();
-        }, 300);
+        setTimeout(function () { toast.remove(); }, 300);
       }, 2000);
     }
 
     // --- Retake ---
     retakeBtn.addEventListener('click', function () {
-      currentQuestion = 0;
+      currentScenario = 0;
       scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
+      chatArea.innerHTML = '';
       showScreen(startScreen);
     });
 
     // --- Hide Loader ---
     var loader = document.getElementById('app-loader');
-    if (loader) {
-      loader.classList.add('hidden');
-    }
+    if (loader) loader.classList.add('hidden');
 
   } catch (e) {
-    // i18n or init error — hide loader anyway
     console.error('App init error:', e);
     var loader = document.getElementById('app-loader');
     if (loader) loader.classList.add('hidden');

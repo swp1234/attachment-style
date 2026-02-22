@@ -1,103 +1,125 @@
 {
   "meta": {
-    "title": "Tes Gaya Kelekatan | Apa Tipe Cintamu?",
-    "description": "Temukan gaya kelekatanmu lewat 10 skenario hubungan. Aman, Cemas, Menghindar, atau Takut?"
+    "title": "Tes Gaya Kelekatan | Simulator Chat",
+    "description": "Temukan gaya kelekatanmu lewat percakapan chat yang realistis. Gimana cara kamu bales chat pasangan?"
   },
   "app": {
-    "title": "Tes Gaya Kelekatan",
-    "subtitle": "Temukan gaya kelekatanmu lewat 10 skenario hubungan",
-    "warning": "Tes ini hanya untuk hiburan dan bukan pengganti penilaian psikologis profesional.",
-    "start": "Mulai Tes"
+    "title": "Gaya Kelekatan",
+    "subtitle": "Gimana sih kamu beneran nge-chat pasangan?",
+    "description": "Kebiasaan chatmu mengungkap gaya kelekatanmu. Jalani 10 skenario realistis untuk menemukan milikmu.",
+    "badge": "Simulator Chat",
+    "info1": "10 Chat",
+    "info2": "~3 Mnt",
+    "info3": "4 Gaya",
+    "disclaimer": "Hanya untuk hiburan. Bukan diagnosis klinis.",
+    "start": "Mulai Chatting 💬"
   },
-  "questions": {
-    "q1": {
-      "text": "Pasanganmu belum balas chat selama 3 jam. Apa yang kamu lakukan?",
+  "chat": {
+    "partner": "Pasangan",
+    "typing": "mengetik...",
+    "online": "online",
+    "scenario": "Chat",
+    "tapToReply": "Pilih balasanmu..."
+  },
+  "scenarios": {
+    "s1": {
+      "context": "3 jam sejak chat terakhirmu",
+      "partnerMsg": "Hei, aku udah chat 3 jam lalu... semuanya baik-baik aja? 😕",
       "options": {
-        "a": "Pasti lagi sibuk. Aku lanjut kerjain hal lain.",
-        "b": "Cemas terus cek HP — jangan-jangan di-read doang.",
-        "c": "Biasa aja sih. Nggak suka nungguin balesan juga.",
-        "d": "Kesel tapi nggak mau chat duluan — ntar dikira needy."
+        "a": "Maaf! Tadi sibuk banget di kantor. Ada apa? 😊",
+        "b": "YA AMPUN maaf banget!! Aku nggak bermaksud ngacangin kamu 😭",
+        "c": "Iya, udah liat. Tadi lagi ngerjain hal lain aja.",
+        "d": "Maaf... dari tadi pengen bales tapi nggak tau mau nulis apa"
       }
     },
-    "q2": {
-      "text": "Pasangan bilang 'Kita perlu ngobrol serius'. Reaksi pertamamu?",
+    "s2": {
+      "context": "Selasa malam",
+      "partnerMsg": "Hei... kita perlu ngobrol soal sesuatu malam ini.",
       "options": {
-        "a": "Deg-degan — jangan-jangan mau putus?",
-        "b": "Siap buat ngobrol terbuka.",
-        "c": "Pengen kabur tapi ya udah, dengerin deh.",
-        "d": "Langsung defensif sekaligus cemas."
+        "a": "Oke, mau bahas apa? Aku dengerin 😊",
+        "b": "Aduh, semuanya baik-baik aja kan?? Aku jadi takut 😰",
+        "c": "Bisa langsung bilang sekarang nggak? Aku nggak suka nunggu.",
+        "d": "...oke (baca ulang pesannya 5 kali nyoba nebak nadanya)"
       }
     },
-    "q3": {
-      "text": "Teman dekatmu mulai PDKT sama pasanganmu. Gimana reaksimu?",
+    "s3": {
+      "context": "Pesan random siang hari",
+      "partnerMsg": "Tadi lagi kepikiran kamu dan pengen bilang aku bersyukur banget kamu ada di hidupku 💕",
       "options": {
-        "a": "Dia pasti lebih baik dari aku… emang aku nggak cukup.",
-        "b": "Ya sudahlah, nggak bisa dikontrol juga.",
-        "c": "Percaya sama pasangan, kalau perlu ngobrol jujur.",
-        "d": "Cemburu tapi diam aja, takut dikira posesif."
+        "a": "Itu berarti banget 🥰 Aku juga ngerasain hal yang sama!",
+        "b": "Serius?? Kamu beneran ngerasa gitu? 🥺 Janji?",
+        "c": "Haha makasih 👍",
+        "d": "Manis banget, makasih... (ngetik terus hapus 3 kali dulu)"
       }
     },
-    "q4": {
-      "text": "Pasanganmu kasih hadiah kejutan. Reaksimu?",
+    "s4": {
+      "context": "Rencana akhir pekan",
+      "partnerMsg": "Temen-temenku mau kumpul hari Sabtu. Mau ikut nggak? 🎉",
       "options": {
-        "a": "Senang dan langsung bilang terima kasih dengan tulus.",
-        "b": "Terharu banget sampai mau nangis, terus ngerasa harus bales.",
-        "c": "Agak nggak nyaman. Nggak usah segala gitu juga.",
-        "d": "Senang tapi curiga — ada maunya nggak ya?"
+        "a": "Kayaknya seru! Jam berapa aku harus datang?",
+        "b": "Siapa aja yang dateng? Mantan kamu bakal ada? 👀",
+        "c": "Ntar aku kabarin deh. Mungkin ada acara lain.",
+        "d": "Mau sih tapi... aku kurang nyaman sama keramaian. Bisa pulang duluan nggak?"
       }
     },
-    "q5": {
-      "text": "Habis berantem hebat sama pasangan, biasanya kamu gimana?",
+    "s5": {
+      "context": "Pagi setelah berantem",
+      "partnerMsg": "Kayaknya kita berdua kemarin ngomong hal-hal yang nggak kita maksud...",
       "options": {
-        "a": "Putus kontak mau sendiri, tapi takut dia pergi.",
-        "b": "Butuh jarak buat proses perasaan sendiri.",
-        "c": "Langsung kirim pesan terus biar cepet baikan.",
-        "d": "Tunggu sama-sama tenang dulu, baru ngobrol baik-baik."
+        "a": "Kamu bener. Bisa duduk bareng dan ngobrol tenang nggak?",
+        "b": "Kamu masih marah? Aku mikirin ini semalaman 😔",
+        "c": "Udah lah lupain aja. Dipikirin juga nggak ada gunanya.",
+        "d": "Tiap berantem bikin aku ngerasa kayak mau berakhir... aku nggak kuat"
       }
     },
-    "q6": {
-      "text": "Baru mulai pacaran sama orang baru. Kamu kayak gimana di awal?",
+    "s6": {
+      "context": "Chat malam hari",
+      "partnerMsg": "Malam ini aku butuh waktu sendiri ya. Nggak ada masalah kok, cuma mau recharge 🔋",
       "options": {
-        "a": "Terus-terusan cari tanda seberapa tertariknya dia.",
-        "b": "Cepat jatuh cinta tapi takut ditinggalin.",
-        "c": "Kenalan pelan-pelan dengan ritme yang nyaman.",
-        "d": "Kalau udah terlalu dekat, aku mundur."
+        "a": "Tentu! Ambil waktu yang kamu butuhkan. Aku di sini 😊",
+        "b": "Aku salah apa? Kamu beneran nggak kesel?",
+        "c": "Oke, aku juga mau ngusulkan hal yang sama sih.",
+        "d": "Oke... (tapi gimana kalo dia mulai menjauh?)"
       }
     },
-    "q7": {
-      "text": "Pasangan bilang butuh waktu sendiri. Apa yang kamu pikirkan?",
+    "s7": {
+      "context": "Pesan larut malam",
+      "partnerMsg": "Hari ini bener-bener buruk banget... boleh curhat sebentar? 😞",
       "options": {
-        "a": "Bagus! Aku juga butuh me-time.",
-        "b": "Malah bagus — aku juga bisa napas.",
-        "c": "Jangan-jangan udah bosen sama aku?",
-        "d": "Setengah lega, setengah khawatir — jangan-jangan ngejauh."
+        "a": "Selalu boleh. Ceritain semuanya, aku di sini 💛",
+        "b": "Tentu dong!! Mau aku ke sana sekarang?? Aku batalin semua!",
+        "c": "Boleh, tapi bisa singkat nggak? Aku juga ada urusan.",
+        "d": "Iya... aku mau bantu tapi nggak yakin bisa ngomong yang bener"
       }
     },
-    "q8": {
-      "text": "Pasanganmu lagi susah dan butuh dukungan emosional. Kamu...",
+    "s8": {
+      "context": "Obrolan serius",
+      "partnerMsg": "Pertanyaan random tapi... kamu ngeliat kita di mana setahun lagi? 🤔",
       "options": {
-        "a": "Dengerin dan hibur dengan senang hati.",
-        "b": "Mau bantu tapi ngerasa beban emosionalnya berat.",
-        "c": "Agak cemas tapi senang dibutuhkan.",
-        "d": "Bingung harus ngapain dan ngerasa nggak nyaman."
+        "a": "Tumbuh bareng, ke mana pun hidup bawa kita. Kita pasti bisa 😊",
+        "b": "Aku TERUS mikirin masa depan kita. Semoga kita berhasil 🥺",
+        "c": "Setahun? Jauh amat. Nikmatin aja yang sekarang.",
+        "d": "Pengen ngomong sesuatu yang penuh harapan tapi... takut jinx"
       }
     },
-    "q9": {
-      "text": "Nemu mantan pasanganmu di medsos. Reaksimu?",
+    "s9": {
+      "context": "Momen media sosial",
+      "partnerMsg": "Aku ngeliat kamu nge-like foto mantan di Instagram... 👀",
       "options": {
-        "a": "Pasti aku nggak semenarik dia.",
-        "b": "Stalking habis-habisan terus bandingin sama diri sendiri.",
-        "c": "Masa lalu ya masa lalu. Santai aja.",
-        "d": "Kalau penasaran, tanya langsung ke pasangan."
+        "a": "Oh itu? Cuma iseng. Kamu tau kamu satu-satunya buat aku 💛",
+        "b": "Itu nggak ada apa-apa sumpah!! Aku unfollow sekarang 😫",
+        "c": "Cuma medsos doang. Jangan kebanyakan mikir.",
+        "d": "Kamu bener, itu nggak sensitif... kamu marah sama aku? 😟"
       }
     },
-    "q10": {
-      "text": "Kalau disuruh deskripsiin hubungan ideal dalam satu kalimat?",
+    "s10": {
+      "context": "Mau tidur",
+      "partnerMsg": "Selamat malam! Mimpi indah 🌙💕 Nggak sabar ketemu besok!",
       "options": {
-        "a": "Saling hargai ruang masing-masing — terlalu deket bikin sesak.",
-        "b": "Selalu diyakinkan dan merasa dicintai setiap detik.",
-        "c": "Saling percaya dalam dan tetap menghargai kehidupan masing-masing.",
-        "d": "Pengen dicintai tapi susah buka hati sepenuhnya karena takut sakit."
+        "a": "Selamat malam! 💛 Besok nggak bisa dateng lebih cepat!",
+        "b": "Selamat malam!! Chat aku DETIK pertama kamu bangun ya?? 🥰🥰",
+        "c": "Malam 👋",
+        "d": "Malam... (pengen bilang betapa berartinya orang ini)"
       }
     }
   },
@@ -105,51 +127,51 @@
     "secure": {
       "name": "Aman",
       "emoji": "🛡️",
-      "desc": "Kamu punya gaya kelekatan aman. Di hubungan kamu merasa nyaman, secara alami percaya pasangan, dan menghargai kebersamaan maupun waktu pribadi. Saat konflik, kamu menyelesaikannya lewat komunikasi yang jujur.",
-      "traits": ["Batasan yang sehat", "Ekspresi emosi yang jujur", "Penyelesaian konflik lewat dialog", "Percaya diri yang baik"],
-      "idealPartner": "Kamu cocok dengan semua tipe, tapi dengan sesama Aman akan tercipta dinamika paling sehat. Kamu juga bisa memberi stabilitas ke pasangan Cemas atau Menghindar.",
-      "advice": "Skill hubunganmu sudah bagus banget! Hanya hati-hati jangan sampai nganggep ketidakamanan pasangan sebagai kesalahanmu. Stabilitasmu itu kekuatan — tapi jangan lupa ungkapin kebutuhanmu sendiri juga ya."
+      "desc": "Kamu punya gaya kelekatan aman. Kamu nyaman dengan kedekatan emosional dan berkomunikasi dengan jujur. Kamu percaya pasanganmu sambil menjaga batasan yang sehat. Saat konflik muncul, kamu menghadapinya secara langsung dengan penuh perhatian.",
+      "traits": ["Batasan yang sehat", "Komunikasi jujur", "Stabilitas emosional", "Kepercayaan alami"],
+      "idealPartner": "Kamu cocok sama semua tipe, tapi dengan sesama Aman akan tercipta dinamika paling sehat. Kamu juga bisa memberi stabilitas ke pasangan Cemas atau Menghindar.",
+      "advice": "Insting hubunganmu kuat banget! Cuma ingat untuk mengungkapkan kebutuhanmu sendiri juga ya — jadi 'yang stabil' bukan berarti menekan emosimu."
     },
     "anxious": {
       "name": "Cemas",
       "emoji": "💓",
-      "desc": "Kamu punya gaya kelekatan cemas. Kamu mencintai dengan sangat dalam dan penuh dedikasi, tapi selalu dihantui rasa takut ditinggalkan. Kamu sangat sensitif terhadap perubahan kecil dari pasangan dan butuh konfirmasi serta kedekatan terus-menerus.",
-      "traits": ["Empati dan sensitivitas tinggi", "Komitmen mendalam", "Kecenderungan cemas terpisah", "Sangat peka terhadap reaksi pasangan"],
-      "idealPartner": "Pasangan tipe Aman paling ideal — yang memberi rasa tenang konsisten. Hati-hati dengan tipe Menghindar karena dinamika tarik-ulur bisa bikin cemasmu makin parah.",
-      "advice": "Kecepatan bales chat bukan ukuran cinta. Saat cemas melanda, berhenti sebentar sebelum bereaksi impulsif. Belajar mencintai diri sendiri dulu akan bikin semua hubunganmu jadi lebih sehat."
+      "desc": "Kamu punya gaya kelekatan cemas. Kamu mencintai dengan sangat dalam dan luar biasa setia, tapi membawa ketakutan konstan akan ditinggalkan. Kamu sangat sensitif terhadap perubahan mood pasangan dan butuh kepastian terus-menerus untuk merasa aman.",
+      "traits": ["Empati mendalam", "Dedikasi intens", "Takut ditinggalkan", "Butuh kepastian"],
+      "idealPartner": "Pasangan Aman adalah pilihan idealmu — seseorang yang memberi kepastian konsisten dan cinta yang stabil. Hati-hati dengan tipe Menghindar, karena dinamika tarik-ulur bisa memperparah kecemasan.",
+      "advice": "Bales chat telat ≠ cinta berkurang. Saat cemas melonjak, tarik napas sebelum bereaksi. Membangun cinta diri adalah pondasi untuk hubungan yang lebih sehat."
     },
     "avoidant": {
       "name": "Menghindar",
       "emoji": "🏔️",
-      "desc": "Kamu punya gaya kelekatan menghindar. Kamu menghargai kemandirian dan kebebasan, dan kedekatan berlebihan bikin nggak nyaman. Mungkin susah mengekspresikan emosi secara terbuka, tapi di balik itu ada perasaan yang dalam. Kamu butuh waktu dan ruang sendiri.",
-      "traits": ["Kemandirian kuat", "Sulit mengekspresikan emosi", "Sangat menghargai ruang pribadi", "Pola pikir mandiri"],
-      "idealPartner": "Pasangan tipe Aman yang memberi ruang tanpa klepek-klepek. Orang yang hangat tapi nggak overwhelming bisa pelan-pelan menurunkan tembokmu. Dengan tipe Cemas bisa terjadi siklus kejar-lari.",
-      "advice": "Mendekat ke seseorang bukan berarti lemah. Coba pelan-pelan buka diri. Boleh bilang butuh space — tapi akui juga kebutuhan emosional pasangan. Keseimbangan itu kunci."
+      "desc": "Kamu punya gaya kelekatan menghindar. Kamu menghargai kemandirian dan kebebasan. Terlalu dekat bikin kamu nggak nyaman, tapi perasaan mendalam ada di balik eksterior yang dingin itu. Kamu memproses emosi paling baik dengan caramu sendiri.",
+      "traits": ["Kemandirian kuat", "Emosi yang dijaga", "Butuh ruang", "Mandiri"],
+      "idealPartner": "Pasangan Aman yang memberi ruang tanpa tekanan. Seseorang yang hangat tapi sabar bisa pelan-pelan menurunkan tembokmu.",
+      "advice": "Menjadi rentan bukan berarti lemah — itu jembatan menuju koneksi yang lebih dalam. Coba buka diri sedikit demi sedikit. Akui juga kebutuhan emosional pasanganmu."
     },
     "fearful": {
-      "name": "Takut",
+      "name": "Takut-Menghindar",
       "emoji": "🌪️",
-      "desc": "Kamu punya gaya kelekatan takut (disorganized). Kamu mendambakan keintiman tapi sekaligus takut. Ingin mendekat tapi mundur untuk melindungi diri dari sakit hati. Konflik batin ini bisa bikin hubunganmu rumit dan emosional naik-turun.",
-      "traits": ["Ambigu soal keintiman", "Emosi naik-turun", "Terpengaruh luka masa lalu", "Insting perlindungan diri kuat"],
-      "idealPartner": "Pasangan tipe Aman yang sabar — yang memahami pola tarik-mundurmu dan tetap kokoh. Mengalami hubungan yang aman, meski butuh waktu, sangat penting untuk pertumbuhanmu.",
-      "advice": "Perasaan campur adukmu itu mekanisme pertahanan alami, tapi nggak semua hubungan berakhir menyakitkan. Bangun kepercayaan pelan-pelan dari hal kecil. Bantuan profesional juga pilihan bagus. Kamu layak dicintai, tanpa ragu."
+      "desc": "Kamu punya gaya kelekatan takut-menghindar. Kamu mendambakan keintiman tapi sekaligus takut. Kamu ingin mendekat tapi mundur untuk melindungi diri dari rasa sakit. Tarik-ulur ini membuat hubungan terasa seperti roller coaster emosional.",
+      "traits": ["Mendambakan & takut kedekatan", "Emosi naik turun", "Pengaruh luka masa lalu", "Insting perlindungan diri"],
+      "idealPartner": "Pasangan Aman yang sabar dan tetap kokoh melewati tarik-ulurmu. Merasakan hubungan yang aman dan konsisten — meski pelan-pelan — bisa mengubah segalanya.",
+      "advice": "Sinyal campuranmu datang dari perlindungan diri, bukan kebingungan. Nggak semua hubungan berakhir menyakitkan. Bangun kepercayaan dengan langkah kecil. Kamu layak mendapatkan cinta yang kamu takutkan."
     }
   },
   "result": {
-    "attachmentLevel": "Level Kelekatan",
-    "secondaryType": "Tipe Sekunder",
-    "retake": "Tes Ulang",
+    "yourStyle": "Gaya Kelekatanmu",
+    "chatAnalysis": "Analisis Pola Chat",
+    "attachmentLevel": "Spektrum Kelekatan",
+    "secondaryType": "Gaya Sekunder",
     "keyTraits": "Ciri Utama",
     "idealPartner": "Pasangan Ideal",
-    "advice": "Saran Hubungan"
+    "advice": "Saran Cinta",
+    "retake": "Chat Lagi 💬"
   },
   "share": {
-    "twitter": "Temukan gaya kelekatanmu!",
-    "copyUrl": "Salin link",
+    "twitter": "Temukan gaya kelekatanmu lewat percakapan chat!",
+    "shareX": "Bagikan di X",
+    "copyUrl": "Salin Link",
     "copied": "Link tersalin!"
-  },
-  "nav": {
-    "back": "Kembali"
   },
   "a11y": {
     "skip": "Langsung ke konten"

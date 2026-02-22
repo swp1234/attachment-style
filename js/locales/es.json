@@ -1,103 +1,125 @@
 {
   "meta": {
-    "title": "Test de Estilo de Apego | ¿Cuál es tu tipo?",
-    "description": "Descubre tu estilo de apego con 10 escenarios de relación. ¿Eres seguro, ansioso, evitativo o temeroso?"
+    "title": "Test de Estilo de Apego | Simulador de Chat",
+    "description": "Descubre tu estilo de apego a través de conversaciones de texto realistas. ¿Cómo respondes a los mensajes de tu pareja?"
   },
   "app": {
-    "title": "Test de Estilo de Apego",
-    "subtitle": "Descubre tu estilo de apego a través de 10 escenarios de pareja",
-    "warning": "Este test es solo para entretenimiento y no sustituye una evaluación psicológica profesional.",
-    "start": "Empezar Test"
+    "title": "Estilo de Apego",
+    "subtitle": "¿Cómo le escribes realmente a tu pareja?",
+    "description": "Tus hábitos al escribir revelan tu estilo de apego. Chatea en 10 escenarios realistas para descubrir el tuyo.",
+    "badge": "Simulador de Chat",
+    "info1": "10 Chats",
+    "info2": "~3 Min",
+    "info3": "4 Estilos",
+    "disclaimer": "Solo para entretenimiento. No es un diagnóstico clínico.",
+    "start": "Empezar a Chatear 💬"
   },
-  "questions": {
-    "q1": {
-      "text": "Tu pareja lleva 3 horas sin contestar. ¿Qué haces?",
+  "chat": {
+    "partner": "Pareja",
+    "typing": "escribiendo...",
+    "online": "en línea",
+    "scenario": "Chat",
+    "tapToReply": "Elige tu respuesta..."
+  },
+  "scenarios": {
+    "s1": {
+      "context": "3 horas desde tu último mensaje",
+      "partnerMsg": "Oye, te escribí hace 3 horas... ¿está todo bien? 😕",
       "options": {
-        "a": "Seguro está ocupado/a. Sigo con lo mío.",
-        "b": "Reviso el móvil sin parar preguntándome si me está ignorando.",
-        "c": "La verdad, me da igual. No me gusta depender de los mensajes.",
-        "d": "Me molesta pero no quiero escribir primero para no parecer desesperado/a."
+        "a": "¡Perdón! Estuve súper ocupado/a en el trabajo. ¿Qué pasa? 😊",
+        "b": "¡¡Ay perdón!! No quise ignorarte 😭",
+        "c": "Sí, lo vi. Estaba en mis cosas.",
+        "d": "Perdón... quería contestar pero no sabía qué decir"
       }
     },
-    "q2": {
-      "text": "Tu pareja dice 'Tenemos que hablar'. ¿Tu primera reacción?",
+    "s2": {
+      "context": "Martes por la noche",
+      "partnerMsg": "Oye... tenemos que hablar de algo esta noche.",
       "options": {
-        "a": "Se me cae el alma al suelo — ¿me va a dejar?",
-        "b": "Me preparo para una conversación abierta y tranquila.",
-        "c": "Preferiría evitarlo pero bueno, toca escuchar.",
-        "d": "Me pongo a la defensiva y me invade la ansiedad a la vez."
+        "a": "Claro, ¿qué tienes en mente? Te escucho 😊",
+        "b": "Ay no, ¿está todo bien?? Me estás asustando 😰",
+        "c": "¿Puedes decirme ya? No me gusta esperar.",
+        "d": "...está bien (lo lee 5 veces intentando descifrar el tono)"
       }
     },
-    "q3": {
-      "text": "Un amigo cercano empieza a coquetear con tu pareja. ¿Cómo reaccionas?",
+    "s3": {
+      "context": "Mensaje random por la tarde",
+      "partnerMsg": "Estaba pensando en ti y quería decirte que valoro mucho tenerte en mi vida 💕",
       "options": {
-        "a": "Seguro es mejor que yo… ya sabía que no soy suficiente.",
-        "b": "Lo que tenga que ser, será. No puedo controlar eso.",
-        "c": "Confío en mi pareja y hablo con sinceridad si hace falta.",
-        "d": "Me muero de celos pero me callo para no parecer posesivo/a."
+        "a": "Eso significa mucho para mí 🥰 ¡Yo siento lo mismo!",
+        "b": "¿¿En serio?? ¿De verdad lo dices? 🥺 ¿Lo prometes?",
+        "c": "Jaja gracias 👍",
+        "d": "Qué lindo, gracias... (escribe y borra 3 veces antes)"
       }
     },
-    "q4": {
-      "text": "Tu pareja te sorprende con un regalo. ¿Tu reacción?",
+    "s4": {
+      "context": "Planes del fin de semana",
+      "partnerMsg": "Mis amigos hacen una reunión el sábado. ¿Quieres venir? 🎉",
       "options": {
-        "a": "Me alegro y le doy las gracias con cariño.",
-        "b": "Me emociono tanto que casi lloro, y siento que tengo que devolver el gesto.",
-        "c": "Es un poco incómodo. No hacía falta.",
-        "d": "Me alegra pero me pregunto si hay alguna intención oculta."
+        "a": "¡Suena divertido! ¿A qué hora llego?",
+        "b": "¿Quién más va? ¿Va a estar tu ex? 👀",
+        "c": "Ya te digo. Puede que tenga otros planes.",
+        "d": "Quiero ir pero... no se me dan bien los grupos. ¿Podemos irnos temprano?"
       }
     },
-    "q5": {
-      "text": "Después de una pelea fuerte con tu pareja, ¿cuál es tu patrón?",
+    "s5": {
+      "context": "La mañana después de una pelea",
+      "partnerMsg": "Creo que ambos dijimos cosas que no queríamos decir ayer...",
       "options": {
-        "a": "Corto la comunicación y quiero estar solo/a, pero me aterroriza que se vaya.",
-        "b": "Necesito distancia para procesar mis emociones a solas.",
-        "c": "Escribo sin parar para arreglarlo cuanto antes.",
-        "d": "Espero a que ambos nos calmemos y luego hablamos con calma."
+        "a": "Tienes razón. ¿Podemos sentarnos y hablarlo con calma?",
+        "b": "¿Sigues enojado/a? Estuve dándole vueltas toda la noche 😔",
+        "c": "Mejor pasemos la página. Darle vueltas no ayuda.",
+        "d": "Cada pelea me hace sentir que se acaba... no puedo con esto"
       }
     },
-    "q6": {
-      "text": "Acabas de empezar a salir con alguien. ¿Cómo eres al principio?",
+    "s6": {
+      "context": "Mensaje por la noche",
+      "partnerMsg": "Necesito un rato a solas esta noche. No pasa nada, solo necesito recargar energías 🔋",
       "options": {
-        "a": "Busco constantemente señales de cuánto le intereso.",
-        "b": "Me enamoro rápido pero me aterra que me abandonen.",
-        "c": "Voy conociéndole poco a poco, a mi ritmo.",
-        "d": "Si la cosa se pone muy íntima, me echo para atrás."
+        "a": "¡Claro! Tómate todo el tiempo que necesites. Aquí estaré 😊",
+        "b": "¿Hice algo mal? ¿Seguro/a que no estás molesto/a?",
+        "c": "Dale, yo iba a sugerir lo mismo.",
+        "d": "Está bien... (pero ¿y si se está alejando?)"
       }
     },
-    "q7": {
-      "text": "Tu pareja dice que necesita tiempo a solas. ¿Qué piensas?",
+    "s7": {
+      "context": "Mensaje tarde por la noche",
+      "partnerMsg": "Tuve el peor día... ¿puedo desahogarme contigo un rato? 😞",
       "options": {
-        "a": "¡Genial! Yo también valoro mi tiempo personal.",
-        "b": "Mejor aún — yo también necesito respirar.",
-        "c": "¿Se habrá cansado de mí?",
-        "d": "Por un lado me alivia, pero por otro me preocupa que me esté alejando."
+        "a": "Siempre. Cuéntame todo, aquí estoy 💛",
+        "b": "¡¡Claro!! ¿¿Quieres que vaya ahora mismo?? ¡Cancelo todo!",
+        "c": "Claro, pero ¿puedes ser breve? Yo también tengo cosas.",
+        "d": "Sí... quiero ayudar pero no sé si diré lo correcto"
       }
     },
-    "q8": {
-      "text": "Tu pareja pasa por un mal momento y busca tu apoyo emocional. Tú...",
+    "s8": {
+      "context": "Conversación profunda",
+      "partnerMsg": "Pregunta random... ¿dónde nos ves en un año? 🤔",
       "options": {
-        "a": "Le escucho y le consuelo con gusto.",
-        "b": "Quiero ayudar pero siento que el peso emocional me agobia.",
-        "c": "Me pone ansioso/a pero me alegra que me necesite.",
-        "d": "No sé muy bien cómo reaccionar y me siento incómodo/a."
+        "a": "Creciendo juntos, donde la vida nos lleve. Lo resolveremos 😊",
+        "b": "Pienso en nuestro futuro TODO el tiempo. De verdad espero que lo logremos 🥺",
+        "c": "¿Un año? Eso está lejos. Disfrutemos el presente.",
+        "d": "Quiero decir algo esperanzador pero... me da miedo gafarlo"
       }
     },
-    "q9": {
-      "text": "Encuentras el perfil del ex de tu pareja en redes. ¿Tu reacción?",
+    "s9": {
+      "context": "Momento de redes sociales",
+      "partnerMsg": "Vi que le diste like a las fotos de tu ex en Instagram... 👀",
       "options": {
-        "a": "Seguro soy menos atractivo/a que esa persona.",
-        "b": "Me meto a fondo en su perfil y no puedo evitar compararme.",
-        "c": "El pasado es el pasado. No me importa.",
-        "d": "Si me da curiosidad, le pregunto directamente a mi pareja."
+        "a": "¿Eso? Solo fue casual. Sabes que eres la única persona para mí 💛",
+        "b": "¡¡No fue nada, lo juro!! Ahora mismo dejo de seguirle 😫",
+        "c": "Son solo redes sociales. No le des importancia.",
+        "d": "Tienes razón, fue desconsiderado... ¿estás enojado/a conmigo? 😟"
       }
     },
-    "q10": {
-      "text": "¿Cómo describirías tu relación ideal en una frase?",
+    "s10": {
+      "context": "Hora de dormir",
+      "partnerMsg": "¡Buenas noches! Dulces sueños 🌙💕 ¡Muero por verte mañana!",
       "options": {
-        "a": "Respetar el espacio del otro y vivir tranquilos — demasiada cercanía agobia.",
-        "b": "Que me reafirmen constantemente y sentirme amado/a en cada momento.",
-        "c": "Confiar profundamente y respetar la vida individual de cada uno.",
-        "d": "Querer amor pero no poder abrirme del todo por miedo a sufrir."
+        "a": "¡Buenas noches! 💛 ¡Que llegue ya mañana!",
+        "b": "¡¡Buenas noches!! ¡¡Escríbeme EN CUANTO te despiertes, ¿sí??!! 🥰🥰",
+        "c": "Buenas noches 👋",
+        "d": "Buenas noches... (desearía poder decir cuánto significa esta persona)"
       }
     }
   },
@@ -105,53 +127,53 @@
     "secure": {
       "name": "Seguro",
       "emoji": "🛡️",
-      "desc": "Tienes un estilo de apego seguro. Te sientes cómodo/a en las relaciones, confías en tu pareja de forma natural y valoras tanto la unión como el espacio personal. Ante los conflictos, apuestas por la comunicación honesta.",
-      "traits": ["Límites saludables", "Expresión emocional sincera", "Resolución de conflictos por diálogo", "Buena autoestima"],
-      "idealPartner": "Te llevas bien con todos los tipos, pero con otro Seguro se crea la dinámica más sana. También puedes aportar estabilidad a parejas Ansiosas o Evitativas.",
-      "advice": "¡Ya tienes grandes habilidades relacionales! Solo ten cuidado de no cargar con la inseguridad de tu pareja como si fuera culpa tuya. Tu estabilidad es una fortaleza, pero no olvides expresar también tus propias necesidades."
+      "desc": "Tienes un estilo de apego seguro. Te sientes cómodo/a con la cercanía emocional y te comunicas con honestidad. Confías en tu pareja mientras mantienes límites saludables. Cuando surge un conflicto, lo abordas directamente con cuidado.",
+      "traits": ["Límites saludables", "Comunicación honesta", "Estabilidad emocional", "Confianza natural"],
+      "idealPartner": "Conectas bien con todos los estilos, pero otra pareja Segura crea la dinámica más sana. También puedes aportar estabilidad a parejas Ansiosas o Evitativas.",
+      "advice": "¡Tus instintos en las relaciones son sólidos! Solo recuerda expresar tus propias necesidades también — ser 'el estable' no significa reprimir tus emociones."
     },
     "anxious": {
       "name": "Ansioso",
       "emoji": "💓",
-      "desc": "Tienes un estilo de apego ansioso. Amas profundamente y eres muy entregado/a, pero cargas con un miedo constante al abandono. Eres hipersensible a los cambios de humor de tu pareja y necesitas confirmación y cercanía.",
-      "traits": ["Gran empatía y sensibilidad", "Entrega total en las relaciones", "Tendencia a la ansiedad de separación", "Hipersensibilidad a las reacciones del otro"],
-      "idealPartner": "Una pareja Segura es ideal — alguien que ofrezca tranquilidad constante y comportamiento estable. Cuidado con los Evitativos: la dinámica de empujar-tirar puede intensificar tu ansiedad.",
-      "advice": "El tiempo de respuesta de tu pareja no mide cuánto te quiere. Cuando la ansiedad suba, para un momento antes de reaccionar impulsivamente. Aprender a quererte primero hará que todas tus relaciones sean más sanas."
+      "desc": "Tienes un estilo de apego ansioso. Amas profundamente y eres increíblemente devoto/a, pero cargas con un miedo constante al abandono. Eres hipersensible a los cambios de humor de tu pareja y necesitas reafirmación para sentirte seguro/a.",
+      "traits": ["Empatía profunda", "Devoción intensa", "Miedo al abandono", "Necesidad de reafirmación"],
+      "idealPartner": "Una pareja Segura es tu match ideal — alguien que te dé reafirmación constante y amor estable. Ten cuidado con los tipos Evitativos, ya que el tira y afloja puede intensificar la ansiedad.",
+      "advice": "Una respuesta lenta ≠ amor que se apaga. Cuando la ansiedad suba, respira antes de reaccionar. Construir amor propio es la base para conexiones más sanas."
     },
     "avoidant": {
       "name": "Evitativo",
       "emoji": "🏔️",
-      "desc": "Tienes un estilo de apego evitativo. Valoras la independencia y la libertad, y demasiada cercanía te incomoda. Puede que te cueste expresar emociones abiertamente, pero debajo de la superficie hay sentimientos profundos. Necesitas tu propio tiempo y espacio.",
-      "traits": ["Gran independencia", "Dificultad para expresar emociones", "Alta valoración del espacio personal", "Mentalidad autosuficiente"],
-      "idealPartner": "Una pareja Segura que te dé espacio sin ser pegajosa. Alguien cálido pero no agobiante puede ayudarte a bajar las defensas. Con los Ansiosos puede generarse un ciclo de persecución-huida.",
-      "advice": "Acercarte a alguien no te hace débil. Intenta abrirte poco a poco. Está bien decirle a tu pareja que necesitas espacio — pero también reconoce sus necesidades emocionales. El equilibrio lo es todo."
+      "desc": "Tienes un estilo de apego evitativo. Valoras la independencia y la libertad. Demasiada cercanía te incomoda, pero debajo de esa apariencia fría existen sentimientos profundos. Procesas tus emociones mejor a tu propio ritmo.",
+      "traits": ["Gran independencia", "Emociones reservadas", "Necesidad de espacio", "Autosuficiencia"],
+      "idealPartner": "Una pareja Segura que te dé espacio sin presión. Alguien cálido pero paciente puede ayudarte gradualmente a bajar la guardia.",
+      "advice": "La vulnerabilidad no es debilidad — es el puente hacia una conexión más profunda. Intenta abrirte en pequeñas dosis. Reconoce también las necesidades emocionales de tu pareja."
     },
     "fearful": {
-      "name": "Temeroso",
+      "name": "Ansioso-Evitativo",
       "emoji": "🌪️",
-      "desc": "Tienes un estilo de apego temeroso (desorganizado). Deseas la intimidad pero al mismo tiempo la temes. Quieres acercarte pero retrocedes para protegerte del dolor. Este conflicto interno puede hacer que tus relaciones sean complicadas y emocionalmente turbulentas.",
-      "traits": ["Ambivalencia ante la intimidad", "Altibajos emocionales", "Influencia de heridas pasadas", "Fuerte instinto de autoprotección"],
-      "idealPartner": "Una pareja Segura y paciente es lo ideal — alguien que entienda tu vaivén y se mantenga firme. Experimentar una relación segura, aunque lleve tiempo, es clave para tu crecimiento.",
-      "advice": "Tus sentimientos contradictorios son un mecanismo de defensa natural, pero no todas las relaciones terminan en dolor. Construye confianza poco a poco, empezando por lo pequeño. El apoyo profesional también es una gran opción. Mereces amor, sin duda."
+      "desc": "Tienes un estilo de apego ansioso-evitativo. Anhelas la intimidad pero al mismo tiempo la temes. Quieres acercarte pero te alejas para protegerte del dolor. Este tira y afloja hace que las relaciones se sientan como una montaña rusa emocional.",
+      "traits": ["Anhela y teme la cercanía", "Altibajos emocionales", "Influencia de heridas pasadas", "Instinto de autoprotección"],
+      "idealPartner": "Una pareja Segura y paciente que se mantenga firme durante tu tira y afloja. Experimentar una relación segura y constante — aunque sea poco a poco — es transformador.",
+      "advice": "Tus señales mixtas vienen de la autoprotección, no de la confusión. No toda relación termina en dolor. Construye confianza paso a paso. Mereces el amor que te da miedo."
     }
   },
   "result": {
-    "attachmentLevel": "Nivel de Apego",
-    "secondaryType": "Tipo Secundario",
-    "retake": "Repetir Test",
+    "yourStyle": "Tu Estilo de Apego",
+    "chatAnalysis": "Análisis de Patrones de Chat",
+    "attachmentLevel": "Espectro de Apego",
+    "secondaryType": "Estilo Secundario",
     "keyTraits": "Rasgos Clave",
     "idealPartner": "Pareja Ideal",
-    "advice": "Consejo Sentimental"
+    "advice": "Consejo Amoroso",
+    "retake": "Chatear de Nuevo 💬"
   },
   "share": {
-    "twitter": "¡Descubre tu estilo de apego!",
-    "copyUrl": "Copiar enlace",
+    "twitter": "¡Descubre tu estilo de apego a través de conversaciones de texto!",
+    "shareX": "Compartir en X",
+    "copyUrl": "Copiar Enlace",
     "copied": "¡Enlace copiado!"
   },
-  "nav": {
-    "back": "Atrás"
-  },
   "a11y": {
-    "skip": "Ir al contenido"
+    "skip": "Saltar al contenido"
   }
 }

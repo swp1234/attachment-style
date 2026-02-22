@@ -1,103 +1,125 @@
 {
   "meta": {
-    "title": "Bindungsstil-Test | Welcher Liebestyp bist du?",
-    "description": "Finde deinen Bindungsstil mit 10 Beziehungsszenarien heraus. Sicher, ängstlich, vermeidend oder ängstlich-vermeidend?"
+    "title": "Bindungstyp-Test | Chat-Simulator",
+    "description": "Entdecke deinen Bindungsstil durch realistische Textnachrichten. Wie antwortest du auf die Nachrichten deines Partners?"
   },
   "app": {
-    "title": "Bindungsstil-Test",
-    "subtitle": "Entdecke deinen Bindungsstil anhand von 10 Beziehungsszenarien",
-    "warning": "Dieser Test dient nur der Unterhaltung und ersetzt keine professionelle psychologische Beratung.",
-    "start": "Test starten"
+    "title": "Bindungsstil",
+    "subtitle": "Wie schreibst du wirklich mit deinem Partner?",
+    "description": "Dein Schreibverhalten verrät deinen Bindungsstil. Chatte durch 10 realistische Szenarien und finde deinen heraus.",
+    "badge": "Chat-Simulator",
+    "info1": "10 Chats",
+    "info2": "~3 Min",
+    "info3": "4 Stile",
+    "disclaimer": "Nur zur Unterhaltung. Keine klinische Diagnose.",
+    "start": "Chat starten 💬"
   },
-  "questions": {
-    "q1": {
-      "text": "Dein Partner hat seit 3 Stunden nicht geantwortet. Was machst du?",
+  "chat": {
+    "partner": "Partner",
+    "typing": "tippt...",
+    "online": "online",
+    "scenario": "Chat",
+    "tapToReply": "Wähle deine Antwort..."
+  },
+  "scenarios": {
+    "s1": {
+      "context": "3 Stunden seit deiner letzten Nachricht",
+      "partnerMsg": "Hey, ich hab dir vor 3 Stunden geschrieben... ist alles okay? 😕",
       "options": {
-        "a": "Wahrscheinlich beschäftigt. Ich mach einfach mein Ding.",
-        "b": "Ich checke ständig mein Handy — ignoriert er/sie mich etwa?",
-        "c": "Ist mir ehrlich gesagt egal. Auf Nachrichten warten ist nicht mein Ding.",
-        "d": "Nervt mich, aber ich will nicht zuerst schreiben — soll nicht bedürftig wirken."
+        "a": "Sorry! War mega beschäftigt bei der Arbeit. Was gibt's? 😊",
+        "b": "OMG es tut mir sooo leid!! Ich wollte dich nicht ignorieren 😭",
+        "c": "Ja, hab's gesehen. War einfach beschäftigt.",
+        "d": "Tut mir leid... ich wollte die ganze Zeit antworten, wusste aber nicht was"
       }
     },
-    "q2": {
-      "text": "Dein Partner sagt: 'Wir müssen reden.' Deine erste Reaktion?",
+    "s2": {
+      "context": "Dienstagabend",
+      "partnerMsg": "Hey... wir müssen heute Abend über was reden.",
       "options": {
-        "a": "Mein Herz rutscht in die Hose — will er/sie Schluss machen?",
-        "b": "Ich bin bereit für ein offenes Gespräch.",
-        "c": "Am liebsten würde ich davonlaufen, aber gut, ich höre zu.",
-        "d": "Ich werde gleichzeitig defensiv und ängstlich."
+        "a": "Klar, was hast du auf dem Herzen? Ich bin ganz Ohr 😊",
+        "b": "Oh nein, ist alles okay?? Du machst mir Angst 😰",
+        "c": "Kannst du's mir einfach jetzt sagen? Ich mag nicht warten.",
+        "d": "...okay (liest es 5 Mal und versucht den Tonfall zu deuten)"
       }
     },
-    "q3": {
-      "text": "Ein enger Freund flirtet mit deinem Partner. Wie reagierst du?",
+    "s3": {
+      "context": "Zufällige Nachricht am Nachmittag",
+      "partnerMsg": "Ich hab gerade an dich gedacht und wollte sagen, wie froh ich bin, dass es dich gibt 💕",
       "options": {
-        "a": "Der/die ist bestimmt besser als ich… wusste ich doch, dass ich nicht genug bin.",
-        "b": "Was passiert, passiert. Kann ich eh nicht ändern.",
-        "c": "Ich vertraue meinem Partner und rede bei Bedarf ehrlich darüber.",
-        "d": "Ich bin eifersüchtig, sage aber nichts — will nicht besitzergreifend wirken."
+        "a": "Das bedeutet mir so viel 🥰 Mir geht es genauso mit dir!",
+        "b": "Echt?? Meinst du das wirklich? 🥺 Versprochen?",
+        "c": "Haha danke 👍",
+        "d": "Das ist echt süß, danke... (tippt und löscht 3 Mal vorher)"
       }
     },
-    "q4": {
-      "text": "Dein Partner überrascht dich mit einem Geschenk. Deine Reaktion?",
+    "s4": {
+      "context": "Wochenendpläne",
+      "partnerMsg": "Meine Freunde machen am Samstag was. Kommst du mit? 🎉",
       "options": {
-        "a": "Ich freue mich und bedanke mich herzlich.",
-        "b": "Ich bin so gerührt, dass ich fast weine, und fühle Druck, etwas zurückzugeben.",
-        "c": "Etwas unangenehm. Das wäre nicht nötig gewesen.",
-        "d": "Ich freue mich, frage mich aber, ob ein Hintergedanke dahintersteckt."
+        "a": "Klingt super! Wann soll ich da sein?",
+        "b": "Wer kommt denn noch? Kommt dein/e Ex auch? 👀",
+        "c": "Ich sag dir Bescheid. Hab vielleicht schon was anderes vor.",
+        "d": "Ich will schon, aber... ich bin nicht so gut mit Gruppen. Können wir früh gehen?"
       }
     },
-    "q5": {
-      "text": "Nach einem großen Streit — was ist dein typisches Muster?",
+    "s5": {
+      "context": "Der Morgen nach einem Streit",
+      "partnerMsg": "Ich glaube, wir haben gestern beide Dinge gesagt, die wir nicht so gemeint haben...",
       "options": {
-        "a": "Ich breche den Kontakt ab und will allein sein, habe aber Angst, dass er/sie geht.",
-        "b": "Ich brauche Abstand, um meine Gefühle allein zu verarbeiten.",
-        "c": "Ich schreibe sofort nonstop, um alles schnell wieder gut zu machen.",
-        "d": "Ich warte, bis sich beide beruhigt haben, und rede dann in Ruhe."
+        "a": "Da hast du recht. Können wir uns in Ruhe zusammensetzen und drüber reden?",
+        "b": "Bist du noch sauer? Ich hab die ganze Nacht darüber nachgedacht 😔",
+        "c": "Lass uns einfach weitermachen. Bringt nichts, dem hinterherzuhängen.",
+        "d": "Jeder Streit gibt mir das Gefühl, dass es vorbei ist... ich halt das nicht aus"
       }
     },
-    "q6": {
-      "text": "Du triffst dich gerade mit jemandem Neuem. Wie bist du am Anfang?",
+    "s6": {
+      "context": "Abendlicher Check-in",
+      "partnerMsg": "Ich brauch heute Abend etwas Zeit für mich. Ist nichts, muss nur auftanken 🔋",
       "options": {
-        "a": "Ich suche ständig nach Zeichen, wie interessiert die Person ist.",
-        "b": "Ich verliebe mich schnell, habe aber Angst, verlassen zu werden.",
-        "c": "Ich lerne die Person in meinem eigenen Tempo kennen.",
-        "d": "Wenn es zu nah wird, ziehe ich mich zurück."
+        "a": "Natürlich! Nimm dir alle Zeit, die du brauchst. Ich bin da 😊",
+        "b": "Hab ich was falsch gemacht? Bist du sicher, dass du nicht sauer bist?",
+        "c": "Klar, wollte ich eh auch gerade vorschlagen.",
+        "d": "Okay... (aber was, wenn er/sie sich langsam zurückzieht?)"
       }
     },
-    "q7": {
-      "text": "Dein Partner sagt, er/sie braucht Zeit für sich. Was denkst du?",
+    "s7": {
+      "context": "Späte Nachricht",
+      "partnerMsg": "Ich hatte den schlimmsten Tag... kann ich dir kurz mein Herz ausschütten? 😞",
       "options": {
-        "a": "Super! Ich schätze meine eigene Zeit auch.",
-        "b": "Umso besser — ich kann auch mal durchatmen.",
-        "c": "Hat er/sie genug von mir?",
-        "d": "Einerseits erleichtert, andererseits besorgt, dass er/sie mich abschiebt."
+        "a": "Immer. Erzähl mir alles, ich bin für dich da 💛",
+        "b": "Natürlich!! Soll ich sofort rüberkommen?? Ich sag alles ab!",
+        "c": "Klar, aber fass dich kurz, ja? Hab auch Zeug am Laufen.",
+        "d": "Ja... ich will helfen, aber ich bin mir nicht sicher, ob ich das Richtige sage"
       }
     },
-    "q8": {
-      "text": "Dein Partner hat eine schwere Zeit und sucht emotionalen Halt bei dir. Du…",
+    "s8": {
+      "context": "Tiefgründiges Gespräch",
+      "partnerMsg": "Zufällige Frage, aber... wo siehst du uns in einem Jahr? 🤔",
       "options": {
-        "a": "Höre gerne zu und tröste.",
-        "b": "Will helfen, aber die emotionale Last fühlt sich schwer an.",
-        "c": "Bin etwas ängstlich, aber froh, gebraucht zu werden.",
-        "d": "Weiß nicht so recht, wie ich reagieren soll, und fühle mich unwohl."
+        "a": "Gemeinsam wachsen, egal wohin uns das Leben führt. Wir schaffen das 😊",
+        "b": "Ich denke STÄNDIG an unsere Zukunft. Ich hoffe so sehr, dass wir es schaffen 🥺",
+        "c": "Ein Jahr? Das ist weit weg. Lass uns einfach das Jetzt genießen.",
+        "d": "Ich will was Hoffnungsvolles sagen, aber... ich hab Angst, es zu verschreien"
       }
     },
-    "q9": {
-      "text": "Du findest den/die Ex deines Partners in den sozialen Medien. Deine Reaktion?",
+    "s9": {
+      "context": "Social-Media-Moment",
+      "partnerMsg": "Mir ist aufgefallen, dass du Fotos von deinem/r Ex auf Instagram geliked hast... 👀",
       "options": {
-        "a": "Ich bin wahrscheinlich nicht so attraktiv wie er/sie.",
-        "b": "Ich durchforste das Profil und vergleiche mich ununterbrochen.",
-        "c": "Die Vergangenheit ist die Vergangenheit. Stört mich nicht.",
-        "d": "Wenn es mich interessiert, frage ich meinen Partner direkt."
+        "a": "Ach das? Nur beiläufig. Du weißt, du bist die/der Einzige für mich 💛",
+        "b": "Das war nichts, ich schwör!! Ich entfolge sofort 😫",
+        "c": "Es ist nur Social Media. Lies da nicht zu viel rein.",
+        "d": "Du hast recht, das war gedankenlos... bist du sauer auf mich? 😟"
       }
     },
-    "q10": {
-      "text": "Wie würdest du deine ideale Beziehung in einem Satz beschreiben?",
+    "s10": {
+      "context": "Schlafenszeit",
+      "partnerMsg": "Gute Nacht! Träum süß 🌙💕 Kann's kaum erwarten, dich morgen zu sehen!",
       "options": {
-        "a": "Gegenseitigen Freiraum respektieren — zu viel Nähe erdrückt mich.",
-        "b": "Ständig bestätigt und in jedem Moment geliebt fühlen.",
-        "c": "Tiefes Vertrauen bei gleichzeitigem Respekt für das eigene Leben.",
-        "d": "Liebe wollen, aber sich aus Angst vor Verletzung nicht ganz öffnen können."
+        "a": "Gute Nacht! 💛 Morgen kann gar nicht schnell genug kommen!",
+        "b": "Gute Nacht!! Schreib mir SOFORT wenn du aufwachst, ja?? 🥰🥰",
+        "c": "Nacht 👋",
+        "d": "Nacht... (wünscht sich, sagen zu können, wie viel diese Person bedeutet)"
       }
     }
   },
@@ -105,51 +127,51 @@
     "secure": {
       "name": "Sicher",
       "emoji": "🛡️",
-      "desc": "Du hast einen sicheren Bindungsstil. In Beziehungen fühlst du dich wohl, vertraust deinem Partner ganz natürlich und schätzt sowohl Nähe als auch persönlichen Freiraum. Bei Konflikten setzt du auf ehrliche Kommunikation.",
-      "traits": ["Gesunde Grenzsetzung", "Ehrlicher Ausdruck von Gefühlen", "Konfliktlösung durch Dialog", "Starkes Selbstwertgefühl"],
-      "idealPartner": "Du kommst mit allen Typen gut zurecht, aber mit einem anderen Sicheren entsteht die gesündeste Dynamik. Du kannst auch Ängstlichen oder Vermeidenden Stabilität geben.",
-      "advice": "Du hast bereits tolle Beziehungsfähigkeiten! Pass nur auf, dass du die Unsicherheit deines Partners nicht als dein Versagen deutest. Deine Stabilität ist eine Stärke — vergiss aber nicht, auch deine eigenen Bedürfnisse auszudrücken."
+      "desc": "Du hast einen sicheren Bindungsstil. Du fühlst dich mit emotionaler Nähe wohl und kommunizierst ehrlich. Du vertraust deinem Partner und hältst dabei gesunde Grenzen ein. Bei Konflikten gehst du sie direkt und einfühlsam an.",
+      "traits": ["Gesunde Grenzen", "Ehrliche Kommunikation", "Emotionale Stabilität", "Natürliches Vertrauen"],
+      "idealPartner": "Du harmonierst mit allen Typen, aber ein weiterer sicherer Partner schafft die gesündeste Dynamik. Du kannst auch ängstlichen oder vermeidenden Partnern Stabilität geben.",
+      "advice": "Dein Beziehungsinstinkt ist stark! Denk nur daran, auch deine eigenen Bedürfnisse auszudrücken — der/die \"Stabile\" zu sein heißt nicht, eigene Gefühle zu unterdrücken."
     },
     "anxious": {
       "name": "Ängstlich",
       "emoji": "💓",
-      "desc": "Du hast einen ängstlichen Bindungsstil. Du liebst intensiv und bist unglaublich hingebungsvoll, trägst aber eine ständige Angst vor dem Verlassenwerden in dir. Du reagierst hochsensibel auf Stimmungsschwankungen deines Partners und brauchst ständige Bestätigung.",
-      "traits": ["Hohe Empathie und Sensibilität", "Tiefe Hingabe in Beziehungen", "Neigung zu Trennungsangst", "Überempfindlichkeit gegenüber Reaktionen des Partners"],
-      "idealPartner": "Ein sicherer Partner ist ideal — jemand, der konstante Beruhigung und stabiles Verhalten bietet. Bei Vermeidenden Vorsicht: Die Push-Pull-Dynamik kann deine Angst verstärken.",
-      "advice": "Die Antwortzeit deines Partners misst nicht seine Liebe. Wenn die Angst hochkommt, halte kurz inne, bevor du impulsiv reagierst. Lerne, dich selbst zuerst zu lieben — das macht alle Beziehungen gesünder."
+      "desc": "Du hast einen ängstlichen Bindungsstil. Du liebst tief und bist unglaublich hingabevoll, trägst aber eine ständige Angst vor dem Verlassenwerden in dir. Du reagierst sehr sensibel auf Stimmungsschwankungen deines Partners und sehnst dich nach Bestätigung.",
+      "traits": ["Tiefes Einfühlungsvermögen", "Intensive Hingabe", "Verlustangst", "Bedürfnis nach Bestätigung"],
+      "idealPartner": "Ein sicherer Partner ist dein ideales Match — jemand, der dir konstante Bestätigung und beständige Liebe gibt. Sei vorsichtig mit vermeidenden Typen, da das Hin und Her die Angst verstärken kann.",
+      "advice": "Eine späte Antwort ≠ schwindende Liebe. Wenn die Angst hochkommt, atme erstmal durch, bevor du reagierst. Selbstliebe aufzubauen ist die Basis für gesündere Beziehungen."
     },
     "avoidant": {
       "name": "Vermeidend",
       "emoji": "🏔️",
-      "desc": "Du hast einen vermeidenden Bindungsstil. Du schätzt Unabhängigkeit und Freiheit, und zu viel Nähe macht dich unwohl. Gefühle offen zu zeigen fällt dir vielleicht schwer, aber unter der Oberfläche stecken tiefe Emotionen. Du brauchst deine eigene Zeit und deinen Raum.",
-      "traits": ["Starke Unabhängigkeit", "Schwierigkeiten, Gefühle auszudrücken", "Hoher Wert auf persönlichen Freiraum", "Selbstgenügsame Einstellung"],
-      "idealPartner": "Ein sicherer Partner, der dir Raum gibt, ohne anhänglich zu sein. Jemand Warmherziges, aber nicht Erdrückendes kann langsam deine Mauern senken. Mit Ängstlichen kann ein Verfolgungs-Flucht-Zyklus entstehen.",
-      "advice": "Nähe zulassen heißt nicht, schwach zu sein. Versuche, dich Stück für Stück zu öffnen. Es ist okay, Freiraum zu brauchen — aber erkenne auch die emotionalen Bedürfnisse deines Partners an. Balance ist alles."
+      "desc": "Du hast einen vermeidenden Bindungsstil. Du schätzt Unabhängigkeit und Freiheit. Zu viel Nähe macht dich unwohl, aber unter der coolen Fassade existieren tiefe Gefühle. Du verarbeitest Emotionen am besten auf deine eigene Art.",
+      "traits": ["Starke Unabhängigkeit", "Zurückhaltende Gefühle", "Bedürfnis nach Freiraum", "Eigenständigkeit"],
+      "idealPartner": "Ein sicherer Partner, der dir Raum gibt ohne Druck auszuüben. Jemand Warmherziges aber Geduldiges kann nach und nach helfen, deine Mauern abzubauen.",
+      "advice": "Verletzlichkeit ist keine Schwäche — sie ist die Brücke zu tieferer Verbindung. Versuch dich in kleinen Schritten zu öffnen. Erkenne auch die emotionalen Bedürfnisse deines Partners an."
     },
     "fearful": {
-      "name": "Ängstlich-vermeidend",
+      "name": "Ängstlich-Vermeidend",
       "emoji": "🌪️",
-      "desc": "Du hast einen ängstlich-vermeidenden (desorganisierten) Bindungsstil. Du sehnst dich nach Nähe, fürchtest sie aber gleichzeitig. Du willst dich annähern, ziehst dich aber zurück, um dich vor Verletzung zu schützen. Dieser innere Konflikt kann Beziehungen kompliziert und emotional stürmisch machen.",
-      "traits": ["Ambivalenz gegenüber Nähe", "Emotionale Höhen und Tiefen", "Einfluss vergangener Verletzungen", "Starker Selbstschutzinstinkt"],
-      "idealPartner": "Ein geduldiger, sicherer Partner ist ideal — jemand, der dein Hin und Her versteht und standhaft bleibt. Eine sichere Beziehung zu erleben, auch wenn es Zeit braucht, ist entscheidend für dein Wachstum.",
-      "advice": "Deine widersprüchlichen Gefühle sind ein natürlicher Schutzmechanismus, aber nicht jede Beziehung endet mit Schmerz. Baue Vertrauen Schritt für Schritt auf. Professionelle Unterstützung ist ebenfalls eine gute Wahl. Du verdienst Liebe — ohne jeden Zweifel."
+      "desc": "Du hast einen ängstlich-vermeidenden Bindungsstil. Du sehnst dich nach Nähe, fürchtest sie aber gleichzeitig. Du willst dich annähern, ziehst dich aber zurück, um dich vor Schmerz zu schützen. Dieses Hin und Her lässt Beziehungen wie eine emotionale Achterbahn wirken.",
+      "traits": ["Sehnt & fürchtet Nähe", "Emotionale Höhen & Tiefen", "Einfluss vergangener Wunden", "Selbstschutz-Instinkt"],
+      "idealPartner": "Ein geduldiger, sicherer Partner, der in deinem Hin und Her standhaft bleibt. Eine sichere, beständige Beziehung zu erleben — auch langsam — kann transformierend sein.",
+      "advice": "Deine widersprüchlichen Signale kommen aus Selbstschutz, nicht aus Verwirrung. Nicht jede Beziehung endet mit Verletzung. Bau Vertrauen in kleinen Schritten auf. Du verdienst die Liebe, vor der du Angst hast."
     }
   },
   "result": {
-    "attachmentLevel": "Bindungslevel",
-    "secondaryType": "Sekundärer Typ",
-    "retake": "Nochmal testen",
-    "keyTraits": "Wichtigste Merkmale",
+    "yourStyle": "Dein Bindungsstil",
+    "chatAnalysis": "Chat-Muster-Analyse",
+    "attachmentLevel": "Bindungs-Spektrum",
+    "secondaryType": "Sekundärer Stil",
+    "keyTraits": "Hauptmerkmale",
     "idealPartner": "Idealer Partner",
-    "advice": "Beziehungsrat"
+    "advice": "Liebes-Tipp",
+    "retake": "Nochmal chatten 💬"
   },
   "share": {
-    "twitter": "Finde deinen Bindungsstil heraus!",
+    "twitter": "Entdecke deinen Bindungsstil durch Textnachrichten!",
+    "shareX": "Auf X teilen",
     "copyUrl": "Link kopieren",
     "copied": "Link kopiert!"
-  },
-  "nav": {
-    "back": "Zurück"
   },
   "a11y": {
     "skip": "Zum Inhalt springen"
