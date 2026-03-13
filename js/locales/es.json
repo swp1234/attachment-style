@@ -203,5 +203,19 @@
     "mbtiLove": "MBTI Amor",
     "emotionIceberg": "Iceberg emocional",
     "eqTest": "Test EQ"
+  },
+  "engage": {
+    "result1": "🛡️ Seguro -- Equilibrado y confiado",
+    "result2": "💓 Ansioso -- Devoto y sensible",
+    "result3": "🏔️ Evitativo -- Independiente y reservado",
+    "result4": "🌪️ Temeroso -- Complejo y profundo",
+    "socialProof": "2,400+ personas descubrieron su estilo de apego"
+  },
+  "about": {
+    "toggle": "Sobre el test de estilo de apego",
+    "heading1": "Cómo funciona el simulador de chat",
+    "text1": "Este test utiliza conversaciones de texto realistas en lugar de preguntas tradicionales. Chateas a través de 10 escenarios con un compañero virtual, y tus respuestas naturales revelan tu estilo de apego.",
+    "heading2": "Entendiendo la teoría del apego",
+    "text2": "La teoría del apego, desarrollada por John Bowlby y Mary Ainsworth, explica cómo las experiencias tempranas de vínculo moldean los patrones de relación adultos. Los cuatro estilos -- seguro, ansioso, evitativo y temeroso-evitativo -- influyen en la comunicación, el manejo de conflictos y la búsqueda de cercanía."
   }
 }

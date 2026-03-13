@@ -203,5 +203,19 @@
     "mbtiLove": "MBTI Love",
     "emotionIceberg": "Emotion Iceberg",
     "eqTest": "EQ Test"
+  },
+  "engage": {
+    "result1": "🛡️ Secure -- Balanced & Trusting",
+    "result2": "💓 Anxious -- Devoted & Sensitive",
+    "result3": "🏔️ Avoidant -- Independent & Guarded",
+    "result4": "🌪️ Fearful -- Complex & Deep",
+    "socialProof": "2,400+ people discovered their attachment style"
+  },
+  "about": {
+    "toggle": "About the Attachment Style Test",
+    "heading1": "How the Chat Simulator Works",
+    "text1": "This test uses realistic text message conversations instead of traditional questions. You chat through 10 scenarios with a virtual partner, and your natural response choices reveal your attachment style. The chat format captures authentic relationship patterns that standard questionnaires often miss.",
+    "heading2": "Understanding Attachment Theory",
+    "text2": "Attachment theory, developed by John Bowlby and Mary Ainsworth, explains how early bonding experiences shape adult relationship patterns. The four styles -- Secure, Anxious, Avoidant, and Fearful-Avoidant -- influence how you communicate, handle conflict, seek closeness, and respond to your partner's needs."
   }
 }

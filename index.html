@@ -74,6 +74,54 @@
 }
 </script>
 
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dopabrain.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tests", "item": "https://dopabrain.com/portal/" },
+        { "@type": "ListItem", "position": 3, "name": "Relationship Tests", "item": "https://dopabrain.com/portal/" },
+        { "@type": "ListItem", "position": 4, "name": "Attachment Style Test", "item": "https://dopabrain.com/attachment-style/" }
+    ]
+}
+</script>
+<!-- FAQPage -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is an attachment style test?",
+            "acceptedAnswer": { "@type": "Answer", "text": "An attachment style test identifies how you bond in relationships. Based on attachment theory by John Bowlby and Mary Ainsworth, it categorizes your style as Secure, Anxious, Avoidant, or Fearful-Avoidant by analyzing how you respond to realistic relationship scenarios." }
+        },
+        {
+            "@type": "Question",
+            "name": "What are the 4 attachment styles?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The four attachment styles are: Secure (comfortable with intimacy and independence), Anxious (craves closeness, fears abandonment), Avoidant (values independence, uncomfortable with closeness), and Fearful-Avoidant (wants intimacy but fears it). Each style shapes how you communicate, handle conflict, and express love." }
+        },
+        {
+            "@type": "Question",
+            "name": "How does the chat simulator format work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Instead of traditional multiple-choice questions, this test uses realistic text message conversations. You chat through 10 scenarios with a virtual partner, choosing how you would naturally respond. Your texting patterns reveal your attachment style more accurately than abstract questions." }
+        },
+        {
+            "@type": "Question",
+            "name": "Can your attachment style change over time?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes! Attachment styles are not fixed. Through self-awareness, therapy, healthy relationships, and personal growth, you can develop a more secure attachment style. Many people shift from insecure to secure attachment over their lifetime." }
+        },
+        {
+            "@type": "Question",
+            "name": "Is this attachment style test scientifically accurate?",
+            "acceptedAnswer": { "@type": "Answer", "text": "This test is designed for entertainment and self-reflection, drawing from established attachment theory concepts. While it provides meaningful insights into your relationship patterns, it is not a clinical diagnostic tool. For professional assessment, consult a licensed therapist." }
+        }
+    ]
+}
+</script>
+
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
@@ -134,8 +182,21 @@
         <span class="chip" data-i18n="app.info2">~3 Min</span>
         <span class="chip" data-i18n="app.info3">4 Styles</span>
       </div>
+      <!-- Result Preview Carousel -->
+      <div class="result-carousel" aria-live="polite">
+        <div class="carousel-track">
+          <div class="carousel-item" data-i18n="engage.result1">🛡️ Secure -- Balanced & Trusting</div>
+          <div class="carousel-item" data-i18n="engage.result2">💓 Anxious -- Devoted & Sensitive</div>
+          <div class="carousel-item" data-i18n="engage.result3">🏔️ Avoidant -- Independent & Guarded</div>
+          <div class="carousel-item" data-i18n="engage.result4">🌪️ Fearful -- Complex & Deep</div>
+        </div>
+      </div>
+
+      <!-- Social Proof Badge -->
+      <div class="social-proof-badge" data-i18n="engage.socialProof">2,400+ people discovered their attachment style</div>
+
       <p class="disclaimer" data-i18n="app.disclaimer">For entertainment only. Not a clinical diagnosis.</p>
-      <button id="start-btn" class="btn btn-primary" data-i18n="app.start">Start Chatting 💬</button>
+      <button id="start-btn" class="btn btn-primary btn-pulse" data-i18n="app.start">Discover My Style - Free 💬</button>
     </div>
   </section>
 
@@ -261,6 +322,19 @@
   </section>
 
 </main>
+
+<!-- About Section -->
+<section class="about-section collapsible-section" id="about-section">
+  <details>
+    <summary data-i18n="about.toggle">About the Attachment Style Test</summary>
+    <div class="about-content">
+      <h2 data-i18n="about.heading1">How the Chat Simulator Works</h2>
+      <p data-i18n="about.text1">This test uses realistic text message conversations instead of traditional questions. You chat through 10 scenarios with a virtual partner, and your natural response choices reveal your attachment style. The chat format captures authentic relationship patterns that standard questionnaires often miss.</p>
+      <h2 data-i18n="about.heading2">Understanding Attachment Theory</h2>
+      <p data-i18n="about.text2">Attachment theory, developed by John Bowlby and Mary Ainsworth, explains how early bonding experiences shape adult relationship patterns. The four styles -- Secure, Anxious, Avoidant, and Fearful-Avoidant -- influence how you communicate, handle conflict, seek closeness, and respond to your partner's needs.</p>
+    </div>
+  </details>
+</section>
 
 <!-- Scripts -->
 <script src="js/i18n.js"></script>

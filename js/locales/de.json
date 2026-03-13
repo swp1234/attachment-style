@@ -203,5 +203,19 @@
     "mbtiLove": "MBTI Liebe",
     "emotionIceberg": "Emotions-Eisberg",
     "eqTest": "EQ-Test"
+  },
+  "engage": {
+    "result1": "🛡️ Sicher -- Ausgeglichen und vertrauensvoll",
+    "result2": "💓 Ängstlich -- Hingabevoll und sensibel",
+    "result3": "🏔️ Vermeidend -- Unabhängig und zurückhaltend",
+    "result4": "🌪️ Ängstlich-vermeidend -- Komplex und tiefgründig",
+    "socialProof": "2.400+ Menschen haben ihren Bindungsstil entdeckt"
+  },
+  "about": {
+    "toggle": "Über den Bindungsstil-Test",
+    "heading1": "So funktioniert der Chat-Simulator",
+    "text1": "Dieser Test verwendet realistische Textnachrichten-Gespräche anstelle traditioneller Fragen. Sie chatten durch 10 Szenarien mit einem virtuellen Partner, und Ihre natürlichen Antworten enthüllen Ihren Bindungsstil.",
+    "heading2": "Die Bindungstheorie verstehen",
+    "text2": "Die Bindungstheorie, entwickelt von John Bowlby und Mary Ainsworth, erklärt, wie frühe Bindungserfahrungen erwachsene Beziehungsmuster formen. Die vier Stile -- sicher, ängstlich, vermeidend und ängstlich-vermeidend -- beeinflussen Kommunikation, Konfliktbewältigung und das Streben nach Nähe."
   }
 }

@@ -203,5 +203,19 @@
     "mbtiLove": "MBTI Amour",
     "emotionIceberg": "Iceberg émotionnel",
     "eqTest": "Test EQ"
+  },
+  "engage": {
+    "result1": "🛡️ Sécure -- Équilibré et confiant",
+    "result2": "💓 Anxieux -- Dévoué et sensible",
+    "result3": "🏔️ Évitant -- Indépendant et réservé",
+    "result4": "🌪️ Craintif -- Complexe et profond",
+    "socialProof": "2 400+ personnes ont découvert leur style d'attachement"
+  },
+  "about": {
+    "toggle": "À propos du test de style d'attachement",
+    "heading1": "Comment fonctionne le simulateur de chat",
+    "text1": "Ce test utilise des conversations par messages réalistes au lieu de questions traditionnelles. Vous chattez à travers 10 scénarios avec un partenaire virtuel, et vos réponses naturelles révèlent votre style d'attachement.",
+    "heading2": "Comprendre la théorie de l'attachement",
+    "text2": "La théorie de l'attachement, développée par John Bowlby et Mary Ainsworth, explique comment les premières expériences de lien façonnent les modèles relationnels adultes. Les quatre styles -- sécure, anxieux, évitant et craintif-évitant -- influencent la communication, la gestion des conflits et la recherche de proximité."
   }
 }

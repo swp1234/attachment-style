@@ -203,5 +203,19 @@
     "mbtiLove": "MBTI Cinta",
     "emotionIceberg": "Gunung Es Emosi",
     "eqTest": "Tes EQ"
+  },
+  "engage": {
+    "result1": "🛡️ Aman -- Seimbang & Percaya",
+    "result2": "💓 Cemas -- Setia & Sensitif",
+    "result3": "🏔️ Menghindar -- Mandiri & Berhati-hati",
+    "result4": "🌪️ Takut -- Kompleks & Mendalam",
+    "socialProof": "2.400+ orang menemukan gaya kelekatan mereka"
+  },
+  "about": {
+    "toggle": "Tentang Tes Gaya Kelekatan",
+    "heading1": "Cara Kerja Simulator Chat",
+    "text1": "Tes ini menggunakan percakapan pesan teks yang realistis, bukan pertanyaan tradisional. Anda mengobrol melalui 10 skenario dengan pasangan virtual, dan pilihan respons alami Anda mengungkap gaya kelekatan Anda.",
+    "heading2": "Memahami Teori Kelekatan",
+    "text2": "Teori kelekatan yang dikembangkan oleh John Bowlby dan Mary Ainsworth menjelaskan bagaimana pengalaman ikatan awal membentuk pola hubungan dewasa. Empat gaya -- aman, cemas, menghindar, dan takut-menghindar -- memengaruhi komunikasi, penanganan konflik, dan pencarian kedekatan."
   }
 }

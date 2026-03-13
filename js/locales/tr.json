@@ -203,5 +203,19 @@
     "mbtiLove": "MBTI Aşk",
     "emotionIceberg": "Duygu Buzdağı",
     "eqTest": "EQ Testi"
+  },
+  "engage": {
+    "result1": "🛡️ Güvenli -- Dengeli ve Güvenilir",
+    "result2": "💓 Kaygılı -- Sadık ve Hassas",
+    "result3": "🏔️ Kaçıngan -- Bağımsız ve Temkinli",
+    "result4": "🌪️ Korkulu -- Karmaşık ve Derin",
+    "socialProof": "2.400+ kişi bağlanma stilini keşfetti"
+  },
+  "about": {
+    "toggle": "Bağlanma Stili Testi Hakkında",
+    "heading1": "Sohbet Simülatörü Nasıl Çalışır",
+    "text1": "Bu test, geleneksel soruların yerine gerçekçi mesaj konuşmaları kullanır. Sanal bir partnerle 10 senaryoda sohbet edersiniz ve doğal yanıt seçimleriniz bağlanma stilinizi ortaya koyar.",
+    "heading2": "Bağlanma Teorisini Anlamak",
+    "text2": "John Bowlby ve Mary Ainsworth tarafından geliştirilen bağlanma teorisi, erken bağ deneyimlerinin yetişkin ilişki kalıplarını nasıl şekillendirdiğini açıklar. Dört stil -- güvenli, kaygılı, kaçıngan ve korkulu-kaçıngan -- iletişimi, çatışma yönetimini ve yakınlık arayışını etkiler."
   }
 }
