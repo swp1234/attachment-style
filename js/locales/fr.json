@@ -128,7 +128,12 @@
       "name": "Sécure",
       "emoji": "🛡️",
       "desc": "Tu as un style d'attachement sécure. Tu es à l'aise avec la proximité émotionnelle et tu communiques honnêtement. Tu fais confiance à ton partenaire tout en maintenant des limites saines. En cas de conflit, tu l'abordes directement avec bienveillance.",
-      "traits": ["Limites saines", "Communication honnête", "Stabilité émotionnelle", "Confiance naturelle"],
+      "traits": [
+        "Limites saines",
+        "Communication honnête",
+        "Stabilité émotionnelle",
+        "Confiance naturelle"
+      ],
       "idealPartner": "Tu t'entends avec tous les types, mais un autre partenaire Sécure crée la dynamique la plus saine. Tu peux aussi apporter de la stabilité aux partenaires Anxieux ou Évitants.",
       "advice": "Tes instincts relationnels sont solides ! N'oublie pas d'exprimer tes propres besoins aussi — être la personne \"stable\" ne veut pas dire réprimer tes émotions."
     },
@@ -136,7 +141,12 @@
       "name": "Anxieux",
       "emoji": "💓",
       "desc": "Tu as un style d'attachement anxieux. Tu aimes profondément et tu es incroyablement dévoué(e), mais tu portes une peur constante d'être abandonné(e). Tu es hyper-sensible aux changements d'humeur de ton partenaire et tu as besoin d'être rassuré(e) pour te sentir en sécurité.",
-      "traits": ["Empathie profonde", "Dévouement intense", "Peur de l'abandon", "Besoin de réassurance"],
+      "traits": [
+        "Empathie profonde",
+        "Dévouement intense",
+        "Peur de l'abandon",
+        "Besoin de réassurance"
+      ],
       "idealPartner": "Un partenaire Sécure est ton match idéal — quelqu'un qui te rassure constamment et t'offre un amour stable. Sois prudent(e) avec les types Évitants, car le jeu de va-et-vient peut intensifier l'anxiété.",
       "advice": "Une réponse tardive ≠ un amour qui s'éteint. Quand l'anxiété monte, respire avant de réagir. Construire l'amour de soi est la base de relations plus saines."
     },
@@ -144,7 +154,12 @@
       "name": "Évitant",
       "emoji": "🏔️",
       "desc": "Tu as un style d'attachement évitant. Tu valorises l'indépendance et la liberté. Trop de proximité te met mal à l'aise, mais des sentiments profonds existent sous cette façade détachée. Tu gères tes émotions mieux à ta propre manière.",
-      "traits": ["Forte indépendance", "Émotions réservées", "Besoin d'espace", "Autonomie"],
+      "traits": [
+        "Forte indépendance",
+        "Émotions réservées",
+        "Besoin d'espace",
+        "Autonomie"
+      ],
       "idealPartner": "Un partenaire Sécure qui te laisse de l'espace sans pression. Quelqu'un de chaleureux mais patient peut progressivement t'aider à baisser tes barrières.",
       "advice": "La vulnérabilité n'est pas une faiblesse — c'est le pont vers une connexion plus profonde. Essaie de t'ouvrir petit à petit. Reconnais aussi les besoins émotionnels de ton partenaire."
     },
@@ -152,7 +167,12 @@
       "name": "Craintif-Évitant",
       "emoji": "🌪️",
       "desc": "Tu as un style d'attachement craintif-évitant. Tu désires l'intimité mais tu la crains en même temps. Tu veux te rapprocher mais tu recules pour te protéger de la douleur. Ce va-et-vient fait de tes relations de véritables montagnes russes émotionnelles.",
-      "traits": ["Désire & craint la proximité", "Hauts & bas émotionnels", "Influence des blessures passées", "Instinct d'autoprotection"],
+      "traits": [
+        "Désire & craint la proximité",
+        "Hauts & bas émotionnels",
+        "Influence des blessures passées",
+        "Instinct d'autoprotection"
+      ],
       "idealPartner": "Un partenaire Sécure et patient qui reste stable dans ton va-et-vient. Vivre une relation sûre et régulière — même lentement — peut tout changer.",
       "advice": "Tes signaux contradictoires viennent de l'autoprotection, pas de la confusion. Toutes les relations ne finissent pas dans la souffrance. Construis la confiance petit à petit. Tu mérites l'amour dont tu as peur."
     }
@@ -165,7 +185,9 @@
     "keyTraits": "Traits clés",
     "idealPartner": "Partenaire idéal",
     "advice": "Conseil amoureux",
-    "retake": "Rechatter 💬"
+    "retake": "Rechatter 💬",
+    "moreTests": "Découvrir plus de tests",
+    "percentileStat": "Seulement <strong>{percent}%</strong> des participants partagent votre style d'attachement"
   },
   "share": {
     "twitter": "Découvrez votre style d'attachement à travers des conversations par SMS !",
@@ -175,5 +197,11 @@
   },
   "a11y": {
     "skip": "Aller au contenu"
+  },
+  "related": {
+    "loveLanguage": "Langage amoureux",
+    "mbtiLove": "MBTI Amour",
+    "emotionIceberg": "Iceberg émotionnel",
+    "eqTest": "Test EQ"
   }
 }

@@ -128,7 +128,12 @@
       "name": "Sicher",
       "emoji": "🛡️",
       "desc": "Du hast einen sicheren Bindungsstil. Du fühlst dich mit emotionaler Nähe wohl und kommunizierst ehrlich. Du vertraust deinem Partner und hältst dabei gesunde Grenzen ein. Bei Konflikten gehst du sie direkt und einfühlsam an.",
-      "traits": ["Gesunde Grenzen", "Ehrliche Kommunikation", "Emotionale Stabilität", "Natürliches Vertrauen"],
+      "traits": [
+        "Gesunde Grenzen",
+        "Ehrliche Kommunikation",
+        "Emotionale Stabilität",
+        "Natürliches Vertrauen"
+      ],
       "idealPartner": "Du harmonierst mit allen Typen, aber ein weiterer sicherer Partner schafft die gesündeste Dynamik. Du kannst auch ängstlichen oder vermeidenden Partnern Stabilität geben.",
       "advice": "Dein Beziehungsinstinkt ist stark! Denk nur daran, auch deine eigenen Bedürfnisse auszudrücken — der/die \"Stabile\" zu sein heißt nicht, eigene Gefühle zu unterdrücken."
     },
@@ -136,7 +141,12 @@
       "name": "Ängstlich",
       "emoji": "💓",
       "desc": "Du hast einen ängstlichen Bindungsstil. Du liebst tief und bist unglaublich hingabevoll, trägst aber eine ständige Angst vor dem Verlassenwerden in dir. Du reagierst sehr sensibel auf Stimmungsschwankungen deines Partners und sehnst dich nach Bestätigung.",
-      "traits": ["Tiefes Einfühlungsvermögen", "Intensive Hingabe", "Verlustangst", "Bedürfnis nach Bestätigung"],
+      "traits": [
+        "Tiefes Einfühlungsvermögen",
+        "Intensive Hingabe",
+        "Verlustangst",
+        "Bedürfnis nach Bestätigung"
+      ],
       "idealPartner": "Ein sicherer Partner ist dein ideales Match — jemand, der dir konstante Bestätigung und beständige Liebe gibt. Sei vorsichtig mit vermeidenden Typen, da das Hin und Her die Angst verstärken kann.",
       "advice": "Eine späte Antwort ≠ schwindende Liebe. Wenn die Angst hochkommt, atme erstmal durch, bevor du reagierst. Selbstliebe aufzubauen ist die Basis für gesündere Beziehungen."
     },
@@ -144,7 +154,12 @@
       "name": "Vermeidend",
       "emoji": "🏔️",
       "desc": "Du hast einen vermeidenden Bindungsstil. Du schätzt Unabhängigkeit und Freiheit. Zu viel Nähe macht dich unwohl, aber unter der coolen Fassade existieren tiefe Gefühle. Du verarbeitest Emotionen am besten auf deine eigene Art.",
-      "traits": ["Starke Unabhängigkeit", "Zurückhaltende Gefühle", "Bedürfnis nach Freiraum", "Eigenständigkeit"],
+      "traits": [
+        "Starke Unabhängigkeit",
+        "Zurückhaltende Gefühle",
+        "Bedürfnis nach Freiraum",
+        "Eigenständigkeit"
+      ],
       "idealPartner": "Ein sicherer Partner, der dir Raum gibt ohne Druck auszuüben. Jemand Warmherziges aber Geduldiges kann nach und nach helfen, deine Mauern abzubauen.",
       "advice": "Verletzlichkeit ist keine Schwäche — sie ist die Brücke zu tieferer Verbindung. Versuch dich in kleinen Schritten zu öffnen. Erkenne auch die emotionalen Bedürfnisse deines Partners an."
     },
@@ -152,7 +167,12 @@
       "name": "Ängstlich-Vermeidend",
       "emoji": "🌪️",
       "desc": "Du hast einen ängstlich-vermeidenden Bindungsstil. Du sehnst dich nach Nähe, fürchtest sie aber gleichzeitig. Du willst dich annähern, ziehst dich aber zurück, um dich vor Schmerz zu schützen. Dieses Hin und Her lässt Beziehungen wie eine emotionale Achterbahn wirken.",
-      "traits": ["Sehnt & fürchtet Nähe", "Emotionale Höhen & Tiefen", "Einfluss vergangener Wunden", "Selbstschutz-Instinkt"],
+      "traits": [
+        "Sehnt & fürchtet Nähe",
+        "Emotionale Höhen & Tiefen",
+        "Einfluss vergangener Wunden",
+        "Selbstschutz-Instinkt"
+      ],
       "idealPartner": "Ein geduldiger, sicherer Partner, der in deinem Hin und Her standhaft bleibt. Eine sichere, beständige Beziehung zu erleben — auch langsam — kann transformierend sein.",
       "advice": "Deine widersprüchlichen Signale kommen aus Selbstschutz, nicht aus Verwirrung. Nicht jede Beziehung endet mit Verletzung. Bau Vertrauen in kleinen Schritten auf. Du verdienst die Liebe, vor der du Angst hast."
     }
@@ -165,7 +185,9 @@
     "keyTraits": "Hauptmerkmale",
     "idealPartner": "Idealer Partner",
     "advice": "Liebes-Tipp",
-    "retake": "Nochmal chatten 💬"
+    "retake": "Nochmal chatten 💬",
+    "moreTests": "Weitere Tests entdecken",
+    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer teilen Ihren Bindungsstil"
   },
   "share": {
     "twitter": "Entdecke deinen Bindungsstil durch Textnachrichten!",
@@ -175,5 +197,11 @@
   },
   "a11y": {
     "skip": "Zum Inhalt springen"
+  },
+  "related": {
+    "loveLanguage": "Liebessprache",
+    "mbtiLove": "MBTI Liebe",
+    "emotionIceberg": "Emotions-Eisberg",
+    "eqTest": "EQ-Test"
   }
 }

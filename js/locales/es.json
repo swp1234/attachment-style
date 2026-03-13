@@ -128,7 +128,12 @@
       "name": "Seguro",
       "emoji": "🛡️",
       "desc": "Tienes un estilo de apego seguro. Te sientes cómodo/a con la cercanía emocional y te comunicas con honestidad. Confías en tu pareja mientras mantienes límites saludables. Cuando surge un conflicto, lo abordas directamente con cuidado.",
-      "traits": ["Límites saludables", "Comunicación honesta", "Estabilidad emocional", "Confianza natural"],
+      "traits": [
+        "Límites saludables",
+        "Comunicación honesta",
+        "Estabilidad emocional",
+        "Confianza natural"
+      ],
       "idealPartner": "Conectas bien con todos los estilos, pero otra pareja Segura crea la dinámica más sana. También puedes aportar estabilidad a parejas Ansiosas o Evitativas.",
       "advice": "¡Tus instintos en las relaciones son sólidos! Solo recuerda expresar tus propias necesidades también — ser 'el estable' no significa reprimir tus emociones."
     },
@@ -136,7 +141,12 @@
       "name": "Ansioso",
       "emoji": "💓",
       "desc": "Tienes un estilo de apego ansioso. Amas profundamente y eres increíblemente devoto/a, pero cargas con un miedo constante al abandono. Eres hipersensible a los cambios de humor de tu pareja y necesitas reafirmación para sentirte seguro/a.",
-      "traits": ["Empatía profunda", "Devoción intensa", "Miedo al abandono", "Necesidad de reafirmación"],
+      "traits": [
+        "Empatía profunda",
+        "Devoción intensa",
+        "Miedo al abandono",
+        "Necesidad de reafirmación"
+      ],
       "idealPartner": "Una pareja Segura es tu match ideal — alguien que te dé reafirmación constante y amor estable. Ten cuidado con los tipos Evitativos, ya que el tira y afloja puede intensificar la ansiedad.",
       "advice": "Una respuesta lenta ≠ amor que se apaga. Cuando la ansiedad suba, respira antes de reaccionar. Construir amor propio es la base para conexiones más sanas."
     },
@@ -144,7 +154,12 @@
       "name": "Evitativo",
       "emoji": "🏔️",
       "desc": "Tienes un estilo de apego evitativo. Valoras la independencia y la libertad. Demasiada cercanía te incomoda, pero debajo de esa apariencia fría existen sentimientos profundos. Procesas tus emociones mejor a tu propio ritmo.",
-      "traits": ["Gran independencia", "Emociones reservadas", "Necesidad de espacio", "Autosuficiencia"],
+      "traits": [
+        "Gran independencia",
+        "Emociones reservadas",
+        "Necesidad de espacio",
+        "Autosuficiencia"
+      ],
       "idealPartner": "Una pareja Segura que te dé espacio sin presión. Alguien cálido pero paciente puede ayudarte gradualmente a bajar la guardia.",
       "advice": "La vulnerabilidad no es debilidad — es el puente hacia una conexión más profunda. Intenta abrirte en pequeñas dosis. Reconoce también las necesidades emocionales de tu pareja."
     },
@@ -152,7 +167,12 @@
       "name": "Ansioso-Evitativo",
       "emoji": "🌪️",
       "desc": "Tienes un estilo de apego ansioso-evitativo. Anhelas la intimidad pero al mismo tiempo la temes. Quieres acercarte pero te alejas para protegerte del dolor. Este tira y afloja hace que las relaciones se sientan como una montaña rusa emocional.",
-      "traits": ["Anhela y teme la cercanía", "Altibajos emocionales", "Influencia de heridas pasadas", "Instinto de autoprotección"],
+      "traits": [
+        "Anhela y teme la cercanía",
+        "Altibajos emocionales",
+        "Influencia de heridas pasadas",
+        "Instinto de autoprotección"
+      ],
       "idealPartner": "Una pareja Segura y paciente que se mantenga firme durante tu tira y afloja. Experimentar una relación segura y constante — aunque sea poco a poco — es transformador.",
       "advice": "Tus señales mixtas vienen de la autoprotección, no de la confusión. No toda relación termina en dolor. Construye confianza paso a paso. Mereces el amor que te da miedo."
     }
@@ -165,7 +185,9 @@
     "keyTraits": "Rasgos Clave",
     "idealPartner": "Pareja Ideal",
     "advice": "Consejo Amoroso",
-    "retake": "Chatear de Nuevo 💬"
+    "retake": "Chatear de Nuevo 💬",
+    "moreTests": "Explorar más tests",
+    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes comparte tu estilo de apego"
   },
   "share": {
     "twitter": "¡Descubre tu estilo de apego a través de conversaciones de texto!",
@@ -175,5 +197,11 @@
   },
   "a11y": {
     "skip": "Saltar al contenido"
+  },
+  "related": {
+    "loveLanguage": "Lenguaje del amor",
+    "mbtiLove": "MBTI Amor",
+    "emotionIceberg": "Iceberg emocional",
+    "eqTest": "Test EQ"
   }
 }

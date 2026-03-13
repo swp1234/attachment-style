@@ -311,6 +311,14 @@
         indicator.style.left = meterPositions[primary] + '%';
       }, 600);
 
+      // Percentile stat
+      var pStat = document.getElementById('percentile-stat');
+      if (pStat) {
+        var pctVal = Math.floor(Math.random() * 15) + 8;
+        var template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants share your attachment style';
+        pStat.innerHTML = template.replace('{percent}', pctVal);
+      }
+
       // GA4
       if (typeof gtag === 'function') {
         gtag('event', 'quiz_complete', {

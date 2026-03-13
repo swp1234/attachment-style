@@ -128,7 +128,12 @@
       "name": "Güvenli",
       "emoji": "🛡️",
       "desc": "Güvenli bağlanma stiliniz var. Duygusal yakınlıkta kendinizi rahat hisseder ve dürüstçe iletişim kurarsınız. Sağlıklı sınırlar korurken partnerinize güvenirsiniz. Çatışma olduğunda özenle ve doğrudan ele alırsınız.",
-      "traits": ["Sağlıklı sınırlar", "Dürüst iletişim", "Duygusal istikrar", "Doğal güven"],
+      "traits": [
+        "Sağlıklı sınırlar",
+        "Dürüst iletişim",
+        "Duygusal istikrar",
+        "Doğal güven"
+      ],
       "idealPartner": "Tüm tiplerle uyum sağlarsınız ama bir diğer Güvenli partnerle en sağlıklı dinamiği kurarsınız. Kaygılı veya Kaçınan partnerlere de istikrar sağlayabilirsiniz.",
       "advice": "İlişki içgüdüleriniz harika! Sadece kendi ihtiyaçlarınızı da ifade etmeyi unutmayın — 'dengeli olan' olmak duygularınızı bastırmak anlamına gelmez."
     },
@@ -136,7 +141,12 @@
       "name": "Kaygılı",
       "emoji": "💓",
       "desc": "Kaygılı bağlanma stiliniz var. Derinden seversiniz ve inanılmaz sadıksınızdır ama terk edilme korkusu sürekli yanınızdadır. Partnerinizin ruh hali değişimlerine aşırı duyarlısınızdır ve kendinizi güvende hissetmek için sürekli güvenceye ihtiyaç duyarsınız.",
-      "traits": ["Derin empati", "Yoğun bağlılık", "Terk edilme korkusu", "Güvence ihtiyacı"],
+      "traits": [
+        "Derin empati",
+        "Yoğun bağlılık",
+        "Terk edilme korkusu",
+        "Güvence ihtiyacı"
+      ],
       "idealPartner": "Güvenli bir partner sizin için ideal — tutarlı güvence ve istikrarlı sevgi sunan biri. Kaçınan tiplerle dikkatli olun, çek-bırak dinamiği kaygıyı artırabilir.",
       "advice": "Geç gelen cevap ≠ azalan sevgi. Kaygı yükseldiğinde tepki vermeden önce nefes alın. Özsevgi, daha sağlıklı bağlar kurmanın temelidir."
     },
@@ -144,7 +154,12 @@
       "name": "Kaçınan",
       "emoji": "🏔️",
       "desc": "Kaçınan bağlanma stiliniz var. Bağımsızlığa ve özgürlüğe değer verirsiniz. Fazla yakınlık sizi rahatsız eder ama o soğuk dışın altında derin duygular var. Duyguları en iyi kendi koşullarınızda işlersiniz.",
-      "traits": ["Güçlü bağımsızlık", "Korunan duygular", "Alan ihtiyacı", "Kendine yeterlilik"],
+      "traits": [
+        "Güçlü bağımsızlık",
+        "Korunan duygular",
+        "Alan ihtiyacı",
+        "Kendine yeterlilik"
+      ],
       "idealPartner": "Baskı yapmadan alan veren Güvenli bir partner. Sıcak ama sabırlı biri yavaş yavaş duvarlarınızı indirmenize yardımcı olabilir.",
       "advice": "Savunmasızlık zayıflık değildir — daha derin bağlara açılan köprüdür. Küçük dozlarda açılmayı deneyin. Partnerinizin duygusal ihtiyaçlarını da kabul edin."
     },
@@ -152,7 +167,12 @@
       "name": "Korkulu-Kaçınan",
       "emoji": "🌪️",
       "desc": "Korkulu-kaçınan bağlanma stiliniz var. Yakınlığı arzularsınız ama aynı zamanda ondan korkarsınız. Yaklaşmak istersiniz ama acıdan korunmak için geri çekilirsiniz. Bu çek-bırak, ilişkileri duygusal bir hız trenine çevirir.",
-      "traits": ["Yakınlık arzusu ve korkusu", "Duygusal inişler ve çıkışlar", "Geçmiş yaraların etkisi", "Kendini koruma içgüdüsü"],
+      "traits": [
+        "Yakınlık arzusu ve korkusu",
+        "Duygusal inişler ve çıkışlar",
+        "Geçmiş yaraların etkisi",
+        "Kendini koruma içgüdüsü"
+      ],
       "idealPartner": "Çek-bırak hareketleriniz boyunca kararlı kalan sabırlı bir Güvenli partner. Güvenli ve tutarlı bir ilişki deneyimi — yavaş bile olsa — dönüştürücüdür.",
       "advice": "Karışık sinyalleriniz kendini korumadan gelir, kafanızın karışık olmasından değil. Her ilişki acıyla bitmez. Küçük adımlarla güven inşa edin. Korktuğunuz sevgiyi hak ediyorsunuz."
     }
@@ -165,7 +185,9 @@
     "keyTraits": "Temel Özellikler",
     "idealPartner": "İdeal Partner",
     "advice": "Aşk Tavsiyesi",
-    "retake": "Tekrar Mesajlaş 💬"
+    "retake": "Tekrar Mesajlaş 💬",
+    "moreTests": "Daha fazla test keşfet",
+    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i sizinle aynı bağlanma stiline sahip"
   },
   "share": {
     "twitter": "Mesajlaşma senaryolarıyla bağlanma stilini keşfet!",
@@ -175,5 +197,11 @@
   },
   "a11y": {
     "skip": "İçeriğe atla"
+  },
+  "related": {
+    "loveLanguage": "Aşk Dili",
+    "mbtiLove": "MBTI Aşk",
+    "emotionIceberg": "Duygu Buzdağı",
+    "eqTest": "EQ Testi"
   }
 }

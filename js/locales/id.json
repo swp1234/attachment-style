@@ -128,7 +128,12 @@
       "name": "Aman",
       "emoji": "🛡️",
       "desc": "Kamu punya gaya kelekatan aman. Kamu nyaman dengan kedekatan emosional dan berkomunikasi dengan jujur. Kamu percaya pasanganmu sambil menjaga batasan yang sehat. Saat konflik muncul, kamu menghadapinya secara langsung dengan penuh perhatian.",
-      "traits": ["Batasan yang sehat", "Komunikasi jujur", "Stabilitas emosional", "Kepercayaan alami"],
+      "traits": [
+        "Batasan yang sehat",
+        "Komunikasi jujur",
+        "Stabilitas emosional",
+        "Kepercayaan alami"
+      ],
       "idealPartner": "Kamu cocok sama semua tipe, tapi dengan sesama Aman akan tercipta dinamika paling sehat. Kamu juga bisa memberi stabilitas ke pasangan Cemas atau Menghindar.",
       "advice": "Insting hubunganmu kuat banget! Cuma ingat untuk mengungkapkan kebutuhanmu sendiri juga ya — jadi 'yang stabil' bukan berarti menekan emosimu."
     },
@@ -136,7 +141,12 @@
       "name": "Cemas",
       "emoji": "💓",
       "desc": "Kamu punya gaya kelekatan cemas. Kamu mencintai dengan sangat dalam dan luar biasa setia, tapi membawa ketakutan konstan akan ditinggalkan. Kamu sangat sensitif terhadap perubahan mood pasangan dan butuh kepastian terus-menerus untuk merasa aman.",
-      "traits": ["Empati mendalam", "Dedikasi intens", "Takut ditinggalkan", "Butuh kepastian"],
+      "traits": [
+        "Empati mendalam",
+        "Dedikasi intens",
+        "Takut ditinggalkan",
+        "Butuh kepastian"
+      ],
       "idealPartner": "Pasangan Aman adalah pilihan idealmu — seseorang yang memberi kepastian konsisten dan cinta yang stabil. Hati-hati dengan tipe Menghindar, karena dinamika tarik-ulur bisa memperparah kecemasan.",
       "advice": "Bales chat telat ≠ cinta berkurang. Saat cemas melonjak, tarik napas sebelum bereaksi. Membangun cinta diri adalah pondasi untuk hubungan yang lebih sehat."
     },
@@ -144,7 +154,12 @@
       "name": "Menghindar",
       "emoji": "🏔️",
       "desc": "Kamu punya gaya kelekatan menghindar. Kamu menghargai kemandirian dan kebebasan. Terlalu dekat bikin kamu nggak nyaman, tapi perasaan mendalam ada di balik eksterior yang dingin itu. Kamu memproses emosi paling baik dengan caramu sendiri.",
-      "traits": ["Kemandirian kuat", "Emosi yang dijaga", "Butuh ruang", "Mandiri"],
+      "traits": [
+        "Kemandirian kuat",
+        "Emosi yang dijaga",
+        "Butuh ruang",
+        "Mandiri"
+      ],
       "idealPartner": "Pasangan Aman yang memberi ruang tanpa tekanan. Seseorang yang hangat tapi sabar bisa pelan-pelan menurunkan tembokmu.",
       "advice": "Menjadi rentan bukan berarti lemah — itu jembatan menuju koneksi yang lebih dalam. Coba buka diri sedikit demi sedikit. Akui juga kebutuhan emosional pasanganmu."
     },
@@ -152,7 +167,12 @@
       "name": "Takut-Menghindar",
       "emoji": "🌪️",
       "desc": "Kamu punya gaya kelekatan takut-menghindar. Kamu mendambakan keintiman tapi sekaligus takut. Kamu ingin mendekat tapi mundur untuk melindungi diri dari rasa sakit. Tarik-ulur ini membuat hubungan terasa seperti roller coaster emosional.",
-      "traits": ["Mendambakan & takut kedekatan", "Emosi naik turun", "Pengaruh luka masa lalu", "Insting perlindungan diri"],
+      "traits": [
+        "Mendambakan & takut kedekatan",
+        "Emosi naik turun",
+        "Pengaruh luka masa lalu",
+        "Insting perlindungan diri"
+      ],
       "idealPartner": "Pasangan Aman yang sabar dan tetap kokoh melewati tarik-ulurmu. Merasakan hubungan yang aman dan konsisten — meski pelan-pelan — bisa mengubah segalanya.",
       "advice": "Sinyal campuranmu datang dari perlindungan diri, bukan kebingungan. Nggak semua hubungan berakhir menyakitkan. Bangun kepercayaan dengan langkah kecil. Kamu layak mendapatkan cinta yang kamu takutkan."
     }
@@ -165,7 +185,9 @@
     "keyTraits": "Ciri Utama",
     "idealPartner": "Pasangan Ideal",
     "advice": "Saran Cinta",
-    "retake": "Chat Lagi 💬"
+    "retake": "Chat Lagi 💬",
+    "moreTests": "Jelajahi tes lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang memiliki gaya kelekatan seperti Anda"
   },
   "share": {
     "twitter": "Temukan gaya kelekatanmu lewat percakapan chat!",
@@ -175,5 +197,11 @@
   },
   "a11y": {
     "skip": "Langsung ke konten"
+  },
+  "related": {
+    "loveLanguage": "Bahasa Cinta",
+    "mbtiLove": "MBTI Cinta",
+    "emotionIceberg": "Gunung Es Emosi",
+    "eqTest": "Tes EQ"
   }
 }

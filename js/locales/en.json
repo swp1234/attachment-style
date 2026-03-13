@@ -128,7 +128,12 @@
       "name": "Secure",
       "emoji": "🛡️",
       "desc": "You have a secure attachment style. You're comfortable with emotional closeness and communicate honestly. You trust your partner while maintaining healthy boundaries. When conflict arises, you address it directly with care.",
-      "traits": ["Healthy boundaries", "Honest communication", "Emotional stability", "Natural trust"],
+      "traits": [
+        "Healthy boundaries",
+        "Honest communication",
+        "Emotional stability",
+        "Natural trust"
+      ],
       "idealPartner": "You vibe with all types, but another Secure partner creates the healthiest dynamic. You can also bring stability to Anxious or Avoidant partners.",
       "advice": "Your relationship instincts are strong! Just remember to express your own needs too — being the 'stable one' doesn't mean suppressing your emotions."
     },
@@ -136,7 +141,12 @@
       "name": "Anxious",
       "emoji": "💓",
       "desc": "You have an anxious attachment style. You love deeply and are incredibly devoted, but carry a constant fear of being abandoned. You're hyper-sensitive to your partner's mood shifts and crave reassurance to feel secure.",
-      "traits": ["Deep empathy", "Intense devotion", "Fear of abandonment", "Need for reassurance"],
+      "traits": [
+        "Deep empathy",
+        "Intense devotion",
+        "Fear of abandonment",
+        "Need for reassurance"
+      ],
       "idealPartner": "A Secure partner is your ideal match — someone who provides consistent reassurance and steady love. Be cautious with Avoidant types, as the push-pull can intensify anxiety.",
       "advice": "A slow reply ≠ fading love. When anxiety spikes, breathe before reacting. Building self-love is the foundation for healthier connections."
     },
@@ -144,7 +154,12 @@
       "name": "Avoidant",
       "emoji": "🏔️",
       "desc": "You have an avoidant attachment style. You prize independence and freedom. Too much closeness makes you uncomfortable, but deep feelings exist beneath that cool exterior. You process emotions best on your own terms.",
-      "traits": ["Strong independence", "Guarded emotions", "Need for space", "Self-reliance"],
+      "traits": [
+        "Strong independence",
+        "Guarded emotions",
+        "Need for space",
+        "Self-reliance"
+      ],
       "idealPartner": "A Secure partner who gives you room without pressure. Someone warm but patient can gradually help lower your walls.",
       "advice": "Vulnerability isn't weakness — it's the bridge to deeper connection. Try opening up in small doses. Acknowledge your partner's emotional needs too."
     },
@@ -152,7 +167,12 @@
       "name": "Fearful-Avoidant",
       "emoji": "🌪️",
       "desc": "You have a fearful-avoidant attachment style. You crave intimacy but simultaneously fear it. You want to get close but pull back to protect yourself from pain. This push-pull makes relationships feel like an emotional rollercoaster.",
-      "traits": ["Craves & fears closeness", "Emotional highs & lows", "Past wound influence", "Self-protective instinct"],
+      "traits": [
+        "Craves & fears closeness",
+        "Emotional highs & lows",
+        "Past wound influence",
+        "Self-protective instinct"
+      ],
       "idealPartner": "A patient Secure partner who stays steady through your push-pull. Experiencing a safe, consistent relationship — even slowly — is transformative.",
       "advice": "Your mixed signals come from self-protection, not confusion. Not every relationship ends in hurt. Build trust in small steps. You deserve the love you're afraid of."
     }
@@ -165,7 +185,9 @@
     "keyTraits": "Key Traits",
     "idealPartner": "Ideal Partner",
     "advice": "Love Advice",
-    "retake": "Chat Again 💬"
+    "retake": "Chat Again 💬",
+    "moreTests": "Explore More Tests",
+    "percentileStat": "Only <strong>{percent}%</strong> of participants share your attachment style"
   },
   "share": {
     "twitter": "Discover your attachment style through text convos!",
@@ -175,5 +197,11 @@
   },
   "a11y": {
     "skip": "Skip to content"
+  },
+  "related": {
+    "loveLanguage": "Love Language",
+    "mbtiLove": "MBTI Love",
+    "emotionIceberg": "Emotion Iceberg",
+    "eqTest": "EQ Test"
   }
 }
