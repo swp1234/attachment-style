@@ -204,7 +204,8 @@
     "emotionIceberg": "Iceberg emocional",
     "eqTest": "Test EQ",
     "burnoutTest": "Test de Burnout",
-    "stressResponse": "Respuesta al Estrés"
+    "stressResponse": "Respuesta al Estrés",
+    "anxietyType": "Tipo de Ansiedad"
   },
   "engage": {
     "result1": "🛡️ Seguro -- Equilibrado y confiado",

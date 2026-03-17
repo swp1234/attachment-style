@@ -204,7 +204,8 @@
     "emotionIceberg": "Duygu Buzdağı",
     "eqTest": "EQ Testi",
     "burnoutTest": "Tükenmişlik Testi",
-    "stressResponse": "Stres Tepkisi"
+    "stressResponse": "Stres Tepkisi",
+    "anxietyType": "Kaygı Tipi"
   },
   "engage": {
     "result1": "🛡️ Güvenli -- Dengeli ve Güvenilir",

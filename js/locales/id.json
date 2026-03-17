@@ -204,7 +204,8 @@
     "emotionIceberg": "Gunung Es Emosi",
     "eqTest": "Tes EQ",
     "burnoutTest": "Tes Burnout",
-    "stressResponse": "Respons Stres"
+    "stressResponse": "Respons Stres",
+    "anxietyType": "Tipe Kecemasan"
   },
   "engage": {
     "result1": "🛡️ Aman -- Seimbang & Percaya",

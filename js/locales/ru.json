@@ -204,7 +204,8 @@
     "emotionIceberg": "Айсберг эмоций",
     "eqTest": "EQ Тест",
     "burnoutTest": "Тест на выгорание",
-    "stressResponse": "Стресс-реакция"
+    "stressResponse": "Стресс-реакция",
+    "anxietyType": "Тип тревожности"
   },
   "engage": {
     "result1": "🛡️ Надёжный -- Сбалансированный и доверяющий",
