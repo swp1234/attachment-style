@@ -49,8 +49,11 @@
     var themeToggle = document.getElementById('theme-toggle');
     var langSelect = document.getElementById('lang-select');
     var retakeBtn = document.getElementById('retake-btn');
+    var shareDownload = document.getElementById('share-download');
     var shareTwitter = document.getElementById('share-twitter');
     var shareCopy = document.getElementById('share-copy');
+
+    var currentResult = null;
 
     // --- Theme ---
     function initTheme() {
@@ -277,6 +280,8 @@
       var primary = result.primary;
       var secondary = result.secondary;
 
+      currentResult = result;
+
       document.getElementById('result-emoji').textContent = i18n.t('results.' + primary + '.emoji');
       document.getElementById('result-type').textContent = i18n.t('results.' + primary + '.name');
       document.getElementById('result-desc').textContent = i18n.t('results.' + primary + '.desc');
@@ -328,6 +333,35 @@
         });
       }
     }
+
+    // --- Share: Download ---
+    shareDownload.addEventListener('click', function () {
+      if (!currentResult || typeof ResultCard === 'undefined') return;
+
+      var primary = currentResult.primary;
+      var typeName = i18n.t('results.' + primary + '.name');
+      var emoji = i18n.t('results.' + primary + '.emoji');
+
+      // Create dimension data from scores
+      var scoreTypes = ['secure', 'anxious', 'avoidant', 'fearful'];
+      var dimensions = scoreTypes.map(function(type) {
+        var pct = Math.round((scores[type] / TOTAL_SCENARIOS) * 100);
+        return {
+          label: i18n.t('results.' + type + '.name'),
+          pct: pct,
+          color: '#D946EF'
+        };
+      });
+
+      ResultCard.download({
+        appName: 'Attachment Style Test',
+        typeName: typeName,
+        typeEmoji: emoji,
+        dimensions: dimensions,
+        primaryColor: '#D946EF',
+        tagline: 'dopabrain.com/attachment-style'
+      });
+    });
 
     // --- Share: Twitter ---
     shareTwitter.addEventListener('click', function () {
