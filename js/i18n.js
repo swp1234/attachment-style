@@ -38,6 +38,7 @@ class I18n {
         return true;
     }
     updateUI() {
+        document.documentElement.lang = this.currentLang;
         document.querySelectorAll('[data-i18n]').forEach(el => {
             el.textContent = this.t(el.getAttribute('data-i18n'));
         });

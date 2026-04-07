@@ -14,6 +14,9 @@
     "disclaimer": "Sadece eğlence amaçlıdır. Klinik bir teşhis değildir.",
     "start": "Mesajlaşmaya Başla 💬"
   },
+  "button": {
+    "save_result": "Sonucu kaydet"
+  },
   "chat": {
     "partner": "Partner",
     "typing": "yazıyor...",
@@ -205,7 +208,9 @@
     "eqTest": "EQ Testi",
     "burnoutTest": "Tükenmişlik Testi",
     "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi"
+    "anxietyType": "Kaygı Tipi",
+    "shadowWork": "G?lge ?al??ma testi",
+    "traumaResponse": "Travma tepkisi"
   },
   "engage": {
     "result1": "🛡️ Güvenli -- Dengeli ve Güvenilir",

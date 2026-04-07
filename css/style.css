@@ -887,13 +887,19 @@ body {
 .related-tests { width: 100%; max-width: 420px; margin: 24px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
 .related-tests h3 { font-size: 16px; color: var(--text-secondary, #a0a0b8); margin-bottom: 12px; text-align: center; }
 .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.related-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 8px; background: var(--bg-option, rgba(255,255,255,0.05)); border: 1px solid var(--border, rgba(255,255,255,0.1)); border-radius: 12px; text-decoration: none; color: var(--text, #fff); transition: transform 0.2s, border-color 0.2s; }
+.related-card { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 8px; background: var(--bg-option, rgba(255,255,255,0.05)); border: 1px solid var(--border, rgba(255,255,255,0.1)); border-radius: 12px; text-decoration: none; color: var(--text, #fff); transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s, background 0.2s; }
 .related-card:hover { transform: translateY(-2px); border-color: var(--card-color, var(--primary)); }
+.related-card.is-featured { border-color: var(--card-color, var(--primary)); background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.04)); box-shadow: 0 12px 24px rgba(0,0,0,0.18); }
+.related-card.is-featured::before { content: "#" attr(data-rank); position: absolute; top: 8px; right: 8px; min-width: 24px; padding: 3px 6px; border-radius: 999px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; text-align: center; background: var(--card-color, var(--primary)); color: #fff; }
 .related-emoji { font-size: 28px; }
 .related-name { font-size: 12px; font-weight: 600; text-align: center; color: var(--text-secondary, #a0a0b8); }
 [data-theme="light"] .related-tests { border-top-color: rgba(0,0,0,0.1); }
 [data-theme="light"] .related-card { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.1); }
 [data-theme="light"] .related-card:hover { background: rgba(0,0,0,0.06); }
+[data-theme="light"] .related-card.is-featured { background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.82)); box-shadow: 0 10px 18px rgba(15,23,42,0.12); }
+@media (max-width: 480px) {
+  .related-card.is-featured::before { top: 6px; right: 6px; font-size: 9px; padding: 2px 6px; }
+}
 .percentile-stat { text-align: center; margin: 16px 0 0; font-size: 13px; color: var(--text-secondary, #a0a0b8); max-width: 420px; }
 .percentile-stat strong { color: var(--primary); font-size: 15px; }
 

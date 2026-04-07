@@ -52,8 +52,47 @@
     var shareDownload = document.getElementById('share-download');
     var shareTwitter = document.getElementById('share-twitter');
     var shareCopy = document.getElementById('share-copy');
+    var relatedGrid = document.getElementById('related-grid');
+    var aboutDetails = document.getElementById('about-details');
 
     var currentResult = null;
+    var recommendationMap = {
+      secure: ['love-language', 'mbti-love', 'eq-test', 'emotion-iceberg', 'stress-response', 'anxiety-type', 'burnout-test', 'inner-child-test', 'shadow-work', 'trauma-response'],
+      anxious: ['anxiety-type', 'stress-response', 'burnout-test', 'eq-test', 'inner-child-test', 'love-language', 'mbti-love', 'emotion-iceberg', 'shadow-work', 'trauma-response'],
+      avoidant: ['emotion-iceberg', 'eq-test', 'shadow-work', 'love-language', 'stress-response', 'anxiety-type', 'mbti-love', 'burnout-test', 'inner-child-test', 'trauma-response'],
+      fearful: ['trauma-response', 'inner-child-test', 'shadow-work', 'stress-response', 'anxiety-type', 'eq-test', 'emotion-iceberg', 'burnout-test', 'love-language', 'mbti-love']
+    };
+
+    function trackEvent(name, params) {
+      if (typeof gtag !== 'function') return;
+      gtag('event', name, params || {});
+    }
+
+    function prioritizeRelatedCards(primary) {
+      if (!relatedGrid) return;
+
+      var cards = Array.prototype.slice.call(relatedGrid.querySelectorAll('.related-card'));
+      var order = recommendationMap[primary] || recommendationMap.secure;
+      var rankMap = {};
+
+      order.forEach(function (key, index) {
+        rankMap[key] = index;
+      });
+
+      cards.sort(function (a, b) {
+        var aKey = a.getAttribute('data-related-key') || '';
+        var bKey = b.getAttribute('data-related-key') || '';
+        var aRank = Object.prototype.hasOwnProperty.call(rankMap, aKey) ? rankMap[aKey] : 999;
+        var bRank = Object.prototype.hasOwnProperty.call(rankMap, bKey) ? rankMap[bKey] : 999;
+        return aRank - bRank;
+      });
+
+      cards.forEach(function (card, index) {
+        card.classList.toggle('is-featured', index < 3);
+        card.setAttribute('data-rank', String(index + 1));
+        relatedGrid.appendChild(card);
+      });
+    }
 
     // --- Theme ---
     function initTheme() {
@@ -107,7 +146,13 @@
     startBtn.addEventListener('click', function () {
       currentScenario = 0;
       scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
+      currentResult = null;
       chatArea.innerHTML = '';
+      trackEvent('quiz_start', {
+        event_category: 'attachment_style',
+        event_label: i18n.currentLang,
+        value: TOTAL_SCENARIOS
+      });
       showScreen(chatScreen);
       renderScenario(0, false);
     });
@@ -218,6 +263,13 @@
       var optionIndex = optionKeys.indexOf(optionKey);
       var type = scenarioMap[scenarioIndex][optionIndex];
       scores[type] += 1;
+      trackEvent('quiz_answer_selected', {
+        event_category: 'attachment_style',
+        event_label: type,
+        scenario_number: scenarioIndex + 1,
+        option_key: optionKey,
+        value: optionIndex + 1
+      });
 
       // Highlight selected button
       var buttons = replyOptions.querySelectorAll('.reply-btn');
@@ -281,6 +333,7 @@
       var secondary = result.secondary;
 
       currentResult = result;
+      prioritizeRelatedCards(primary);
 
       document.getElementById('result-emoji').textContent = i18n.t('results.' + primary + '.emoji');
       document.getElementById('result-type').textContent = i18n.t('results.' + primary + '.name');
@@ -325,13 +378,18 @@
       }
 
       // GA4
-      if (typeof gtag === 'function') {
-        gtag('event', 'quiz_complete', {
-          event_category: 'attachment_style',
-          event_label: primary,
-          value: scores[primary]
-        });
-      }
+      trackEvent('result_view', {
+        event_category: 'attachment_style',
+        event_label: primary,
+        secondary_type: secondary,
+        value: scores[primary]
+      });
+      trackEvent('quiz_complete', {
+        event_category: 'attachment_style',
+        event_label: primary,
+        secondary_type: secondary,
+        value: scores[primary]
+      });
     }
 
     // --- Share: Download ---
@@ -361,6 +419,12 @@
         primaryColor: '#D946EF',
         tagline: 'dopabrain.com/attachment-style'
       });
+
+      trackEvent('attachment_share_click', {
+        event_category: 'attachment_style',
+        event_label: 'download',
+        result_type: primary
+      });
     });
 
     // --- Share: Twitter ---
@@ -375,11 +439,17 @@
         '_blank',
         'noopener'
       );
+      trackEvent('attachment_share_click', {
+        event_category: 'attachment_style',
+        event_label: 'twitter',
+        result_type: result.primary
+      });
     });
 
     // --- Share: Copy ---
     shareCopy.addEventListener('click', function () {
       var url = 'https://dopabrain.com/attachment-style/';
+      var resultType = currentResult ? currentResult.primary : 'unknown';
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(function () {
           showToast(i18n.t('share.copied'));
@@ -393,6 +463,11 @@
         document.body.removeChild(ta);
         showToast(i18n.t('share.copied'));
       }
+      trackEvent('attachment_share_click', {
+        event_category: 'attachment_style',
+        event_label: 'copy',
+        result_type: resultType
+      });
     });
 
     // --- Toast ---
@@ -417,11 +492,38 @@
 
     // --- Retake ---
     retakeBtn.addEventListener('click', function () {
+      trackEvent('attachment_retake_click', {
+        event_category: 'attachment_style',
+        event_label: currentResult ? currentResult.primary : 'unknown'
+      });
       currentScenario = 0;
       scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
+      currentResult = null;
       chatArea.innerHTML = '';
       showScreen(startScreen);
     });
+
+    if (relatedGrid) {
+      relatedGrid.addEventListener('click', function (event) {
+        var card = event.target.closest('.related-card');
+        if (!card) return;
+        trackEvent('attachment_related_click', {
+          event_category: 'attachment_style',
+          event_label: card.getAttribute('data-related-key') || card.getAttribute('href'),
+          result_type: currentResult ? currentResult.primary : 'unknown',
+          related_rank: card.getAttribute('data-rank') || ''
+        });
+      });
+    }
+
+    if (aboutDetails) {
+      aboutDetails.addEventListener('toggle', function () {
+        trackEvent('attachment_about_toggle', {
+          event_category: 'attachment_style',
+          event_label: this.open ? 'open' : 'close'
+        });
+      });
+    }
 
     // --- Hide Loader ---
     var loader = document.getElementById('app-loader');

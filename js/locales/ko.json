@@ -14,6 +14,9 @@
     "disclaimer": "오락 목적입니다. 임상 진단이 아닙니다.",
     "start": "채팅 시작하기 💬"
   },
+  "button": {
+    "save_result": "?? ??"
+  },
   "chat": {
     "partner": "연인",
     "typing": "입력 중...",
@@ -205,7 +208,9 @@
     "eqTest": "EQ 테스트",
     "burnoutTest": "번아웃 테스트",
     "stressResponse": "스트레스 반응",
-    "anxietyType": "불안 유형"
+    "anxietyType": "불안 유형",
+    "shadowWork": "??? ?? ??",
+    "traumaResponse": "???? ??"
   },
   "engage": {
     "result1": "🛡️ 안정형 -- 균형 잡힌 신뢰형",

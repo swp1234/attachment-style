@@ -14,6 +14,9 @@
     "disclaimer": "À des fins de divertissement uniquement. Pas un diagnostic clinique.",
     "start": "Commencer à chatter 💬"
   },
+  "button": {
+    "save_result": "Enregistrer le r?sultat"
+  },
   "chat": {
     "partner": "Partenaire",
     "typing": "écrit...",
@@ -205,7 +208,9 @@
     "eqTest": "Test EQ",
     "burnoutTest": "Test de Burnout",
     "stressResponse": "Réponse au Stress",
-    "anxietyType": "Type d'Anxiété"
+    "anxietyType": "Type d'Anxiété",
+    "shadowWork": "Quiz shadow work",
+    "traumaResponse": "R?ponse au traumatisme"
   },
   "engage": {
     "result1": "🛡️ Sécure -- Équilibré et confiant",

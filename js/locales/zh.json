@@ -14,6 +14,9 @@
     "disclaimer": "仅供娱乐，不构成临床诊断。",
     "start": "开始聊天 💬"
   },
+  "button": {
+    "save_result": "????"
+  },
   "chat": {
     "partner": "另一半",
     "typing": "正在输入...",
@@ -205,7 +208,9 @@
     "eqTest": "EQ测试",
     "burnoutTest": "职业倦怠测试",
     "stressResponse": "压力反应",
-    "anxietyType": "焦虑类型"
+    "anxietyType": "焦虑类型",
+    "shadowWork": "??????",
+    "traumaResponse": "????"
   },
   "engage": {
     "result1": "🛡️ 安全型 -- 平衡且信任",
