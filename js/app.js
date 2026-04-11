@@ -54,8 +54,15 @@
     var shareCopy = document.getElementById('share-copy');
     var relatedGrid = document.getElementById('related-grid');
     var aboutDetails = document.getElementById('about-details');
+    var primaryRelatedEmoji = document.getElementById('primary-related-emoji');
+    var primaryRelatedTitle = document.getElementById('primary-related-title');
+    var primaryRelatedCta = document.getElementById('primary-related-cta');
+    var primaryRelatedCtaText = document.getElementById('primary-related-cta-text');
+    var relatedJumpBtn = document.getElementById('related-jump-btn');
+    var resultInlineAd = document.getElementById('result-inline-ad');
 
     var currentResult = null;
+    var resultInlineAdLoaded = false;
     var recommendationMap = {
       secure: ['love-language', 'mbti-love', 'eq-test', 'emotion-iceberg', 'stress-response', 'anxiety-type', 'burnout-test', 'inner-child-test', 'shadow-work', 'trauma-response'],
       anxious: ['anxiety-type', 'stress-response', 'burnout-test', 'eq-test', 'inner-child-test', 'love-language', 'mbti-love', 'emotion-iceberg', 'shadow-work', 'trauma-response'],
@@ -92,6 +99,66 @@
         card.setAttribute('data-rank', String(index + 1));
         relatedGrid.appendChild(card);
       });
+    }
+
+    function updatePrimaryRecommendation() {
+      if (!relatedGrid || !primaryRelatedTitle || !primaryRelatedCta || !primaryRelatedCtaText || !primaryRelatedEmoji) {
+        return;
+      }
+
+      var firstCard = relatedGrid.querySelector('.related-card');
+      if (!firstCard) return;
+
+      var titleEl = firstCard.querySelector('.related-name');
+      var emojiEl = firstCard.querySelector('.related-emoji');
+      var title = titleEl ? titleEl.textContent.trim() : firstCard.getAttribute('data-related-key') || 'Recommended Test';
+      var emoji = emojiEl ? emojiEl.textContent.trim() : '\uD83D\uDCAC';
+      var href = firstCard.getAttribute('href') || '#';
+      var cardColor = firstCard.style.getPropertyValue('--card-color') || '';
+
+      primaryRelatedTitle.textContent = title;
+      primaryRelatedEmoji.textContent = emoji;
+      primaryRelatedCtaText.textContent = title;
+      primaryRelatedCta.setAttribute('href', href);
+      primaryRelatedCta.setAttribute('data-related-key', firstCard.getAttribute('data-related-key') || '');
+      primaryRelatedCta.setAttribute('data-related-rank', firstCard.getAttribute('data-rank') || '1');
+
+      if (cardColor) {
+        primaryRelatedCta.style.setProperty('--cta-color', cardColor);
+        primaryRelatedTitle.style.setProperty('--cta-color', cardColor);
+        var cardContainer = document.getElementById('next-step-card');
+        if (cardContainer) {
+          cardContainer.style.setProperty('--cta-color', cardColor);
+        }
+      }
+    }
+
+    function ensureResultAdLoaded() {
+      if (resultInlineAdLoaded || !resultInlineAd) return;
+      var adNode = resultInlineAd.querySelector('.adsbygoogle');
+      if (!adNode) return;
+
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        resultInlineAdLoaded = true;
+      } catch (error) {
+        // Ad blockers or delayed AdSense init are non-fatal here.
+      }
+    }
+
+    function getShareUrl() {
+      var currentLang = i18n.currentLang || 'en';
+      var alternate = document.querySelector('link[rel="alternate"][hreflang="' + currentLang + '"]');
+      if (alternate && alternate.href) {
+        return alternate.href;
+      }
+
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical && canonical.href) {
+        return canonical.href;
+      }
+
+      return window.location.origin + window.location.pathname;
     }
 
     // --- Theme ---
@@ -290,6 +357,7 @@
         setTimeout(function () {
           if (currentScenario < TOTAL_SCENARIOS - 1) {
             currentScenario++;
+            isAnimating = false;
             renderScenario(currentScenario, false);
           } else {
             // Show results
@@ -334,6 +402,7 @@
 
       currentResult = result;
       prioritizeRelatedCards(primary);
+      updatePrimaryRecommendation();
 
       document.getElementById('result-emoji').textContent = i18n.t('results.' + primary + '.emoji');
       document.getElementById('result-type').textContent = i18n.t('results.' + primary + '.name');
@@ -390,6 +459,8 @@
         secondary_type: secondary,
         value: scores[primary]
       });
+
+      ensureResultAdLoaded();
     }
 
     // --- Share: Download ---
@@ -433,7 +504,7 @@
       var typeName = i18n.t('results.' + result.primary + '.name');
       var emoji = i18n.t('results.' + result.primary + '.emoji');
       var text = emoji + ' ' + typeName + ' - ' + i18n.t('share.twitter');
-      var url = 'https://dopabrain.com/attachment-style/';
+      var url = getShareUrl();
       window.open(
         'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url),
         '_blank',
@@ -448,7 +519,7 @@
 
     // --- Share: Copy ---
     shareCopy.addEventListener('click', function () {
-      var url = 'https://dopabrain.com/attachment-style/';
+      var url = getShareUrl();
       var resultType = currentResult ? currentResult.primary : 'unknown';
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(function () {
@@ -469,6 +540,30 @@
         result_type: resultType
       });
     });
+
+    if (primaryRelatedCta) {
+      primaryRelatedCta.addEventListener('click', function () {
+        trackEvent('attachment_primary_cta_click', {
+          event_category: 'attachment_style',
+          event_label: this.getAttribute('data-related-key') || this.getAttribute('href'),
+          result_type: currentResult ? currentResult.primary : 'unknown',
+          related_rank: this.getAttribute('data-related-rank') || '1'
+        });
+      });
+    }
+
+    if (relatedJumpBtn) {
+      relatedJumpBtn.addEventListener('click', function () {
+        var relatedSection = document.querySelector('.related-tests');
+        if (relatedSection) {
+          relatedSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        trackEvent('attachment_related_jump_click', {
+          event_category: 'attachment_style',
+          event_label: currentResult ? currentResult.primary : 'unknown'
+        });
+      });
+    }
 
     // --- Toast ---
     function showToast(message) {
