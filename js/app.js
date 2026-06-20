@@ -71,8 +71,13 @@
     };
 
     function trackEvent(name, params) {
-      if (typeof gtag !== 'function') return;
-      gtag('event', name, params || {});
+      var payload = params || {};
+      if (typeof gtag === 'function') {
+        gtag('event', name, payload);
+        return;
+      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({ event: name }, payload));
     }
 
     function prioritizeRelatedCards(primary) {
@@ -133,6 +138,22 @@
       }
     }
 
+    function getResultEventParams(method, extra) {
+      var resultType = currentResult ? currentResult.primary : 'unknown';
+      return Object.assign({
+        event_category: 'attachment_style',
+        content_type: 'test_result',
+        surface: 'result_actions',
+        method: method,
+        result_type: resultType,
+        lang: i18n.currentLang || 'en',
+        utm_source: 'share',
+        utm_medium: 'attachment_result',
+        utm_campaign: 'personality_result_share',
+        utm_content: resultType
+      }, extra || {});
+    }
+
     function ensureResultAdLoaded() {
       if (resultInlineAdLoaded || !resultInlineAd) return;
       var adNode = resultInlineAd.querySelector('.adsbygoogle');
@@ -140,25 +161,37 @@
 
       try {
         (adsbygoogle = window.adsbygoogle || []).push({});
-        resultInlineAdLoaded = true;
       } catch (error) {
         // Ad blockers or delayed AdSense init are non-fatal here.
       }
+      resultInlineAdLoaded = true;
+      trackEvent('attachment_result_ad_impression', getResultEventParams('ad_impression', {
+        surface: 'result_inline',
+        ad_surface: 'attachment_result',
+        ad_slot: adNode.getAttribute('data-ad-slot') || 'auto'
+      }));
     }
 
     function getShareUrl() {
       var currentLang = i18n.currentLang || 'en';
       var alternate = document.querySelector('link[rel="alternate"][hreflang="' + currentLang + '"]');
+      var baseUrl;
       if (alternate && alternate.href) {
-        return alternate.href;
+        baseUrl = alternate.href;
+      } else {
+        var canonical = document.querySelector('link[rel="canonical"]');
+        baseUrl = canonical && canonical.href ? canonical.href : window.location.origin + window.location.pathname;
       }
 
-      var canonical = document.querySelector('link[rel="canonical"]');
-      if (canonical && canonical.href) {
-        return canonical.href;
-      }
-
-      return window.location.origin + window.location.pathname;
+      var url = new URL(baseUrl, window.location.origin);
+      var resultType = currentResult ? currentResult.primary : 'unknown';
+      url.searchParams.set('lang', currentLang);
+      url.searchParams.set('utm_source', 'share');
+      url.searchParams.set('utm_medium', 'attachment_result');
+      url.searchParams.set('utm_campaign', 'personality_result_share');
+      url.searchParams.set('utm_content', resultType);
+      if (currentResult) url.searchParams.set('attachment_style', resultType);
+      return url.toString();
     }
 
     // --- Theme ---
@@ -491,11 +524,9 @@
         tagline: 'dopabrain.com/attachment-style'
       });
 
-      trackEvent('attachment_share_click', {
-        event_category: 'attachment_style',
-        event_label: 'download',
-        result_type: primary
-      });
+      var params = getResultEventParams('download', { event_label: 'download', result_type: primary });
+      trackEvent('attachment_save_click', params);
+      trackEvent('attachment_share_click', params);
     });
 
     // --- Share: Twitter ---
@@ -510,11 +541,13 @@
         '_blank',
         'noopener'
       );
-      trackEvent('attachment_share_click', {
-        event_category: 'attachment_style',
+      var params = getResultEventParams('twitter', {
         event_label: 'twitter',
-        result_type: result.primary
+        result_type: result.primary,
+        share_url: url
       });
+      trackEvent('attachment_share_click', params);
+      trackEvent('share', params);
     });
 
     // --- Share: Copy ---
@@ -534,11 +567,14 @@
         document.body.removeChild(ta);
         showToast(i18n.t('share.copied'));
       }
-      trackEvent('attachment_share_click', {
-        event_category: 'attachment_style',
+      var params = getResultEventParams('clipboard', {
         event_label: 'copy',
-        result_type: resultType
+        result_type: resultType,
+        share_url: url
       });
+      trackEvent('attachment_copy_link', params);
+      trackEvent('attachment_share_click', params);
+      trackEvent('share', params);
     });
 
     if (primaryRelatedCta) {
