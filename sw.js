@@ -1,4 +1,4 @@
-const CACHE_NAME = 'attachment-style-v1';
+const CACHE_NAME = 'attachment-style-v2';
 const ASSETS = [
   '/attachment-style/',
   '/attachment-style/index.html',

@@ -69,6 +69,8 @@
       avoidant: ['emotion-iceberg', 'eq-test', 'shadow-work', 'love-language', 'stress-response', 'anxiety-type', 'mbti-love', 'burnout-test', 'inner-child-test', 'trauma-response'],
       fearful: ['trauma-response', 'inner-child-test', 'shadow-work', 'stress-response', 'anxiety-type', 'eq-test', 'emotion-iceberg', 'burnout-test', 'love-language', 'mbti-love']
     };
+    var launchParams = getLaunchParams();
+    var autoStartConsumed = false;
 
     function trackEvent(name, params) {
       var payload = params || {};
@@ -78,6 +80,46 @@
       }
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push(Object.assign({ event: name }, payload));
+    }
+
+    function getLaunchParams() {
+      try {
+        var params = new URLSearchParams(window.location.search || '');
+        return {
+          shouldStart: params.get('start') === '1',
+          surface: params.get('surface') || params.get('utm_content') || 'url_start'
+        };
+      } catch (error) {
+        return { shouldStart: false, surface: 'url_start' };
+      }
+    }
+
+    function getStartEventParams(surface) {
+      return {
+        event_category: 'attachment_style',
+        event_label: i18n.currentLang,
+        value: TOTAL_SCENARIOS,
+        cta_surface: surface || 'intro_button',
+        launch_surface: surface || 'intro_button',
+        test_slug: 'attachment-style'
+      };
+    }
+
+    function startQuiz(surface) {
+      currentScenario = 0;
+      scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
+      currentResult = null;
+      chatArea.innerHTML = '';
+
+      var eventParams = getStartEventParams(surface);
+      if (surface && surface !== 'intro_button') {
+        trackEvent('attachment_auto_start', eventParams);
+      }
+      trackEvent('quiz_start', eventParams);
+      trackEvent('test_start', eventParams);
+
+      showScreen(chatScreen);
+      renderScenario(0, false);
     }
 
     function prioritizeRelatedCards(primary) {
@@ -244,18 +286,16 @@
 
     // --- Start ---
     startBtn.addEventListener('click', function () {
-      currentScenario = 0;
-      scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
-      currentResult = null;
-      chatArea.innerHTML = '';
-      trackEvent('quiz_start', {
-        event_category: 'attachment_style',
-        event_label: i18n.currentLang,
-        value: TOTAL_SCENARIOS
-      });
-      showScreen(chatScreen);
-      renderScenario(0, false);
+      startQuiz('intro_button');
     });
+
+    if (launchParams.shouldStart) {
+      window.setTimeout(function () {
+        if (autoStartConsumed || !startScreen.classList.contains('active')) return;
+        autoStartConsumed = true;
+        startQuiz(launchParams.surface || 'url_start');
+      }, 350);
+    }
 
     // --- Render Scenario ---
     function renderScenario(index, isRerender) {
