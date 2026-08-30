@@ -1,4 +1,4 @@
-const CACHE_NAME = 'attachment-style-v2';
+const CACHE_NAME = 'attachment-reflection-v3';
 const ASSETS = [
   '/attachment-style/',
   '/attachment-style/index.html',
@@ -17,7 +17,6 @@ const ASSETS = [
   '/attachment-style/js/locales/tr.json',
   '/attachment-style/js/locales/de.json',
   '/attachment-style/js/locales/fr.json',
-  '/attachment-style/manifest.json',
 ];
 
 self.addEventListener('install', event => {
