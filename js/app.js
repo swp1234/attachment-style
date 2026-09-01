@@ -10,8 +10,8 @@
   var SCENARIO_MAP = Array.from({ length: TOTAL_SCENARIOS }, function () {
     return TYPES.slice();
   });
-  var ALLOWED_SOURCES = ['direct', 'en_avoidant_guide_primary', 'clarity_board'];
-  var ALLOWED_SURFACES = ['direct', 'intro_button', 'en_avoidant_guide_primary', 'clarity_header', 'clarity_footer'];
+  var ALLOWED_SOURCES = ['direct', 'en_avoidant_guide_primary', 'fr_attachment_guide_primary', 'clarity_board'];
+  var ALLOWED_SURFACES = ['direct', 'intro_button', 'en_avoidant_guide_primary', 'fr_attachment_guide_primary', 'clarity_header', 'clarity_footer'];
 
   var BASE_COPY = {
     badge: 'Private reflection',
@@ -226,7 +226,7 @@
     function getLaunchParams() {
       try {
         var params = new URLSearchParams(window.location.search || '');
-        var sourceHint = params.get('source') || (params.get('surface') === 'en_avoidant_guide_primary' ? 'en_avoidant_guide_primary' : 'direct');
+        var sourceHint = params.get('source') || params.get('surface') || 'direct';
         return {
           shouldStart: params.get('start') === '1',
           source: pick(sourceHint, ALLOWED_SOURCES, 'direct'),
