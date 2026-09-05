@@ -10,7 +10,7 @@
   var SCENARIO_MAP = Array.from({ length: TOTAL_SCENARIOS }, function () {
     return TYPES.slice();
   });
-  var ALLOWED_SOURCES = ['direct', 'en_avoidant_guide_primary', 'fr_attachment_guide_primary', 'clarity_board'];
+  var ALLOWED_SOURCES = ['direct', 'en_avoidant_guide_primary', 'fr_attachment_guide_primary', 'clarity_board', 'red_flag_retirement'];
   var ALLOWED_SURFACES = ['direct', 'intro_button', 'en_avoidant_guide_primary', 'fr_attachment_guide_primary', 'clarity_header', 'clarity_footer'];
 
   var BASE_COPY = {
