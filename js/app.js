@@ -191,6 +191,81 @@
   };
   var TYPE_SYMBOLS = ['◆', '○', '↔', '◇'];
 
+  var HERO_RECOMMENDATIONS = {
+    anxious: {
+      url: '/stress-check/',
+      label: {
+        en: 'Recommended next step', ko: '추천 다음 단계', zh: '推荐下一步', ja: 'おすすめの次の一歩',
+        es: 'Siguiente paso recomendado', pt: 'Próximo passo recomendado', de: 'Empfohlener nächster Schritt', fr: 'Étape suivante recommandée',
+        id: 'Langkah selanjutnya yang disarankan', tr: 'Önerilen sonraki adım', ru: 'Рекомендуемый следующий шаг', hi: 'अनुशंसित अगला कदम'
+      },
+      title: {
+        en: 'Explore somatic & relationship stress triggers', ko: '신체 및 관계 스트레스 요인 점검하기', zh: '了解身体与关系中的压力触发点', ja: '身体と関係性のストレス要因をチェック',
+        es: 'Explora los detonantes de estrés somático y vincular', pt: 'Explore os gatilhos de estresse somático e relacional', de: 'Erforsche somatische und Beziehungs-Stresstrigger', fr: 'Explorez vos déclencheurs de stress somatique et relationnel',
+        id: 'Jelajahi pemicu stres somatik & relasional', tr: 'Bedensel ve ilişkisel stres tetikleyicilerini keşfet', ru: 'Исследуйте телесные и отношенческие триггеры стресса', hi: 'शारीरिक और रिश्ते से जुड़े तनाव के कारणों को समझें'
+      },
+      action: {
+        en: 'Take Stress Check', ko: '스트레스 지수 측정하기', zh: '开始压力自测', ja: 'ストレス診断を受ける',
+        es: 'Hacer test de estrés', pt: 'Fazer teste de estresse', de: 'Stresstest starten', fr: 'Faire le test de stress',
+        id: 'Mulai Tes Stres', tr: 'Stres Testini Başlat', ru: 'Пройти тест на стресс', hi: 'तनाव टेस्ट शुरू करें'
+      }
+    },
+    avoidant: {
+      url: '/emotion-iceberg/',
+      label: {
+        en: 'Recommended next step', ko: '추천 다음 단계', zh: '推荐下一步', ja: 'おすすめの次の一歩',
+        es: 'Siguiente paso recomendado', pt: 'Próximo passo recomendado', de: 'Empfohlener nächster Schritt', fr: 'Étape suivante recommandée',
+        id: 'Langkah selanjutnya yang disarankan', tr: 'Önerilen sonraki adım', ru: 'Рекомендуемый следующий шаг', hi: 'अनुशंसित अगला कदम'
+      },
+      title: {
+        en: 'Name what is under the protective shield', ko: '방어 반응 아래 숨은 감정 알아차리기', zh: '觉察保护外壳之下的真实感受', ja: '防御的な反応の奥にある感情に気づく',
+        es: 'Nombra lo que hay bajo el escudo protector', pt: 'Nomeie o que está sob o escudo protetor', de: 'Benenne, was unter dem Schutzschild liegt', fr: 'Nommez ce qui se cache sous votre bouclier protecteur',
+        id: 'Kenali apa yang ada di balik tameng pelindung', tr: 'Koruyucu kalkanın altındakini adlandır', ru: 'Осознайте, что скрывается под защитным панцирем', hi: 'सुरक्षा कवच के नीचे छिपी भावनाओं को पहचानें'
+      },
+      action: {
+        en: 'Open Emotion Iceberg', ko: '감정 빙산 탐색하기', zh: '打开情绪冰山', ja: '感情の氷山を開く',
+        es: 'Abrir Iceberg de Emociones', pt: 'Abrir Iceberg das Emoções', de: 'Emotions-Eisberg öffnen', fr: 'Ouvrir l’Iceberg des émotions',
+        id: 'Buka Gunung Es Emosi', tr: 'Duygu Buzdağını Aç', ru: 'Открыть айсберг эмоций', hi: 'भावनाओं का हिमशैल खोलें'
+      }
+    },
+    fearful: {
+      url: '/hsp-test/',
+      label: {
+        en: 'Recommended next step', ko: '추천 다음 단계', zh: '推荐下一步', ja: 'おすすめの次の一歩',
+        es: 'Siguiente paso recomendado', pt: 'Próximo passo recomendado', de: 'Empfohlener nächster Schritt', fr: 'Étape suivante recommandée',
+        id: 'Langkah selanjutnya yang disarankan', tr: 'Önerilen sonraki adım', ru: 'Рекомендуемый следующий шаг', hi: 'अनुशंसित अगला कदम'
+      },
+      title: {
+        en: 'Assess sensory & emotional sensitivity overload', ko: '감각 및 정서적 민감도와 과부하 점검하기', zh: '评估感官与情绪敏感度过载', ja: '感覚と感情の過負荷・繊細さをチェック',
+        es: 'Evalúa la sobrecarga sensorial y emocional', pt: 'Avalie a sobrecarga sensorial e emocional', de: 'Überprüfe sensorische und emotionale Reizüberflutung', fr: 'Évaluez la surcharge sensorielle et émotionnelle',
+        id: 'Periksa kepekaan sensorik & emosional berlebih', tr: 'Duyusal ve duygusal hassasiyet yükünü değerlendir', ru: 'Оцените сенсорную и эмоциональную перегрузку', hi: 'संवेदी और भावनात्मक संवेदनशीलता अधिभार का आकलन करें'
+      },
+      action: {
+        en: 'Take HSP Test', ko: 'HSP 민감성 테스트하기', zh: '开始高敏感测试', ja: 'HSP診断を受ける',
+        es: 'Hacer test PAS (HSP)', pt: 'Fazer teste PAS (HSP)', de: 'HSP-Test starten', fr: 'Faire le test HSP',
+        id: 'Mulai Tes HSP', tr: 'HSP Hassasiyet Testini Başlat', ru: 'Пройти тест на HSP', hi: 'HSP संवेदनशीलता टेस्ट शुरू करें'
+      }
+    },
+    secure: {
+      url: '/future-self/',
+      label: {
+        en: 'Recommended next step', ko: '추천 다음 단계', zh: '推荐下一步', ja: 'おすすめの次の一歩',
+        es: 'Siguiente paso recomendado', pt: 'Próximo passo recomendado', de: 'Empfohlener nächster Schritt', fr: 'Étape suivante recommandée',
+        id: 'Langkah selanjutnya yang disarankan', tr: 'Önerilen sonraki adım', ru: 'Рекомендуемый следующий шаг', hi: 'अनुशंसित अगला कदम'
+      },
+      title: {
+        en: 'Envision your trajectory & future alignment', ko: '앞으로의 삶의 궤적과 미래 방향성 설계하기', zh: '描绘未来生活轨迹与成长方向', ja: '未来の自分との調和と歩みを思い描く',
+        es: 'Visualiza tu trayectoria y alineación futura', pt: 'Visualize sua trajetória e alinhamento futuro', de: 'Entwirf deinen Lebensweg und Zukunftsausrichtung', fr: 'Visualisez votre trajectoire et vos aspirations futures',
+        id: 'Rancang arah hidup & keselarasan masa depan', tr: 'Gelecekteki yönünü ve uyumunu tasarla', ru: 'Спроектируйте траекторию и вектор будущего', hi: 'अपने भविष्य की दिशा और संतुलन की कल्पना करें'
+      },
+      action: {
+        en: 'Explore Future Self', ko: '미래의 나 만나보기', zh: '探索未来的自己', ja: '未来の自分を見つめる',
+        es: 'Explorar tu Yo Futuro', pt: 'Explorar seu Eu Futuro', de: 'Zukunfts-Ich erkunden', fr: 'Explorer votre Moi Futur',
+        id: 'Jelajahi Diri Masa Depan', tr: 'Gelecekteki Kendini Keşfet', ru: 'Узнать своё будущее Я', hi: 'अपने भविष्य के स्वरूप को जानें'
+      }
+    }
+  };
+
   try {
     await i18n.loadTranslations(i18n.currentLang);
     i18n.updateUI();
@@ -264,6 +339,34 @@
       if (node) node.textContent = value;
     }
 
+    function syncRelatedUrls() {
+      var lang = i18n.currentLang || 'en';
+      var relatedLinks = document.querySelectorAll('#related-grid .related-card');
+      Array.prototype.forEach.call(relatedLinks, function (link) {
+        var baseHref = link.getAttribute('href').split('?')[0];
+        link.setAttribute('href', baseHref + '?lang=' + encodeURIComponent(lang));
+      });
+    }
+
+    function applyNextStepRecommendation(primaryType) {
+      var typeKey = primaryType || (currentResult && currentResult.primary) || 'anxious';
+      var rec = HERO_RECOMMENDATIONS[typeKey] || HERO_RECOMMENDATIONS.anxious;
+      var lang = i18n.currentLang || 'en';
+      var label = (rec.label && rec.label[lang]) || rec.label.en;
+      var title = (rec.title && rec.title[lang]) || rec.title.en;
+      var action = (rec.action && rec.action[lang]) || rec.action.en;
+
+      setText('next-step-label', label);
+      setText('next-step-title', title);
+      var cta = document.getElementById('primary-related-cta');
+      if (cta) {
+        cta.textContent = action;
+        cta.setAttribute('href', rec.url + '?lang=' + encodeURIComponent(lang));
+        cta.setAttribute('data-related-key', typeKey);
+      }
+      syncRelatedUrls();
+    }
+
     function applyReflectionCopy() {
       var copy = localeCopy();
       setText('reflection-badge', copy.badge);
@@ -278,9 +381,7 @@
       setText('result-label', copy.resultLabel);
       setText('practice-heading', copy.practiceHeading);
       setText('result-boundary', copy.resultBoundary);
-      setText('next-step-label', copy.nextLabel);
-      setText('next-step-title', copy.nextTitle);
-      setText('primary-related-cta', copy.nextAction);
+      applyNextStepRecommendation((currentResult && currentResult.primary) || 'anxious');
       setText('share-copy', copy.copy);
       setText('retake-btn', copy.retake);
       setText('about-toggle', copy.aboutToggle);
@@ -425,6 +526,7 @@
       setText('result-type', names[index]);
       setText('result-desc', copy.resultSummary);
       setText('result-advice', copy.practice);
+      applyNextStepRecommendation(currentResult.primary);
       if (emitComplete) {
         trackEvent('attachment_reflection_complete', Object.assign(eventContext(launch.surface), { scenario_count: TOTAL_SCENARIOS }));
       }
@@ -486,7 +588,15 @@
     }
 
     primaryRelatedCta.addEventListener('click', function () {
-      trackEvent('attachment_reflection_related_click', Object.assign(eventContext('direct'), { target_slug: 'emotion-iceberg' }));
+      var targetSlug = primaryRelatedCta.getAttribute('href') || 'related';
+      trackEvent('attachment_reflection_related_click', Object.assign(eventContext('direct'), { target_slug: targetSlug, is_hero: true }));
+    });
+    var relatedCards = document.querySelectorAll('#related-grid .related-card');
+    Array.prototype.forEach.call(relatedCards, function (card) {
+      card.addEventListener('click', function () {
+        var key = card.getAttribute('data-related-key') || card.getAttribute('href');
+        trackEvent('attachment_reflection_related_click', Object.assign(eventContext('direct'), { target_slug: key, is_hero: false }));
+      });
     });
     aboutDetails.addEventListener('toggle', function () {
       if (aboutDetails.open) trackEvent('attachment_reflection_evidence_open', eventContext('direct'));

@@ -210,7 +210,11 @@
     "stressResponse": "Stres Tepkisi",
     "anxietyType": "Kaygı Tipi",
     "shadowWork": "G?lge ?al??ma testi",
-    "traumaResponse": "Travma tepkisi"
+    "traumaResponse": "Travma tepkisi",
+    "title": "Daha fazla testi keşfet",
+    "stressCheck": "Stres Testi",
+    "hspTest": "HSP Hassasiyet Testi",
+    "futureSelf": "Gelecekteki Ben"
   },
   "engage": {
     "result1": "🛡️ Güvenli -- Dengeli ve Güvenilir",

@@ -204,13 +204,17 @@
   "related": {
     "loveLanguage": "प्रेम भाषा",
     "mbtiLove": "MBTI प्रेम",
-    "emotionIceberg": "भावना हिमशैल",
+    "emotionIceberg": "भावनाओं का हिमशैल",
     "eqTest": "EQ टेस्ट",
     "burnoutTest": "बर्नआउट टेस्ट",
     "stressResponse": "तनाव प्रतिक्रिया",
     "anxietyType": "चिंता प्रकार",
     "shadowWork": "???? ???? ??????",
-    "traumaResponse": "?????? ???????????"
+    "traumaResponse": "?????? ???????????",
+    "title": "अन्य आत्मचिंतन परीक्षण देखें",
+    "stressCheck": "तनाव परीक्षण",
+    "hspTest": "HSP संवेदनशीलता परीक्षण",
+    "futureSelf": "भविष्य का स्वरूप"
   },
   "engage": {
     "result1": "🛡️ सुरक्षित -- संतुलित और विश्वसनीय",

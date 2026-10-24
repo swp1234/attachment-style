@@ -210,7 +210,11 @@
     "stressResponse": "ストレス反応",
     "anxietyType": "不安タイプ",
     "shadowWork": "?????????",
-    "traumaResponse": "??????"
+    "traumaResponse": "??????",
+    "title": "おすすめの心理テスト",
+    "stressCheck": "ストレス診断",
+    "hspTest": "HSP診断",
+    "futureSelf": "未来の自分"
   },
   "engage": {
     "result1": "🛡️ 安定型 -- バランスと信頼",

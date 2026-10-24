@@ -210,7 +210,11 @@
     "stressResponse": "Stress Response",
     "anxietyType": "Anxiety Type",
     "shadowWork": "Shadow Work Quiz",
-    "traumaResponse": "Trauma Response"
+    "traumaResponse": "Trauma Response",
+    "title": "Explore more reflections",
+    "stressCheck": "Stress Check",
+    "hspTest": "HSP Test",
+    "futureSelf": "Future Self"
   },
   "engage": {
     "result1": "🛡️ Secure -- Balanced & Trusting",

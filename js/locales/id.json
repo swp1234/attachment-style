@@ -210,7 +210,11 @@
     "stressResponse": "Respons Stres",
     "anxietyType": "Tipe Kecemasan",
     "shadowWork": "Kuis shadow work",
-    "traumaResponse": "Respons trauma"
+    "traumaResponse": "Respons trauma",
+    "title": "Jelajahi tes lainnya",
+    "stressCheck": "Tes Stres",
+    "hspTest": "Tes HSP",
+    "futureSelf": "Diri Masa Depan"
   },
   "engage": {
     "result1": "🛡️ Aman -- Seimbang & Percaya",

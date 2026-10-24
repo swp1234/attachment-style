@@ -204,13 +204,17 @@
   "related": {
     "loveLanguage": "Lenguaje del amor",
     "mbtiLove": "MBTI Amor",
-    "emotionIceberg": "Iceberg emocional",
+    "emotionIceberg": "Iceberg de Emociones",
     "eqTest": "Test EQ",
     "burnoutTest": "Test de Burnout",
     "stressResponse": "Respuesta al Estrés",
     "anxietyType": "Tipo de Ansiedad",
     "shadowWork": "Test de sombra",
-    "traumaResponse": "Respuesta al trauma"
+    "traumaResponse": "Respuesta al trauma",
+    "title": "Explora más reflexiones",
+    "stressCheck": "Test de Estrés",
+    "hspTest": "Test PAS (HSP)",
+    "futureSelf": "Mi Yo Futuro"
   },
   "engage": {
     "result1": "🛡️ Seguro -- Equilibrado y confiado",

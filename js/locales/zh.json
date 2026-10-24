@@ -204,13 +204,17 @@
   "related": {
     "loveLanguage": "爱的语言",
     "mbtiLove": "MBTI恋爱",
-    "emotionIceberg": "情感冰山",
+    "emotionIceberg": "情绪冰山",
     "eqTest": "EQ测试",
     "burnoutTest": "职业倦怠测试",
     "stressResponse": "压力反应",
     "anxietyType": "焦虑类型",
     "shadowWork": "??????",
-    "traumaResponse": "????"
+    "traumaResponse": "????",
+    "title": "探索更多心理测试",
+    "stressCheck": "压力自测",
+    "hspTest": "高敏感测试",
+    "futureSelf": "未来的自己"
   },
   "engage": {
     "result1": "🛡️ 安全型 -- 平衡且信任",
