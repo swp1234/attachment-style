@@ -35,16 +35,66 @@
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"WebApplication",
-    "name":"Attachment Response Reflection",
-    "description":"A private 10-scenario reflection on current relationship response patterns. It is not the ECR-R, a validated assessment, or a diagnosis.",
-    "url":"https://dopabrain.com/attachment-style/",
-    "dateModified":"2026-10-24",
-    "applicationCategory":"LifestyleApplication",
-    "operatingSystem":"Any",
-    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
-    "author":{"@type":"Organization","name":"DopaBrain","url":"https://dopabrain.com/"},
-    "inLanguage":["ko","en","zh","hi","ru","ja","es","pt","id","tr","de","fr"]
+    "@graph":[
+      {
+        "@type":"WebApplication",
+        "name":"Attachment Response Reflection",
+        "description":"A private 10-scenario reflection exploring attachment anxiety and avoidance patterns in relationship communication. It is an educational self-reflection, not the ECR-R, a clinical diagnosis, or a medical assessment.",
+        "url":"https://dopabrain.com/attachment-style/",
+        "dateModified":"2026-10-27",
+        "applicationCategory":"LifestyleApplication",
+        "operatingSystem":"Any",
+        "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+        "author":{"@type":"Organization","name":"DopaBrain","url":"https://dopabrain.com/"},
+        "publisher":{"@type":"Organization","name":"DopaBrain","url":"https://dopabrain.com/"},
+        "inLanguage":["ko","en","zh","hi","ru","ja","es","pt","id","tr","de","fr"]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://dopabrain.com/"},
+          {"@type":"ListItem","position":2,"name":"Tests","item":"https://dopabrain.com/#tests"},
+          {"@type":"ListItem","position":3,"name":"Attachment Style Reflection","item":"https://dopabrain.com/attachment-style/"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"What are the four primary adult attachment styles?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Adult attachment research maps relational tendencies across two primary dimensions: attachment anxiety (fear of rejection or abandonment) and attachment avoidance (discomfort with emotional closeness and vulnerability). Combining these axes yields four prototypical profiles: Secure (low anxiety, low avoidance), Anxious-Preoccupied (high anxiety, low avoidance), Dismissive-Avoidant (low anxiety, high avoidance), and Fearful-Avoidant or Disorganized (high anxiety, high avoidance)."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Can a person's attachment style change over time?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Yes. While attachment patterns frequently form through early developmental experiences, research indicates attachment security is not biologically fixed. Through conscious self-reflection, secure relationships, emotional regulation practices, and targeted therapy, individuals can develop 'earned security' across adulthood."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Is this reflection a validated clinical diagnosis?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"No. Standard clinical and empirical assessment uses 36-item psychometric instruments like the ECR-R (Experiences in Close Relationships - Revised) or structured clinical interviews (AAI). This 10-scenario simulation is an educational exploration designed for personal awareness and communication insight, not a psychiatric evaluation."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Are my responses or chat choices stored or uploaded?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Never. All choice evaluations and summary metrics are computed entirely client-side within your browser. No scenario selections, reflection results, or personal identifiable inputs are ever transmitted, saved on servers, or tracked in analytics."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
@@ -166,12 +216,52 @@
   </main>
 
   <section class="about-section" id="about-section">
-    <details id="about-details">
-      <summary id="about-toggle">What this activity can and cannot tell you</summary>
+    <details id="about-details" open>
+      <summary id="about-toggle">Assessment Framework, Attachment Profiles &amp; FAQ</summary>
       <div class="about-content">
-        <h2 id="about-heading">A reflection, not an attachment measure</h2>
-        <p id="about-copy">Adult attachment research commonly studies two continuous dimensions: anxiety and avoidance. Four labels can be derived from dimensions, but a short custom scenario activity cannot establish a stable type, explain your childhood, or diagnose a condition.</p>
-        <p class="source-links"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3954965/" rel="noopener noreferrer">ECR-R measurement overview</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/36201836/" rel="noopener noreferrer">2022 meta-analysis</a></p>
+        <h2 id="about-heading">Theoretical Framework &amp; Two-Dimensional Attachment Model</h2>
+        <p id="about-copy">Originating in the pioneering developmental attachment research of John Bowlby (1969, 1982) and Mary Ainsworth (1978), contemporary adult relationship psychology conceptualizes attachment not as rigid categories, but along two continuous neurocognitive axes: <strong>Attachment Anxiety</strong> (vigilance toward interpersonal abandonment or unresponsiveness) and <strong>Attachment Avoidance</strong> (defensive suppression of vulnerability and reluctance to rely upon emotional intimacy).</p>
+
+        <h2>The Four Adult Attachment Response Patterns</h2>
+        <ul style="margin: 8px 0 16px 20px; line-height: 1.7; color: var(--text-secondary); font-size: 14px;">
+          <li><strong style="color: var(--text);">Secure Pattern (Low Anxiety, Low Avoidance):</strong> High comfort with emotional interdependence and honest communication. Able to express boundaries without hostility and receive reassurance without persistent skepticism.</li>
+          <li><strong style="color: var(--text);">Anxious-Preoccupied Pattern (High Anxiety, Low Avoidance):</strong> Hyper-vigilance to partner availability and perceived tone shifts. Frequent need for verbal confirmation and high emotional investment during perceived distance.</li>
+          <li><strong style="color: var(--text);">Dismissive-Avoidant Pattern (Low Anxiety, High Avoidance):</strong> High defensive self-reliance and emotional compartmentalization. De-escalates conflict by physically or mentally withdrawing when emotional vulnerability is requested.</li>
+          <li><strong style="color: var(--text);">Fearful-Avoidant / Disorganized Pattern (High Anxiety, High Avoidance):</strong> Conflicted relational push-pull dynamic. Deep craving for profound connection paired with intense anticipatory fear of betrayal or emotional harm.</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <div style="margin: 12px 0;">
+          <h3 style="font-size: 15px; color: var(--text); margin: 12px 0 4px;">Q: What are the four primary adult attachment styles?</h3>
+          <p style="margin-bottom: 12px;">A: Adult attachment research maps relational tendencies across two primary dimensions: attachment anxiety (fear of rejection or abandonment) and attachment avoidance (discomfort with emotional closeness and vulnerability). Combining these axes yields four prototypical profiles: Secure (low anxiety, low avoidance), Anxious-Preoccupied (high anxiety, low avoidance), Dismissive-Avoidant (low anxiety, high avoidance), and Fearful-Avoidant or Disorganized (high anxiety, high avoidance).</p>
+
+          <h3 style="font-size: 15px; color: var(--text); margin: 12px 0 4px;">Q: Can a person's attachment style change over time?</h3>
+          <p style="margin-bottom: 12px;">A: Yes. While attachment patterns frequently form through early developmental experiences, research indicates attachment security is not biologically fixed. Through conscious self-reflection, secure relationships, emotional regulation practices, and targeted therapy, individuals can develop 'earned security' across adulthood.</p>
+
+          <h3 style="font-size: 15px; color: var(--text); margin: 12px 0 4px;">Q: Is this reflection a validated clinical diagnosis?</h3>
+          <p style="margin-bottom: 12px;">A: No. Standard clinical and empirical assessment uses 36-item psychometric instruments like the ECR-R (Experiences in Close Relationships - Revised) or structured clinical interviews (AAI). This 10-scenario simulation is an educational exploration designed for personal awareness and communication insight, not a psychiatric evaluation.</p>
+
+          <h3 style="font-size: 15px; color: var(--text); margin: 12px 0 4px;">Q: Are my responses or chat choices stored or uploaded?</h3>
+          <p style="margin-bottom: 12px;">A: Never. All choice evaluations and summary metrics are computed entirely client-side within your browser. No scenario selections, reflection results, or personal identifiable inputs are ever transmitted, saved on servers, or tracked in analytics.</p>
+        </div>
+
+        <h2>References &amp; Empirical Literature</h2>
+        <ul style="margin: 8px 0 16px 20px; line-height: 1.7; color: var(--text-muted); font-size: 13px;">
+          <li>Bowlby, J. (1982). <em>Attachment and Loss: Vol. 1. Attachment</em> (2nd ed.). New York: Basic Books.</li>
+          <li>Ainsworth, M. D. S., Blehar, M. C., Waters, E., &amp; Wall, S. (1978). <em>Patterns of Attachment: A Psychological Study of the Strange Situation</em>. Lawrence Erlbaum.</li>
+          <li>Hazan, C., &amp; Shaver, P. (1987). <em>Romantic love conceptualized as an attachment process</em>. Journal of Personality and Social Psychology, 52(3), 511–524.</li>
+          <li>Brennan, K. A., Clark, C. L., &amp; Shaver, P. R. (1998). <em>Self-report measurement of adult attachment: An integrative overview</em>. Attachment Theory and Close Relationships, 46–76.</li>
+          <li>Fraley, R. C., &amp; Waller, N. G. (1998). <em>Adult attachment dividing the continuous variable: What happens to measurement?</em>. Review of General Psychology, 2(2), 113–139.</li>
+        </ul>
+
+        <p class="source-links" style="margin-top: 12px;">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3954965/" rel="noopener noreferrer" target="_blank">ECR-R Measurement Overview (NIH/PMC) ↗</a> · 
+          <a href="https://pubmed.ncbi.nlm.nih.gov/36201836/" rel="noopener noreferrer" target="_blank">Adult Attachment Meta-Analysis (PubMed) ↗</a>
+        </p>
+
+        <div style="margin-top: 16px; font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 10px;">
+          <span>Editorial Review: October 2026</span> • <span>DopaBrain Behavioral Science &amp; Relationship Research Team</span>
+        </div>
       </div>
     </details>
   </section>
