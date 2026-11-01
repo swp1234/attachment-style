@@ -344,7 +344,7 @@
       var relatedLinks = document.querySelectorAll('#related-grid .related-card');
       Array.prototype.forEach.call(relatedLinks, function (link) {
         var baseHref = link.getAttribute('href').split('?')[0];
-        link.setAttribute('href', baseHref + '?lang=' + encodeURIComponent(lang));
+        link.setAttribute('href', baseHref + '?lang=' + encodeURIComponent(lang) + '&source=attachment_style');
       });
     }
 
@@ -361,7 +361,7 @@
       var cta = document.getElementById('primary-related-cta');
       if (cta) {
         cta.textContent = action;
-        cta.setAttribute('href', rec.url + '?lang=' + encodeURIComponent(lang));
+        cta.setAttribute('href', rec.url + '?lang=' + encodeURIComponent(lang) + '&source=attachment_style');
         cta.setAttribute('data-related-key', typeKey);
       }
       syncRelatedUrls();
@@ -590,12 +590,28 @@
     primaryRelatedCta.addEventListener('click', function () {
       var targetSlug = primaryRelatedCta.getAttribute('href') || 'related';
       trackEvent('attachment_reflection_related_click', Object.assign(eventContext('direct'), { target_slug: targetSlug, is_hero: true }));
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'content_cta_click', {
+          event_category: 'engagement',
+          page_path: location.pathname,
+          target_url: primaryRelatedCta.href,
+          link_id: 'attachment_style_primary_cta'
+        });
+      }
     });
     var relatedCards = document.querySelectorAll('#related-grid .related-card');
     Array.prototype.forEach.call(relatedCards, function (card) {
       card.addEventListener('click', function () {
         var key = card.getAttribute('data-related-key') || card.getAttribute('href');
         trackEvent('attachment_reflection_related_click', Object.assign(eventContext('direct'), { target_slug: key, is_hero: false }));
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'content_cta_click', {
+            event_category: 'engagement',
+            page_path: location.pathname,
+            target_url: card.href,
+            link_id: 'attachment_style_related_' + (card.getAttribute('data-related-key') || 'link')
+          });
+        }
       });
     });
     aboutDetails.addEventListener('toggle', function () {
