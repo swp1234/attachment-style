@@ -25,7 +25,11 @@ class I18n {
             this.translations[lang] = await r.json();
             return true;
         } catch (e) {
-            if (lang !== 'en') return this.loadTranslations('en');
+            if (lang !== 'en') {
+                const ok = await this.loadTranslations('en');
+                if (ok && this.translations.en) this.translations[lang] = this.translations.en;
+                return ok;
+            }
             return false;
         }
     }
@@ -60,3 +64,4 @@ class I18n {
     getCurrentLanguage() { return this.currentLang; }
 }
 const i18n = new I18n();
+try { window.i18n = i18n; } catch (e) {}
